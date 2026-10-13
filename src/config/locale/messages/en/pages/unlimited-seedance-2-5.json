@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 Unlimited Plans Compared (October 2026)",
+    "description": "Which platforms still sell unlimited Seedance 2.5? Compare unlimited days, clip caps, prices and expired offers, checked against each provider's own terms."
+  },
+  "page": {
+    "title": "Seedance 2.5 Unlimited Plans Compared",
+    "show_sections": [
+      "hero"
+    ],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "unlimited-seedance-2-5",
+        "label": "Plan comparison",
+        "title": "Seedance 2.5 unlimited plans: costs and limits",
+        "description": "Compare the time window, upfront payment and output limits before choosing a plan. This snapshot covers Topview and Creaa’s public offers, not every provider.",
+        "verdict": "SeedanceAI.dev does not sell an unlimited plan. This workspace uses credits and shows the exact charge before each generation. The table below covers the platforms that do advertise unlimited access.",
+        "last_reviewed": "Reviewed October 12, 2026",
+        "source_note": "Public pricing and terms checked on October 12, 2026. No purchase, queue-speed or generation test was performed. Offers can change; confirm the selected configuration at checkout. No affiliate links.",
+        "primary_button": {
+          "title": "Compare the plans",
+          "url": "#plans-compared"
+        },
+        "secondary_button": {
+          "title": "See our credit pricing",
+          "url": "/pricing"
+        },
+        "quick_facts": [],
+        "sections": [
+          {
+            "id": "plans-compared",
+            "kicker": "Reviewed October 12, 2026",
+            "title": "Current advertised Seedance 2.5 unlimited offers",
+            "paragraphs": [
+              "Annual prices are the total commitment, not a one-month price. A benefit window is different from the promotion’s purchase deadline; neither reviewed page supplies a reliable calendar deadline.",
+              "Activation date and expiry timezone must be confirmed for the selected account and checkout. These are published plan terms; we have not purchased or generated videos with these third-party offers."
+            ],
+            "table": {
+              "headers": [
+                "Plan / source",
+                "Upfront price",
+                "Unlimited window",
+                "Output",
+                "Conditions / checked",
+                "Activation / deadline / timezone",
+                "Access / task test"
+              ],
+              "rows": [
+                [
+                  "[Topview Ultra annual](https://www.topview.ai/pricing)",
+                  "$599.90 / year",
+                  "30 days",
+                  "720p · 30s",
+                  "Standard queue; up to 6 unlimited video tasks concurrently. 2026-10-12.",
+                  "Confirm activation at checkout; reliable purchase deadline and expiry timezone not published.",
+                  "Manual website jobs; API/MCP/automation excluded. No completed generation test."
+                ],
+                [
+                  "[Topview Team annual](https://www.topview.ai/pricing)",
+                  "$672 / seat/year; 2 seats minimum ($1,344)",
+                  "60 days",
+                  "720p · 30s",
+                  "Website-only unlimited; speed varies. 2026-10-12. Concurrency not recorded in this snapshot.",
+                  "Confirm activation at checkout; reliable purchase deadline and expiry timezone not published.",
+                  "Manual website jobs; API/MCP/automation excluded. No completed generation test."
+                ],
+                [
+                  "[Creaa Ultra annual](https://creaa.ai/pricing)",
+                  "$2,990 / year",
+                  "15 days each membership month",
+                  "720p · 15s",
+                  "Higher tiers change days and duration. 2026-10-12. Queue and concurrency not recorded in this snapshot.",
+                  "Confirm activation at checkout; reliable purchase deadline and expiry timezone not published.",
+                  "Manual website jobs; API/MCP/automation excluded. No completed generation test."
+                ],
+                [
+                  "[Creaa higher annual tier](https://creaa.ai/pricing)",
+                  "$4,990 / year",
+                  "Verify selected tier at checkout",
+                  "720p · 20s",
+                  "FAQ lists the price and duration; do not infer continuous 365 days from the headline. 2026-10-12. Queue and concurrency not recorded in this snapshot.",
+                  "Confirm activation at checkout; reliable purchase deadline and expiry timezone not published.",
+                  "Manual website jobs; API/MCP/automation excluded. No completed generation test."
+                ]
+              ]
+            },
+            "callout": {
+              "title": "What unlimited actually buys",
+              "text": "These offers remove per-task credit charges only for eligible manual website jobs. Queues and fair-use restrictions still apply; API, MCP and automation are excluded. [Topview terms](https://www.topview.ai/pricing) · [Creaa payment terms](https://creaa.ai/payment-terms.html).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "credit-alternative",
+            "kicker": "For occasional tests",
+            "title": "A credit-based option on SeedanceAI.dev",
+            "paragraphs": [
+              "This site does not sell unlimited access. A 5s 480p Seedance 2.5 task uses 30 credits. The smallest pack is $9.90 for 150 credits: five such videos, about $1.98 each if all credits are used. This is a pack purchase, not individual-video checkout.",
+              "[Load a real 5-second sample](/ai-video-generator?sample=product-25#seedance-generator) or [calculate your own budget](/pricing#video-budget)."
+            ]
+          },
+          {
+            "id": "choose-plan",
+            "title": "Choose by accepted outputs, not the unlimited label",
+            "steps": [
+              {
+                "title": "Define the task",
+                "description": "Fix model, duration, resolution, required references and how many usable videos you need."
+              },
+              {
+                "title": "Check the full commitment",
+                "description": "Compare the annual or monthly total, seats, renewal terms, unused credits and benefit dates."
+              },
+              {
+                "title": "Test queue and usable output",
+                "description": "A short benefit window is only useful if the queue and output quality fit your deadline. Include retries in the budget."
+              },
+              {
+                "title": "Recheck before purchase",
+                "description": "Save the checkout terms and selected tier. A headline or old launch promotion is not proof of today’s entitlement."
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Seedance 2.5 unlimited here?",
+            "answer": "No. This workspace charges the visible credit cost for each task. The comparison describes other providers’ offers."
+          },
+          {
+            "question": "Does unlimited mean instant generation?",
+            "answer": "No. Check queues, concurrency, fair use, clip length and the benefit window. The label alone says nothing about how many usable videos you can finish by a deadline."
+          },
+          {
+            "question": "Can I use an unlimited plan through an API?",
+            "answer": "The reviewed Topview and Creaa unlimited benefits exclude API and automated access. Separate API billing and account terms apply."
+          },
+          {
+            "question": "Which price should I compare?",
+            "answer": "Compare the full upfront charge for the selected tier, including required seats and taxes. Then compare the allowed tasks, time window, and likely retries."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Pricing and Unlimited FAQ",
+            "url": "https://www.topview.ai/pricing",
+            "publisher": "Topview"
+          },
+          {
+            "title": "Pricing and duration FAQ",
+            "url": "https://creaa.ai/pricing",
+            "publisher": "Creaa"
+          },
+          {
+            "title": "Payment terms",
+            "url": "https://creaa.ai/payment-terms.html",
+            "publisher": "Creaa"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 pricing",
+            "description": "Credits per second and what each plan covers.",
+            "url": "/pricing"
+          },
+          {
+            "title": "Seedance 2.5 free",
+            "description": "Start with a finite allowance and visible costs.",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 2.5 vs 2.0",
+            "description": "Choose the version before you choose a plan.",
+            "url": "/seedance-2-5-vs-2-0"
+          }
+        ],
+        "cta": {
+          "title": "Try one defined shot first",
+          "description": "Load sample settings, review the credit cost and submit only when ready.",
+          "button": "Load the product sample",
+          "url": "/ai-video-generator?sample=product-25#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "design",
+  "title": "Seedance AI Competitive Redesign",
+  "prompt": "Create three high-quality landing-page directions informed by current product competitors, with polished generator, media, component, UI, and UX treatments while preserving product truth.",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "Seedance Competitive Redesign": {
+      "versions": [
+        {
+          "path": "index.html",
+          "createdAt": "2026-08-26T16:13:38.523Z",
+          "status": "needs-review",
+          "subtitle": "Three interactive high-fidelity landing-page directions",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          }
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-08-26T16:13:38.524Z",
+  "updatedAt": "2026-08-26T16:20:13.584Z"
+}

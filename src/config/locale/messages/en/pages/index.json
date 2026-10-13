@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Seedance AI Video Generator — 2.5, 2.0 & More",
+    "description": "Create Seedance 2.5 and 2.0 videos from text or images. Review prompts, settings and product credit costs before generation in this independent workspace."
+  },
+  "page": {
+    "title": "Seedance AI Video Generator",
+    "show_sections": [
+      "hero",
+      "sample-reel",
+      "proof",
+      "version-paths",
+      "use-cases",
+      "prompt-system",
+      "model-roster",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "create",
+        "block": "hero",
+        "variant": "home",
+        "show_generator": true,
+        "status": "Independent AI video workspace",
+        "title": "Seedance AI Video Generator: Seedance 2.5 & 2.0",
+        "highlight_text": "AI Video Generator",
+        "description": "Turn a prompt or image into a Seedance video. Choose your model, shape the shot and see the exact credits before you generate.",
+        "buttons": [
+          {
+            "title": "Create a video",
+            "url": "#seedance-generator"
+          },
+          {
+            "title": "View examples",
+            "url": "#sample-videos"
+          }
+        ],
+        "facts": [
+          {
+            "title": "6 model lines"
+          },
+          {
+            "title": "Model-aware controls"
+          },
+          {
+            "title": "Exact credits before generation"
+          }
+        ],
+        "media": {
+          "src": "/media/samples/seedance-i2v-25.webp",
+          "poster": "/media/samples/seedance-i2v-25.webp",
+          "video": "/media/samples/seedance-i2v-25.mp4",
+          "alt": "A fictional adult performer turning on a rooftop at blue hour as a cobalt coat catches the wind",
+          "frame_label": "Seedance 2.5 · real image-to-video output",
+          "label": "Image-to-video sample",
+          "caption": "A still image used as the first frame. Seedance 2.5 added the turn, the coat movement and the wind.",
+          "prompt": "Keep the subject, outfit and background from the first frame. She turns into the wind and the cobalt coat lifts behind her. Hair moves in the breeze. Locked camera, no new objects.",
+          "prompt_label": "Prompt direction",
+          "model": "Seedance 2.5",
+          "model_label": "Model",
+          "output": "480p · 5s · 30 credits",
+          "output_label": "Output setup",
+          "play_label": "Play sample",
+          "pause_label": "Pause sample",
+          "error_label": "Motion preview unavailable",
+          "gallery": [
+            {
+              "src": "/media/samples/seedance-dialogue-25.webp",
+              "alt": "A frame from our Seedance 2.5 bus-stop dialogue output",
+              "label": "Seedance 2.5 · 8s",
+              "title": "Dialogue and rain"
+            },
+            {
+              "src": "/media/samples/seedance-camera-25.webp",
+              "alt": "A frame from our Seedance 2.5 continuous camera-move output",
+              "label": "Seedance 2.5 · 8s",
+              "title": "One continuous move"
+            }
+          ]
+        },
+        "workspace_label": "Creative workspace",
+        "workspace_title": "Create a Seedance AI video",
+        "workspace_note": "Select a model, shape the prompt and see the exact product credit cost before signing in.",
+        "preview": {
+          "src": "/media/samples/seedance-i2v-25.webp",
+          "video": "/media/samples/seedance-i2v-25.mp4",
+          "alt": "Rooftop turn — motion from a starting image",
+          "label": "Real sample · Seedance 2.5 · 5s · 480p",
+          "caption": "Play the unedited output, then use the example settings below for your own test."
+        },
+        "disclaimer": "Independent service. Not affiliated with ByteDance or Dreamina.",
+        "cost_link_label": "Credits & pricing"
+      },
+      "proof": {
+        "id": "product-proof",
+        "block": "features",
+        "tone": "paper-2",
+        "layout": "metrics",
+        "title": "Seedance AI settings and video costs",
+        "description": "A 5-second Seedance 2.5 video uses 30 credits at 480p or 60 at 720p. The workspace updates the charge when you change settings. Compare plans, estimated video counts and expiry on the pricing page.",
+        "items": [
+          {
+            "number": "01",
+            "icon": "Monitor",
+            "title": "Eight selectable models",
+            "description": "Text, image and reference workflows across six model lines. Each mode shows only the settings that model accepts."
+          },
+          {
+            "number": "02",
+            "icon": "Clock3",
+            "title": "480p through 2K by model",
+            "description": "Resolution options change with the selected model. The workspace does not merge upstream claims into one universal capability."
+          },
+          {
+            "number": "03",
+            "icon": "Images",
+            "title": "Compatible controls only",
+            "description": "Workflow, aspect ratio, duration, image count and audio controls reconcile whenever the model changes."
+          },
+          {
+            "number": "04",
+            "icon": "ReceiptText",
+            "title": "Credits fixed before generation",
+            "description": "The displayed product credit charge is calculated from resolution and duration. Confirmed failed tasks are refunded automatically."
+          }
+        ],
+        "button": {
+          "title": "Calculate your video budget",
+          "url": "/pricing#video-budget"
+        }
+      },
+      "sample-reel": {
+        "id": "sample-videos",
+        "block": "sample-reel",
+        "label": "Real outputs · generated October 3, 2026",
+        "title": "Seedance 2.5 video examples and prompts",
+        "description": "Each clip is an unedited Seedance 2.5 output at 480p with its original sound. Copy the prompt or load the full settings for your own test; repeated generations can differ.",
+        "provenance": "Generated for SeedanceAI.dev through the same provider route as the generator. Nothing was upscaled, re-timed or re-edited; press play to hear the generated audio.",
+        "button": {
+          "title": "See how these prompts are built",
+          "url": "/seedance-2-5-prompt-guide"
+        }
+      },
+      "model-roster": {
+        "id": "current-models",
+        "block": "model-roster",
+        "title": "Other AI video models in this workspace",
+        "description": "Switch models in the generator at any time. Each guide lists the settings and credit cost for that model.",
+        "items": [
+          {
+            "status": "Popular",
+            "title": "Kling 3.0",
+            "description": "Single-shot text or first/last-frame generation with 720p/1080p and optional sound.",
+            "points": ["5–15s", "Sound toggle", "3 aspect ratios"],
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "status": "New",
+            "title": "Wan 2.7",
+            "description": "Flexible text framing or first/last-frame motion with prompt enhancement and negative direction.",
+            "points": ["720p/1080p", "5 text ratios", "Prompt enhance"],
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "status": "New",
+            "title": "MiniMax H3",
+            "description": "Text or frame-led generation with 768P/2K output and six text-to-video aspect ratios.",
+            "points": ["768P/2K", "6–15s", "First/last frame"],
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "status": "Preview",
+            "title": "Grok Imagine Video 1.5",
+            "description": "Fast text or multi-image experimentation with focused 480p/720p product controls.",
+            "points": ["Up to 7 images", "5–15s", "Low-cost tests"],
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "layout": "compact"
+      },
+      "version-paths": {
+        "id": "versions",
+        "block": "version-paths",
+        "title": "Seedance 2.5 vs Seedance 2.0",
+        "description": "Seedance 2.5 offers longer clip options here. Seedance 2.0 Standard, Fast and Mini offer different credit costs for shorter tests. Compare the same prompt and settings before choosing.",
+        "items": [
+          {
+            "version": "2.5",
+            "status": "Default",
+            "title": "Seedance 2.5",
+            "description": "Use it for new prompts, longer single-shot structure, synchronized audio and reference-led work.",
+            "points": [
+              "Text, start-frame and visual-reference workflows",
+              "5–30 second product controls",
+              "480p and 720p launch output"
+            ],
+            "button": {
+              "title": "Create with 2.5",
+              "url": "#seedance-generator"
+            },
+            "secondary": {
+              "title": "Read the free-access guide",
+              "url": "/seedance-2-5-free"
+            }
+          },
+          {
+            "version": "2.0",
+            "status": "Available",
+            "title": "Seedance 2.0",
+            "description": "Keep it for established prompt recipes, side-by-side tests and searches that specifically ask for the 2.0 workflow.",
+            "points": [
+              "5–15 second workspace options",
+              "Standard, Fast and Mini credit rates",
+              "Switch in the same workspace"
+            ],
+            "button": {
+              "title": "Open the 2.0 guide",
+              "url": "/seedance-2-0"
+            },
+            "secondary": {
+              "title": "Compare the versions",
+              "url": "/seedance-2-5-vs-2-0"
+            }
+          }
+        ],
+        "scene_title": "From a compass close-up to a mountain sunrise.",
+        "scene_note": "Same prompt · 8s · 480p · two original outputs",
+        "prompt_label": "View the original prompt for both clips"
+      },
+      "prompt-system": {
+        "id": "prompt-system",
+        "block": "prompt-system",
+        "title": "How to write Seedance video prompts",
+        "description": "Describe the subject, what changes, the camera movement and the timing. Add dialogue or sound only when the chosen model supports it. Start with a short test, then revise the parts you can observe.",
+        "checkpoints_label": "Prompt checkpoints",
+        "spine_label": "A useful shot has a spine",
+        "spine_description": "Subject first. Then the move, timing and sound that make the direction legible to the model.",
+        "spine_note": "Keep each beat observable. If the action cannot be seen, it is difficult to evaluate or revise.",
+        "timeline_label": "Shot direction",
+        "timeline_duration": "00:00–00:08",
+        "prompt": [
+          {
+            "time": "00:00–00:03",
+            "title": "Establish",
+            "description": "A brushed-metal speaker sits on wet black stone in a quiet studio."
+          },
+          {
+            "time": "00:03–00:06",
+            "title": "Move",
+            "description": "Slow dolly-in as warm practical light catches the product edge."
+          },
+          {
+            "time": "00:06–00:08",
+            "title": "Resolve",
+            "description": "A hand enters frame, stops beside the control dial; restrained room tone."
+          }
+        ],
+        "tips": [
+          "Describe what changes; reference images already define what is visible.",
+          "Put spoken dialogue in double quotes when audio is enabled.",
+          "Test motion at 480p and short duration before the final render."
+        ],
+        "button": {
+          "title": "Open the full prompt guide",
+          "url": "/seedance-2-5-prompt-guide"
+        }
+      },
+      "use-cases": {
+        "id": "use-cases",
+        "block": "shot-workflow",
+        "tone": "paper-2",
+        "layout": "staggered",
+        "title": "How to use Seedance AI",
+        "description": "One prompt. Five seconds. A scene in motion. Follow this real example, then make it your own.",
+        "items": [
+          {
+            "number": "01",
+            "icon": "Megaphone",
+            "title": "Choose a model and workflow",
+            "description": "This example uses Seedance 2.5 text-to-video. Start with 480p and five seconds."
+          },
+          {
+            "number": "02",
+            "icon": "Clapperboard",
+            "title": "Write one clear shot",
+            "description": "A character, one jump, a side-tracking camera and splash timing. Copy the direction, then change the subject or setting."
+          },
+          {
+            "number": "03",
+            "icon": "BookOpen",
+            "title": "Review the credit cost",
+            "description": "These settings use 30 credits. Sign in and confirm your balance before submitting."
+          },
+          {
+            "number": "04",
+            "icon": "Code2",
+            "title": "Review and reuse",
+            "description": "Play the result to check tracking, the jump and the splash. Download the output or reuse the settings for another take."
+          }
+        ],
+        "scene_title": "Anime action: a leap across a puddle",
+        "prompt_label": "The prompt behind the shot",
+        "provenance": "An original Seedance 2.5 output from this workspace. Play it to inspect motion and sound; repeated generations can differ.",
+        "guide_label": "Learn to direct your next shot"
+      },
+      "faq": {
+        "id": "faq",
+        "block": "faq",
+        "title": "Seedance AI FAQ",
+        "description": "Answers grounded in the settings and behavior available in the current product.",
+        "items": [
+          {
+            "title": "What is Seedance AI on this website?",
+            "description": "SeedanceAI.dev is an independent video workspace using third-party API access. It is not affiliated with or endorsed by ByteDance, Doubao or Dreamina."
+          },
+          {
+            "title": "Can I use Seedance 2.5 here?",
+            "description": "Seedance 2.5 is selectable in this workspace. Review the current settings and credit charge before submitting; an account with enough credits is required."
+          },
+          {
+            "title": "Is Seedance 2.5 free here?",
+            "description": "Eligible new accounts with verified email receive 5 credits, enough for one 5-second 480p Seedance 2.0 Mini video. Disposable addresses and repeat accounts on the same network within 24 hours are restricted. Seedance 2.5 uses 30 credits for that configuration; see the free-access guide and credit plans.",
+            "button": {
+              "title": "Free access and eligibility",
+              "url": "/seedance-2-5-free"
+            }
+          },
+          {
+            "title": "How much does a Seedance 2.5 video cost?",
+            "description": "A 5-second video uses 30 credits at 480p or 60 at 720p. Packs currently start at $9.9. Dollar estimates per video depend on the plan, configuration and use of its credits.",
+            "button": {
+              "title": "Calculate video costs",
+              "url": "/pricing#video-budget"
+            }
+          },
+          {
+            "title": "What durations and resolutions can I choose?",
+            "description": "Seedance 2.5 currently offers 5, 8, 10, 15 and 30-second options at 480p or 720p here. Seedance 2.0 offers 5, 8, 10 and 15-second options. These describe this product, not every provider."
+          },
+          {
+            "title": "Which references can I upload?",
+            "description": "Seedance image-to-video accepts up to two images here. Image-reference mode accepts up to six images. This browser workspace does not currently provide video or audio reference uploads."
+          },
+          {
+            "title": "Is Seedance 2.5 unlimited here?",
+            "description": "This workspace uses product credits per task. The unlimited comparison explains other providers’ time windows, queues and plan limits; it is not an unlimited offer from this site.",
+            "button": {
+              "title": "Compare unlimited plans",
+              "url": "/unlimited-seedance-2-5"
+            }
+          },
+          {
+            "title": "What happens if a generation fails?",
+            "description": "Provider-confirmed failed tasks follow the credit-return process. A task that is still queued or processing is not treated as failed. Keep the task record and avoid duplicate submissions while it is running."
+          },
+          {
+            "title": "Can I use the videos commercially?",
+            "description": "Commercial use depends on your plan, current provider and model terms, and rights to your inputs and requested content. Access to a model does not clear third-party characters, brands, music or likenesses."
+          }
+        ]
+      },
+      "cta": {
+        "id": "next-shot",
+        "block": "cta",
+        "title": "Create your next Seedance video",
+        "description": "Use 480p and five seconds to validate the prompt before moving to a longer 720p generation.",
+        "buttons": [
+          {
+            "title": "Open the generator",
+            "url": "#seedance-generator"
+          },
+          {
+            "title": "See credits and pricing",
+            "url": "/pricing"
+          }
+        ],
+        "image": {
+          "src": "/media/samples/seedance-anime-25.webp",
+          "alt": "Our Seedance 2.5 anime puddle-jump sample"
+        }
+      }
+    }
+  }
+}

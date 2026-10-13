@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.customData": [".vscode/tailwindcss.custom-data.json"],
+  "i18n-ally.localesPaths": ["src/config/locale/messages"],
+  "i18n-ally.keystyle": "nested",
+  "less.customData": [".vscode/tailwindcss.custom-data.json"],
+  "scss.customData": [".vscode/tailwindcss.custom-data.json"]
+}

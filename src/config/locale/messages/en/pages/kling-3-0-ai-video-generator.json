@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "Kling 3.0 AI Video Generator — Text, Image and Sound",
+    "description": "Generate Kling 3.0 videos from text or first and last frames. Choose 720p or 1080p, 5–15 seconds and optional sound with visible product credits.",
+    "keywords": "Kling 3.0 video generator, Kling AI video, text to video, image to video"
+  },
+  "page": {
+    "title": "Kling 3.0 AI Video Generator",
+    "sections": {
+      "hero": {
+        "id": "kling-3-0-ai-video-generator",
+        "label": "Kling 3.0 workspace",
+        "title": "Kling 3.0 AI Video Generator",
+        "description": "Direct a single shot from text or first and last frames. This workspace exposes Kling 3.0 standard 720p and pro 1080p modes, optional sound, and five-, ten-, or fifteen-second takes.",
+        "verdict": "Choose Kling 3.0 when sound, camera movement and a controlled final frame matter. Start at 720p and five seconds; move to 1080p only after the motion works.",
+        "last_reviewed": "Reviewed August 22, 2026",
+        "source_note": "Upstream capabilities can change. The preselected generator is the source of truth for the controls and product credit charge currently available here.",
+        "primary_button": {
+          "title": "Create with Kling 3.0",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "Compare current models",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "Workspace modes",
+            "value": "Text · First/last frame",
+            "description": "Single-shot generation in the first release."
+          },
+          {
+            "label": "Output",
+            "value": "720p · 1080p",
+            "description": "Standard and pro mode mappings."
+          },
+          {
+            "label": "Duration",
+            "value": "5 · 10 · 15 seconds",
+            "description": "Selected from Kling's 3–15 second upstream range."
+          },
+          {
+            "label": "Sound",
+            "value": "Optional",
+            "description": "The credit total updates with the sound toggle."
+          }
+        ],
+        "show_generator": true,
+        "default_model": "kling-3.0",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "Selection rule",
+            "title": "Where Kling 3.0 fits best",
+            "paragraphs": [
+              "Kling 3.0 is useful for shots where motion and sound need to be evaluated together: product reveals, short narrative beats, environmental action and social hooks with a clear camera move.",
+              "The workspace intentionally starts with single-shot mode. Kling's upstream multi-shot and element-reference systems add planning complexity and are not presented as product controls until they are implemented and tested end to end."
+            ],
+            "bullets": [
+              "Use text-to-video for composition and camera exploration.",
+              "Use one frame to establish art direction and two frames to control the ending.",
+              "Disable sound when the edit will receive a separate soundtrack.",
+              "Use 1080p for a validated shot, not the first prompt experiment."
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "Product versus upstream",
+            "title": "Controls available in this workspace",
+            "table": {
+              "headers": ["Control", "Available here", "Practical effect"],
+              "rows": [
+                [
+                  "Mode",
+                  "720p standard or 1080p pro",
+                  "Resolution maps to Kling's std/pro input."
+                ],
+                [
+                  "Duration",
+                  "5, 10 or 15 seconds",
+                  "Keeps cost and shot planning predictable."
+                ],
+                [
+                  "Aspect",
+                  "16:9, 9:16 or 1:1",
+                  "Image-led shots follow the uploaded frame."
+                ],
+                [
+                  "Sound",
+                  "On or off",
+                  "Changes both provider input and displayed product credits."
+                ],
+                [
+                  "Multi-shot",
+                  "Not exposed",
+                  "The product currently submits one prompt as one shot."
+                ]
+              ]
+            },
+            "callout": {
+              "title": "No 4K product claim",
+              "text": "Kling documents a 4K upstream mode, but this workspace currently exposes only 720p and 1080p. An upscale or provider capability is not described as native site output.",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "Prompt patterns",
+            "title": "Write for motion, timing and sound",
+            "examples": [
+              {
+                "label": "Product reveal",
+                "text": "A matte-black field recorder sits on a rain-darkened studio table. Slow 30-degree orbit as a narrow warm light travels across the controls; small droplets vibrate with a low bass pulse. Crisp product geometry, restrained room tone, no text overlays."
+              },
+              {
+                "label": "First and last frame",
+                "text": "Move naturally from the opening frame into the final composition. The cyclist crosses the wet intersection as the camera tracks left at street level; headlights bloom softly in the rain, stable bicycle and rider anatomy, realistic traffic ambience."
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "Model choice",
+            "title": "Kling 3.0 versus other models here",
+            "table": {
+              "headers": [
+                "Model",
+                "Choose it for",
+                "Current workspace distinction"
+              ],
+              "rows": [
+                [
+                  "Kling 3.0",
+                  "Sound-aware, directed single shots",
+                  "720p/1080p and optional sound"
+                ],
+                [
+                  "Seedance 2.5",
+                  "Reference-led shots and longer established controls",
+                  "Dedicated reference workflow"
+                ],
+                [
+                  "Wan 2.7",
+                  "Flexible aspect ratios and prompt expansion",
+                  "Negative prompt and prompt enhancement"
+                ],
+                [
+                  "MiniMax H3",
+                  "2K-oriented text or frame motion",
+                  "768P/2K choices"
+                ],
+                [
+                  "Grok Imagine 1.5",
+                  "Fast multi-image experimentation",
+                  "Low-cost 480p/720p tests"
+                ]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Kling 3.0 usable in this generator now?",
+            "answer": "Yes. Kling 3.0 is preselected in the generator above. You need an account with enough credits."
+          },
+          {
+            "question": "Does Kling 3.0 generate sound here?",
+            "answer": "Sound is an optional product control for Kling 3.0. The generate button recalculates the site credit charge when it is enabled."
+          },
+          {
+            "question": "Can I upload first and last frames?",
+            "answer": "Yes. Upload one image for a start frame or two images for start and end composition. The uploaded frame determines aspect for image-led generation."
+          },
+          {
+            "question": "Is 4K available on this site?",
+            "answer": "No. This product currently exposes 720p standard and 1080p pro output for Kling 3.0, even though upstream documentation also discusses a 4K mode."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Kling 3.0 API input and mode documentation",
+            "url": "https://docs.kie.ai/market/kling/kling-3-0"
+          },
+          {
+            "publisher": "Kuaishou",
+            "title": "Kling AI 3.0 launch announcement",
+            "url": "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/"
+          }
+        ],
+        "related": [
+          {
+            "title": "Wan 2.7",
+            "description": "Compare a prompt-expanded 720p/1080p workflow.",
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "Explore 768P and 2K text or frame generation.",
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "title": "Grok Imagine 1.5",
+            "description": "Try a fast multi-image video workflow.",
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "cta": {
+          "title": "Direct one clean Kling take",
+          "description": "Start with five seconds at 720p, verify the motion, then increase resolution or duration.",
+          "button": "Open Kling 3.0",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

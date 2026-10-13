@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-08-26",
+    "macrostructure": "Split Studio",
+    "theme": "custom",
+    "theme_axes": "light warm paper / roman sans display / signal orange",
+    "vibe": "bright editorial production desk with focused projection windows",
+    "nav": "N1b Canonical SaaS three-section (shared site chrome preserved)",
+    "footer": "Ft4 Dense typographic colophon (shared site chrome preserved)",
+    "enrichment": "E8 labelled prompt still + contact-sheet studies + user-initiated loop",
+    "brief": "SeedanceAI.dev landing page light-balance and media-first refinement"
+  },
+  {
+    "date": "2026-08-26",
+    "macrostructure": "Workbench",
+    "theme": "custom",
+    "theme_axes": "warm paper / roman sans display / signal orange",
+    "vibe": "restrained cinematic production instrument",
+    "nav": "N1b Canonical SaaS three-section",
+    "footer": "Ft4 Dense typographic colophon",
+    "enrichment": "E8 contact-sheet studies + user-initiated loop",
+    "brief": "SeedanceAI.dev landing page, generator, pricing, and bilingual public guides"
+  }
+]

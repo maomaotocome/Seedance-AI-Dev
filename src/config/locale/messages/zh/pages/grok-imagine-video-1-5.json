@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "title": "Grok Imagine Video 1.5 生成器 — 文字与多图",
+    "description": "使用文字或最多七张图片生成 Grok Imagine Video 1.5。支持 480p/720p、5–15 秒与准确产品积分。",
+    "keywords": "Grok Imagine Video 1.5, Grok 视频生成器, 多图视频, 文生视频"
+  },
+  "page": {
+    "title": "Grok Imagine Video 1.5 生成器",
+    "sections": {
+      "hero": {
+        "id": "grok-imagine-video-1-5",
+        "label": "Grok Imagine 1.5 预览版",
+        "title": "Grok Imagine Video 1.5 生成器",
+        "description": "把文字或一组视觉素材变成快速视频实验。本站开放 480p、720p，5、8、10、15 秒，以及最多七张图片输入。",
+        "verdict": "快速概念探索与多图导演适合使用 Grok Imagine 1.5。把预览模型当作迭代工具；需要时，再用更高分辨率工作流复测最强镜头。",
+        "last_reviewed": "复核于 2026 年 8 月 22 日",
+        "source_note": "Kie 将该模型标记为预览版。上游 API 还记录 1080p，但本站当前只开放 480p 与 720p。",
+        "primary_button": {
+          "title": "使用 Grok Imagine 1.5 创作",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较当前模型",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "本站工作流",
+            "value": "文字 · 多图",
+            "description": "一个提示词配合最多七张图片。"
+          },
+          {
+            "label": "本站输出",
+            "value": "480p · 720p",
+            "description": "首版不开放 1080p。"
+          },
+          {
+            "label": "时长",
+            "value": "5 · 8 · 10 · 15 秒",
+            "description": "位于 API 的 1–15 秒范围内。"
+          },
+          {
+            "label": "状态",
+            "value": "预览版",
+            "description": "模型行为与可用性可能变化。"
+          }
+        ],
+        "show_generator": true,
+        "default_model": "grok-imagine-video-1.5",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "选择规则",
+            "title": "Grok Imagine Video 1.5 最适合哪些阶段",
+            "paragraphs": [
+              "它适合创意早期：社媒概念、分镜动作、氛围测试与快速视觉组合。此时迭代速度比最高分辨率更重要。",
+              "多张图片可以建立一个紧凑视觉词汇。建议使用主体、环境和一种材质或风格参考，而不是上传七张无关图片。"
+            ],
+            "bullets": [
+              "准备参考素材之前，先用文字模式探索镜头。",
+              "使用两到四张相关图片提供更清晰方向。",
+              "一次性动作测试从 480p 开始。",
+              "最终分辨率或声音重要时，用其他模型复测候选镜头。"
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "本站与上游边界",
+            "title": "有意保持聚焦的预览界面",
+            "table": {
+              "headers": ["控制", "本站可用", "上游说明"],
+              "rows": [
+                [
+                  "分辨率",
+                  "480p 或 720p",
+                  "Kie 还记录 1080p；本站尚未完成定价和验证。"
+                ],
+                ["时长", "5、8、10 或 15 秒", "API 范围为 1–15 秒。"],
+                ["图片", "最多七张", "上游 1080p 仅允许一张。"],
+                ["画幅", "五种文字画幅", "图片请求由输入素材确定构图。"],
+                ["音频", "没有独立控制", "当前适配器不发送音频选项。"]
+              ]
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "提示词模式",
+            "title": "给参考图分配角色，不要做拼贴",
+            "examples": [
+              {
+                "label": "概念动作",
+                "text": "一件半透明橙色雨衣悬挂在混凝土画廊。受控气流抬起下摆，摄影机缓慢环绕半圈；材质反射清晰，日光柔和，雨衣结构稳定，空气运动克制。"
+              },
+              {
+                "label": "多图导演",
+                "text": "图片分别定义同一名骑行者、夜市环境与湿润镀铬材质。摄影机在一个转弯中与骑行者并行跟拍；面部、夹克与自行车保持一致，人群视差真实，不出现标志或文字。"
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "模型选择",
+            "title": "什么时候预览模型不是最终工具",
+            "table": {
+              "headers": ["需求", "可考虑模型", "原因"],
+              "rows": [
+                ["1080p 与声音开关", "Kling 3.0", "该适配器同时开放两者。"],
+                ["2K 输出", "MiniMax H3", "H3 工作台开放 2K。"],
+                ["提示词增强", "Wan 2.7", "开放改写与负面提示词。"],
+                ["独立参考工作流", "Seedance 2.5", "参考生成与首帧模式分开。"]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Grok Imagine Video 1.5 在本站真的已接入吗？",
+            "answer": "可以。上方生成器已预选 Grok Imagine Video 1.5。它是预览版模型，生成需要账户和足够的积分。"
+          },
+          {
+            "question": "为什么没有 1080p？",
+            "answer": "Kie 虽记录 1080p，但在本站产品积分和端到端表现完成验证前，只开放 480p 与 720p。"
+          },
+          {
+            "question": "可以使用七张图片吗？",
+            "answer": "当前产品分辨率下，上传器与 API 适配器最多允许七张公开图片 URL。更小且连贯的素材集通常更容易导演。"
+          },
+          {
+            "question": "预览版意味着什么？",
+            "answer": "模型名称、行为、价格或可用性可能比稳定版本变化更快。重要任务前请核对当前所选模型与控制。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Grok Imagine Video 1.5 预览版 API",
+            "url": "https://docs.kie.ai/market/grok-imagine/1-5-preview"
+          },
+          {
+            "publisher": "xAI",
+            "title": "Grok Imagine Video 1.5 公告",
+            "url": "https://x.ai/news/grok-imagine-video-1-5"
+          }
+        ],
+        "related": [
+          {
+            "title": "Kling 3.0",
+            "description": "从预览迭代转向可选声音与 1080p。",
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "title": "Wan 2.7",
+            "description": "使用提示词增强与灵活画幅。",
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "对比 768P/2K 工作流。",
+            "url": "/minimax-h3-video-generator"
+          }
+        ],
+        "cta": {
+          "title": "让第一条动作测试可以被丢弃",
+          "description": "用 480p 和短时长先找到创意，再为可用成片投入积分。",
+          "button": "打开 Grok Imagine 1.5",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

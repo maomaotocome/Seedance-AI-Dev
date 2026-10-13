@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "title": "多模型 AI 视频生成器",
+    "description": "使用 Seedance、Kling、Wan、MiniMax H3 或 Grok Imagine 生成视频。选择兼容参数，并在生成前查看准确产品积分。"
+  },
+  "page": {
+    "title": "多模型 AI 视频生成器",
+    "description": "通过模型适配参数和透明产品积分，完成文生视频、图生视频和参考驱动创作。"
+  },
+  "generator": {
+    "title": "多模型 AI 视频生成器",
+    "page_eyebrow": "AI 视频模型工作台",
+    "page_title": "多模型 AI 视频生成器——先选模型，再看清成本。",
+    "page_description": "使用 Seedance、Kling、Wan、MiniMax H3 或 Grok Imagine 创作。工作台只展示兼容参数，并在提交前显示准确产品积分。",
+    "workflow_label": "视频生成工作流",
+    "tabs": {
+      "text-to-video": "文生视频",
+      "image-to-video": "图生视频",
+      "reference-to-video": "视觉参考",
+      "text-short": "文本",
+      "image-short": "图片",
+      "reference-short": "参考"
+    },
+    "badges": {
+      "new": "新上线",
+      "popular": "热门"
+    },
+    "model_picker": {
+      "title": "选择视频模型",
+      "description": "搜索当前可用于生成的模型，并查看其工作台能力。",
+      "search": "搜索模型或厂商…",
+      "empty": "没有匹配的可用模型。",
+      "available": "当前工作台可用"
+    },
+    "models": {
+      "seedance_2_5": {
+        "summary": "音频与参考驱动镜头",
+        "description": "默认 Seedance 工作流，支持文字、首帧与视觉参考生成。"
+      },
+      "seedance_2_0": {
+        "summary": "2.0 最高质量档",
+        "description": "最终镜头质量优先于试稿成本时，使用标准版 2.0。"
+      },
+      "seedance_2_0_fast": {
+        "summary": "更快的 2.0 生产档",
+        "description": "适合提示词迭代与常规生产镜头的低成本 2.0 选项。"
+      },
+      "seedance_2_0_mini": {
+        "summary": "成本最低的 Seedance 试稿",
+        "description": "先测试运动、构图和镜头指令，再切换到成本更高的最终模型。"
+      },
+      "kling_3_0": {
+        "summary": "720p/1080p 与可选声音",
+        "description": "支持文字或首尾帧单镜头生成，可选声音，最长 15 秒。"
+      },
+      "wan_2_7": {
+        "summary": "灵活画幅与提示词扩展",
+        "description": "支持文字或首尾帧生成、720p/1080p 输出与可选提示词改写。"
+      },
+      "minimax_h3": {
+        "summary": "768P 或 2K 电影感运动",
+        "description": "支持文字或首尾帧生成，文生视频提供丰富画幅选项。"
+      },
+      "grok_imagine_1_5": {
+        "summary": "快速 480p/720p 实验",
+        "description": "支持 1–15 秒文字或多图引导视频；本站当前开放 480p 与 720p。"
+      }
+    },
+    "form": {
+      "model": "模型",
+      "resolution": "分辨率",
+      "duration": "时长",
+      "aspect_ratio": "画面比例",
+      "shot_direction": "镜头指令",
+      "prompt_guide": "提示词指南",
+      "prompt_placeholder": "描述场景、动作和镜头运动…",
+      "timecode_hint": "先从一个清晰的镜头开始。",
+      "start_frame": "首帧与可选尾帧",
+      "start_frame_hint": "上传一张首帧；也可添加第二张图片来指定结尾构图。",
+      "reference_images": "视觉参考",
+      "reference_images_hint": "最多上传 {count} 张图片参考，并在提示词中说明用途；此处不支持视频或音频上传。",
+      "upload_labels": {
+        "drop_to_upload": "松开以上传",
+        "upload": "上传图片",
+        "max_file_size": "最大 {size}MB",
+        "uploading": "上传中…",
+        "failed": "上传失败",
+        "replace_image": "上传新图片替换当前参考图",
+        "remove_image": "移除参考图",
+        "reference_image_alt": "已上传的视觉参考图"
+      },
+      "generate_audio": "同步生成音频",
+      "audio_not_exposed": "此模型当前没有独立音频开关",
+      "some_images_failed_to_upload": "一张或多张图片上传失败，请删除失败项后重试。"
+    },
+    "advanced": {
+      "title": "高级镜头指令",
+      "negative_prompt": "避免内容",
+      "negative_prompt_placeholder": "闪烁、手部变形、文字不可读",
+      "prompt_extend": "增强提示词"
+    },
+    "checking_account": "正在检查账户…",
+    "generating": "正在生成…",
+    "sign_in_to_generate": "登录后生成",
+    "generate_with_cost": "生成 · {credits} 积分",
+    "credits_remaining": "可用 {credits} 积分",
+    "new_user_credits": "登录后查看积分",
+    "billing_note": "操作按钮会显示当前模型与参数对应的准确产品积分。建议先用 480p 测试，再切换到 720p 制作最终版本。",
+    "refund_note": "供应商确认失败后，系统会自动退还本次积分。",
+    "independent_note": "独立服务 · 模型名称归各自权利方所有",
+    "output_monitor": "输出监视器",
+    "generation_wait": "较长视频可能需要数分钟生成。保持页面打开，系统会在后台持续检查任务状态。",
+    "empty_monitor": "填写镜头指令、确认兼容参数，然后生成第一条镜头。",
+    "source_aspect": "跟随素材",
+    "launch_output": "当前产品输出",
+    "audio_on": "音频已开启",
+    "audio_off": "音频已关闭",
+    "audio_model_default": "模型默认音频",
+    "model_audio": "与视频同步生成",
+    "download": "下载视频",
+    "next_after_generation": {
+      "label": "推荐下一步",
+      "guide": "优化镜头指令，再生成一个版本",
+      "compare": "对比 Seedance 2.5 与 2.0",
+      "pricing": "下次生成前核对积分"
+    },
+    "status": {
+      "ready": "可以开始创作",
+      "queued": "已进入模型队列",
+      "generating": "正在生成镜头",
+      "complete": "视频已完成",
+      "failed": "生成失败"
+    },
+    "messages": {
+      "complete": "你的视频已生成完成。"
+    },
+    "errors": {
+      "timeout": "任务耗时超出预期。开始重复生成前，请先到活动页面检查任务状态。",
+      "query": "暂时无法刷新生成状态。",
+      "empty_result": "供应商已完成任务，但没有返回可播放视频。",
+      "failed": "生成失败。确认失败的任务会自动退还积分。",
+      "credits": "你的积分不足以使用当前参数。",
+      "reference": "请先上传此工作流所需的参考图片。",
+      "prompt": "请在字符限制内填写提示词。",
+      "start": "无法启动本次视频任务。",
+      "download": "无法下载该视频。",
+      "credits_short": "这个镜头需要 {cost} 积分，你当前有 {balance} 积分。积分包 $9.9 起。",
+      "credits_action": "购买积分"
+    },
+    "links": {
+      "free": "Seedance 2.5 赠送积分说明",
+      "compare": "对比 2.5 与 2.0",
+      "prompts": "提示词指南",
+      "api": "Seedance 2.5 API 指南",
+      "pricing": "积分与价格"
+    },
+    "links_eyebrow": "选择有用的下一步",
+    "links_title": "继续消耗积分前，先把镜头计划清楚。",
+    "link_descriptions": {
+      "free": "登录前了解注册赠送积分、使用限制与失败退款规则。",
+      "compare": "按工作流、时长和产品成本选择 2.5 或 2.0。",
+      "prompts": "使用时间码、运镜和声音提示写出更清晰的镜头指令。",
+      "api": "自动化工作流前，先比较当前 Kie 与 fal 接入路径。",
+      "pricing": "比较积分额度和实际单次生成成本。"
+    },
+    "reuse_settings": "复用本次任务设置",
+    "cost_estimate": "Starter 积分包折算约 ${cost}/条；整包支付 ${payment}，当前设置可生成 {count} 条完整视频。不是按条购买。",
+    "generation_cost": "本次生成：{credits} 积分",
+    "sample_monitor": "从真实样片寻找灵感"
+  }
+}

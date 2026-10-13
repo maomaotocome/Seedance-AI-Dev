@@ -1,0 +1,286 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 与 2.0 对比：参数、价格与选择建议",
+    "description": "用真实样片和本站当前积分费用比较 Seedance 2.5 与 2.0，并分别说明官方参数、上游接口选项和本站实际可用能力。"
+  },
+  "page": {
+    "title": "Seedance 2.5 与 2.0 对比",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "seedance-2-5-vs-2-0",
+        "label": "模型对比",
+        "title": "Seedance 2.5 与 2.0 对比：参数、价格与选择建议",
+        "description": "官方发布资料中，2.5 单次最长 30 秒、最多 50 个参考素材；2.0 最长 15 秒、最多 15 个。本浏览器工作区提供较小的设置范围，需与提供者 API 分开比较。",
+        "verdict": "在本站，较长任务可选 2.5，低成本测试可比较 2.0 Standard、Fast 和 Mini。两版在本站均提供 480p/720p，更高的提供者分辨率未在此启用。",
+        "last_reviewed": "核对日期：2026 年 10 月 12 日",
+        "source_note": "官方模型能力与第三方 API 可用性是两类事实。本对比单独标注工作区限制，不把供应商营销表述泛化为统一模型保证。",
+        "primary_button": {
+          "title": "测试两个模型",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "阅读提示词指南",
+          "url": "/seedance-2-5-prompt-guide"
+        },
+        "quick_facts": [
+          {
+            "label": "单条最长时长",
+            "value": "30 秒对 15 秒",
+            "description": "Seedance 2.5 把单条上限翻了一倍。"
+          },
+          {
+            "label": "参考文件数",
+            "value": "50 对 15",
+            "description": "官方图片/视频/音频上限分别为 30/10/10 与 9/3/3；本站限制更低。"
+          },
+          {
+            "label": "本站成本",
+            "value": "每秒 12 对 8 积分",
+            "description": "720p 下。2.0 的 Fast 与 Mini 更低。"
+          },
+          {
+            "label": "发布时间",
+            "value": "2026 年 7 月 31 日对 2 月 12 日",
+            "description": "2.5 在 2.0 之后不到六个月发布。"
+          }
+        ],
+        "sections": [
+          {
+            "id": "spec-table",
+            "kicker": "核对日期：2026 年 10 月 12 日",
+            "title": "官方模型、提供者 API 与本站限制",
+            "paragraphs": [
+              "API 接受某个参数，不等于已证明原生分辨率或每个账号均有权限。生产使用前核对具体提供者路由和返回文件。"
+            ],
+            "table": {
+              "headers": ["证据范围", "Seedance 2.5", "Seedance 2.0"],
+              "rows": [
+                ["官方单次时长", "30s", "15s"],
+                [
+                  "官方参考素材数",
+                  "30 图片 + 10 视频 + 10 音频 = 50",
+                  "9 图片 + 3 视频 + 3 音频 = 15"
+                ],
+                [
+                  "指定提供者 API",
+                  "fal 和 BytePlus 文档列出 480p/720p/1080p",
+                  "BytePlus 2.0 标准版文档列有 4K 参数，不代表所有档位或原生输出"
+                ],
+                ["本站：时长", "5 / 8 / 10 / 15 / 30s", "5 / 8 / 10 / 15s"],
+                ["本站：分辨率", "480p / 720p", "480p / 720p"],
+                [
+                  "本站：输入",
+                  "最多 2 帧图片或 6 张参考图片；无视频/音频上传",
+                  "相同图片限制；无视频/音频上传"
+                ],
+                [
+                  "本站：5 秒 480p / 720p",
+                  "30 / 60 积分",
+                  "Standard 20/40；Fast 15/25；Mini 5/10 积分"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "same-prompt-test",
+            "kicker": "同一提示词，两个模型",
+            "title": "同一提示词下的 Seedance 2.5 与 2.0",
+            "paragraphs": [
+              "2026 年 10 月 3 日，两个提示词在每个模型上以 480p 各生成一次。未剪辑对照只说明这些具体输出，不代表典型可靠性或统计上的胜负。可用下方设置开始自己的测试。"
+            ],
+            "samples": ["product-25", "product-20", "camera-25", "camera-20"]
+          },
+          {
+            "id": "comparison-table",
+            "kicker": "快速判断",
+            "title": "Seedance 2.5 与 2.0 对比表",
+            "paragraphs": [
+              "需要区分模型能力与具体网站开放的控制项。下表结合本站实际选项和供应商公开的 2.5 参考素材能力。"
+            ],
+            "table": {
+              "headers": [
+                "决策维度",
+                "Seedance 2.5",
+                "Seedance 2.0",
+                "实际选择"
+              ],
+              "rows": [
+                [
+                  "新项目",
+                  "当前新模型测试入口",
+                  "成熟基线",
+                  "先用 2.5，同时保留 2.0 对照"
+                ],
+                [
+                  "参考素材",
+                  "供应商 API 公开图片、视频、音频参考输入",
+                  "取决于当前供应商路由",
+                  "多模态参考优先 2.5"
+                ],
+                [
+                  "长镜头",
+                  "已核验供应商路由最高 30 秒",
+                  "以实时生成器选项为准",
+                  "先用短段测试长提示词"
+                ],
+                [
+                  "本站分辨率",
+                  "480p 或 720p",
+                  "480p 或 720p",
+                  "480p 打样，720p 完成"
+                ],
+                [
+                  "本站积分",
+                  "480p 每秒 6；720p 每秒 12",
+                  "标准版每秒 4/8；Fast 3/5；Mini 1/2",
+                  "比较可用结果而非尝试次数"
+                ],
+                [
+                  "连续性风险",
+                  "可能改变既有风格",
+                  "保留原基线",
+                  "合同要求连续性时保留 2.0"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "关于 4K 宣传",
+              "text": "本站不把两个版本宣传为原生 4K。当前生成器只开放 480p 与 720p；外部放大属于独立处理步骤。",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "choose-2-5",
+            "kicker": "适用场景",
+            "title": "需要更广控制能力时选择 Seedance 2.5",
+            "paragraphs": [
+              "新项目若依赖多份参考素材、较长的时间指令或声音协同，2.5 是合理的首选测试。价值不在版本号，而在于这些控制是否减少重试和后期处理。"
+            ],
+            "bullets": [
+              "活动需要在多份素材间保持产品、角色或风格。",
+              "15–30 秒概念需要明确的时间节点。",
+              "声音意图是镜头设计的一部分。",
+              "正在建立没有旧版本依赖的新提示词库。"
+            ]
+          },
+          {
+            "id": "choose-2-0",
+            "kicker": "连续性",
+            "title": "需要可重复性时选择 Seedance 2.0",
+            "paragraphs": [
+              "团队已经了解某模型的提示词与常见瑕疵时，成熟版本可能风险更低。即使新版赢得演示，迁移仍有真实的质检成本。"
+            ],
+            "bullets": [
+              "获批项目必须匹配以前的 2.0 镜头。",
+              "团队已有 2.0 的提示词、参考素材和验收检查。",
+              "镜头简单，不需要新版参考工作流。",
+              "截止时间让重新验证模型的成本高于预期收益。"
+            ]
+          },
+          {
+            "id": "benchmark",
+            "kicker": "公平测试",
+            "title": "五步模型基准测试",
+            "steps": [
+              {
+                "title": "选择代表性镜头",
+                "description": "使用接近真实制作的镜头，不选择偏袒某一模型的演示题。"
+              },
+              {
+                "title": "锁定共同设置",
+                "description": "提示词、参考、画幅、时长和分辨率保持一致。"
+              },
+              {
+                "title": "不只生成一次",
+                "description": "一次幸运或失败样本不足以估计稳定性。"
+              },
+              {
+                "title": "尽量盲评",
+                "description": "评审者先看遵循度和瑕疵，再查看模型名称。"
+              },
+              {
+                "title": "计算每条获批片成本",
+                "description": "包含所有尝试和使视频可用所需的编辑时间。"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Seedance 2.5 和 2.0 有什么区别？",
+            "answer": "官方发布资料中，2.5 单次最长 30 秒、最多 50 个参考素材；2.0 最长 15 秒、最多 15 个。本浏览器工作区提供较小的设置范围，需与提供者 API 分开比较。"
+          },
+          {
+            "question": "Seedance 2.5 比 2.0 好吗？",
+            "answer": "它提供更宽的新工作流，但是否更好取决于镜头。现有项目应以相同输入比较，并评估可用输出、成本和返工。"
+          },
+          {
+            "question": "新手应该选择哪个模型？",
+            "answer": "新项目先用 2.5、短时长和 480p，保持提示词简单；若一致性或成本不确定，再用 2.0 做对照。"
+          },
+          {
+            "question": "两个模型在本站价格相同吗？",
+            "answer": "不同。Seedance 2.5 在 480p 和 720p 下分别为每秒 6 与 12 积分；2.0 标准版为 4 与 8，Fast 为 3 与 5，Mini 为 1 与 2。生成器会在提交前显示确切积分。"
+          },
+          {
+            "question": "能不改提示词直接比较吗？",
+            "answer": "可以，而且这是最好的首次基准。只更换模型，记录结果后再分别优化。"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Seedance 2.0 launch",
+            "url": "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Seedance 2.5 launch",
+            "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Seedance 2.5 API schema",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video/api",
+            "publisher": "fal"
+          },
+          {
+            "title": "Seedance 2.0 API parameters",
+            "url": "https://docs.byteplus.com/en/docs/modelark/seedance-2-0",
+            "publisher": "BytePlus"
+          },
+          {
+            "title": "Seedance 2.5 API parameters",
+            "url": "https://docs.byteplus.com/en/docs/ModelArk/seedance-2-5",
+            "publisher": "BytePlus"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 免费体验",
+            "description": "以可见积分成本运行新版。",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 2.0",
+            "description": "学习如何保留成熟生产基线。",
+            "url": "/seedance-2-0"
+          },
+          {
+            "title": "API 指南",
+            "description": "比较 Kie 与 fal 的接入方式。",
+            "url": "/seedance-2-5-api"
+          }
+        ],
+        "cta": {
+          "title": "让模型用结果证明迁移价值",
+          "description": "复制一个真实生产镜头，在相同设置下比较结果。",
+          "button": "开始对比",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

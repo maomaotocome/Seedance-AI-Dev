@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Seedance 2.0 AI 视频生成器",
+    "description": "在线生成 Seedance 2.0 视频，并了解何时应保留成熟的 2.0 工作流、何时值得迁移到 Seedance 2.5。"
+  },
+  "page": {
+    "title": "Seedance 2.0 AI 视频生成器",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide-generator",
+        "id": "seedance-2-0",
+        "label": "成熟工作流",
+        "title": "Seedance 2.0 AI 视频生成器",
+        "description": "当现有提示词库、视觉基线或审核流程建立在 2.0 上时，它仍然有价值。先用计划交付的版本生成，再单独比较 2.5。",
+        "verdict": "不要只因为版本号更新就迁移生产工作流。用同一短镜头对比两版，同时衡量运动、遵循度、延迟与最终可用视频的总成本。",
+        "last_reviewed": "核对日期：2026 年 10 月 12 日",
+        "source_note": "本页描述 SeedanceAI.dev 公开选项。供应商可用性与具体模型行为会变化，提交前请核对生成器中实际选中的模型。",
+        "primary_button": {
+          "title": "使用 Seedance 2.0 生成",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较 2.5 与 2.0",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [],
+        "show_generator": true,
+        "default_model": "seedance-2.0",
+        "sections": [
+          {
+            "id": "choose-tier",
+            "title": "选择 Seedance 2.0 Standard、Fast 或 Mini",
+            "paragraphs": [
+              "用同一提示词与输出设置比较费用。下表为本站产品积分，不是上游 API 价格。[计算每个套餐的完整视频条数](/pricing#video-budget)。"
+            ],
+            "table": {
+              "headers": ["模型 / 操作", "5 秒 480p", "5 秒 720p"],
+              "rows": [
+                [
+                  "[Standard](/ai-video-generator?model=seedance-2.0#seedance-generator)",
+                  "20",
+                  "40"
+                ],
+                [
+                  "[Fast](/ai-video-generator?model=seedance-2.0-fast#seedance-generator)",
+                  "15",
+                  "25"
+                ],
+                [
+                  "[Mini](/ai-video-generator?model=seedance-2.0-mini#seedance-generator)",
+                  "5",
+                  "10"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Mini 新手额度",
+              "text": "符合资格的已验证账号可获 5 积分，够一次 Mini 5 秒/480p 任务。请先[核对资格](/seedance-2-5-free#how-free-works)。",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "why-use-2-0",
+            "kicker": "版本选择",
+            "title": "为什么创作者仍会选择 Seedance 2.0",
+            "paragraphs": [
+              "模型版本会成为生产系统的一部分：提示词写法、参考素材准备、已知失败模式和验收标准都会围绕它形成。新版能力更强，也仍然需要重新验证这套系统。",
+              "因此 2.0 是有价值的对照组。若它已经产生获批风格，应在保持原流程的同时，用复制镜头测试 2.5，而不是一次性更换整个管线。"
+            ],
+            "bullets": [
+              "项目已有通过审核的 2.0 输出，需要视觉连续性。",
+              "提示词库在 2.0 上有已知、可重复的表现。",
+              "客户审核参照此前的 2.0 样片。",
+              "需要用稳定基线衡量 2.5 对这个镜头是否真正更好。"
+            ]
+          },
+          {
+            "id": "repeatable-test",
+            "kicker": "A/B 方法",
+            "title": "公平比较 2.0 与 2.5",
+            "steps": [
+              {
+                "title": "固定输入",
+                "description": "两次测试使用相同提示词、首帧、画幅、时长和分辨率。"
+              },
+              {
+                "title": "只更换模型",
+                "description": "首次对比不要顺便优化 2.5 提示词，否则无法判断差异来自哪里。"
+              },
+              {
+                "title": "评价可用结果",
+                "description": "衡量指令遵循、主体一致性、运动、瑕疵和修剪成本，而不是只看新鲜感。"
+              },
+              {
+                "title": "记录成本与延迟",
+                "description": "轻微画质提升未必值得每个生产阶段承担更高费用或更慢迭代。"
+              }
+            ],
+            "table": {
+              "headers": ["指标", "观察内容", "意义"],
+              "rows": [
+                [
+                  "提示词遵循",
+                  "主体、动作和顺序是否完整",
+                  "缺失节奏会带来返工"
+                ],
+                [
+                  "时间稳定性",
+                  "脸、手、产品和背景是否连贯",
+                  "决定修复与剪辑量"
+                ],
+                [
+                  "摄影机行为",
+                  "运镜是否按要求开始、缓停",
+                  "决定镜头能否进入成片"
+                ],
+                [
+                  "每条可用片成本",
+                  "总积分除以可发布结果",
+                  "比单次尝试成本更真实"
+                ],
+                ["周转时间", "排队、生成和审核总耗时", "决定迭代速度"]
+              ]
+            }
+          },
+          {
+            "id": "prompt-baseline",
+            "kicker": "基准提示词",
+            "title": "使用紧凑的对照提示词",
+            "paragraphs": [
+              "比较提示词要足够具体以暴露差异，又要足够简单便于诊断。一个主体、一个动作和一种运镜，比复杂蒙太奇更适合作为基准。"
+            ],
+            "examples": [
+              {
+                "label": "A/B 基准",
+                "text": "一位陶艺师从工作台拿起新上釉的钴蓝色碗。中近景，摄影机缓慢推进，柔和北窗光，手部动作自然，人物面部和碗的几何形状稳定，安静工作室环境声。"
+              }
+            ]
+          },
+          {
+            "id": "migration-checklist",
+            "kicker": "切换前",
+            "title": "迁移检查清单",
+            "bullets": [
+              "归档每个获批 2.0 镜头的模型名、设置、提示词和源参考素材。",
+              "在替换客户生产流程前，先用非关键镜头测试 2.5。",
+              "按实际交付设置重新计算积分预算。",
+              "制作时再次核对供应商条款与可用性。",
+              "在 2.5 通过自有验收标准前保留 2.0 作为回退。",
+              "不要把后期放大描述为模型原生 4K。"
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "SeedanceAI.dev 还能使用 Seedance 2.0 吗？",
+            "answer": "配置的供应商路由可用时，生成器中可以选择 2.0。生产提交前请核对实时状态与选中的模型。"
+          },
+          {
+            "question": "Seedance 2.5 一定比 2.0 好吗？",
+            "answer": "并非对所有提示词和工作流都自动更好。应使用相同输入比较，并把返工、延迟与成本纳入判断。"
+          },
+          {
+            "question": "2.0 提示词能直接用于 2.5 吗？",
+            "answer": "可以把它作为基线。完成首次受控对比后，再根据 2.5 结果调整时间、参考和摄影机指令。"
+          },
+          {
+            "question": "可以用新用户积分体验 Seedance 2.0 吗？",
+            "answer": "当账户中有可用的新用户积分时可以。生成器会在提交前显示所选 2.0 档位、分辨率和时长的准确扣费；新用户体验是有限积分额度，不代表无限生成。"
+          },
+          {
+            "question": "旧 2.0 项目应该切换到 2.5 吗？",
+            "answer": "只有受控测试通过后才切换。若连续性或客户审批依赖既有风格，保留原版本通常更稳妥。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "SeedanceAI.dev",
+            "title": "当前生成器模型与积分控制",
+            "url": "https://seedanceai.dev/ai-video-generator"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.0 API 服务参考",
+            "url": "https://kie.ai/seedance-2-0"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.0 Mini API 服务参考",
+            "url": "https://kie.ai/seedance-2-0-mini"
+          }
+        ],
+        "related": [
+          {
+            "title": "2.5 与 2.0 对比",
+            "description": "进行可操作的功能与工作流对比。",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 免费体验",
+            "description": "以透明成本测试新版模型。",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "提示词指南",
+            "description": "完成基线测试后优化镜头结构。",
+            "url": "/seedance-2-5-prompt-guide"
+          }
+        ],
+        "cta": {
+          "title": "让版本选择可衡量",
+          "description": "先用 2.0 跑一个受控镜头，再把相同设置复制到 2.5。",
+          "button": "打开生成器",
+          "url": "#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

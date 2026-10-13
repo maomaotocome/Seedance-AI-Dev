@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Seedance 3.0：发布时间现状与已知信息",
+    "description": "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。"
+  },
+  "page": {
+    "title": "Seedance 3.0",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "label": "发布现状",
+        "title": "Seedance 3.0：发布时间与已知信息",
+        "description": "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。",
+        "verdict": "本站目前提供 Seedance 2.5 和 2.0。付费使用标称 3.0 的服务前，请核对提供者、精确模型 ID 和官方支持文档。",
+        "last_reviewed": "核对日期：2026 年 10 月 12 日",
+        "source_note": "本页只报道字节跳动和所列来源已经公开的信息。SeedanceAI.dev 是独立服务，没有未发布模型的内部消息。",
+        "primary_button": {
+          "title": "现在使用 Seedance 2.5",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "Seedance 是什么？",
+          "url": "/what-is-seedance"
+        },
+        "quick_facts": [
+          {
+            "label": "状态",
+            "value": "尚未核实",
+            "description": "查阅的官方来源中尚未确认正式公告。"
+          },
+          {
+            "label": "发布日期",
+            "value": "未知",
+            "description": "查阅的来源中尚未核实日期。"
+          },
+          {
+            "label": "当前版本",
+            "value": "Seedance 2.5",
+            "description": "2026 年 7 月 31 日发布。"
+          },
+          {
+            "label": "本站是否可用",
+            "value": "否",
+            "description": "本站提供 Seedance 2.5 与 2.0。"
+          }
+        ],
+        "sections": [
+          {
+            "id": "release-date",
+            "kicker": "现状",
+            "title": "Seedance 3.0 什么时候发布？",
+            "paragraphs": [
+              "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。"
+            ]
+          },
+          {
+            "id": "timeline",
+            "kicker": "发布节奏",
+            "title": "Seedance 至今的发布时间线",
+            "paragraphs": [
+              "过去的发布是唯一有事实依据的参考。大版本之间的间隔，1.0 到 2.0 约八个月，2.0 到 2.5 不到六个月。这只是规律，不是时间表。"
+            ],
+            "table": {
+              "headers": ["版本", "发布时间", "新增能力"],
+              "rows": [
+                [
+                  "Seedance 1.0",
+                  "2025 年 6 月 11 日",
+                  "由文字和图片生成 1080p 视频，支持多镜头"
+                ],
+                [
+                  "Seedance 1.5 Pro",
+                  "2025 年 12 月",
+                  "音频与视频同时生成，支持多语言口型同步"
+                ],
+                [
+                  "Seedance 2.0",
+                  "2026 年 2 月 12 日",
+                  "单条最长 15 秒，最多 15 个参考文件"
+                ],
+                [
+                  "Seedance 2.5",
+                  "2026 年 7 月 31 日",
+                  "单条最长 30 秒，最多 50 个参考文件"
+                ],
+                ["Seedance 3.0", "尚未核实", "未核实正式公告"]
+              ]
+            }
+          },
+          {
+            "id": "can-i-use-it",
+            "kicker": "可用性",
+            "title": "现在能用 Seedance 3.0 吗？",
+            "paragraphs": [
+              "本站目前提供 Seedance 2.5 和 2.0。付费使用标称 3.0 的服务前，请核对提供者、精确模型 ID 和官方支持文档。"
+            ],
+            "callout": {
+              "title": "如何核实",
+              "text": "看字节跳动、火山引擎或 Dreamina 是否发布公告，以及 API 供应商的模型列表里是否出现该模型。两者都出现之前，这类说法都未经证实。",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "use-now",
+            "kicker": "现在用什么",
+            "title": "等待期间用什么",
+            "paragraphs": [
+              "Seedance 2.5 是当前模型：单条最长 30 秒，最多 50 个参考文件，声音与画面一起生成。如果更看重成本，Seedance 2.0 及其 Fast、Mini 两档更便宜。[Seedance 2.5 与 2.0 对比](/seedance-2-5-vs-2-0)做了逐项比较，[Seedance 是什么？](/what-is-seedance)介绍了整个模型系列。"
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Seedance 3.0 发布了吗？",
+            "answer": "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。"
+          },
+          {
+            "question": "Seedance 3.0 的发布日期是哪天？",
+            "answer": "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。"
+          },
+          {
+            "question": "Seedance 3.0 会有哪些功能？",
+            "answer": "截至 2026 年 10 月 12 日，我们未在本次查阅的官方来源中核实 Seedance 3.0 的正式公告或可用模型 ID。这是核验状态，不是所有第三方声明均为假的证明。"
+          },
+          {
+            "question": "SeedanceAI.dev 会提供 Seedance 3.0 吗？",
+            "answer": "我们会先评估有文档依据的提供者路由、输出与计费，再决定是否接入；不承诺日期或接入计划。"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Official model and research updates",
+            "url": "https://seed.bytedance.com/en/",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Official Seedance 2.5 announcement",
+            "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+            "publisher": "ByteDance Seed"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 是什么？",
+            "description": "模型系列、版本与使用途径。",
+            "url": "/what-is-seedance"
+          },
+          {
+            "title": "Seedance 2.5 与 2.0 对比",
+            "description": "两个现行版本的参数与价格。",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 定价",
+            "description": "本站每秒积分。",
+            "url": "/pricing"
+          }
+        ],
+        "cta": {
+          "title": "用当前模型生成",
+          "description": "Seedance 2.5 现在可用。提交前先确认积分成本。",
+          "button": "打开生成器",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

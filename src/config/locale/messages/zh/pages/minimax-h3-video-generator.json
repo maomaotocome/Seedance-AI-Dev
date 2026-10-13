@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "title": "MiniMax H3 视频生成器 — 768P 与 2K",
+    "description": "使用文字或首尾帧生成 MiniMax H3 视频。支持 768P/2K、兼容时长与准确产品积分。",
+    "keywords": "MiniMax H3 视频生成器, 海螺 H3 视频, 2K AI 视频, 图生视频"
+  },
+  "page": {
+    "title": "MiniMax H3 视频生成器",
+    "sections": {
+      "hero": {
+        "id": "minimax-h3-video-generator",
+        "label": "MiniMax H3 工作台",
+        "title": "MiniMax H3 视频生成器",
+        "description": "使用六种电影感画幅创建文字镜头，或让首帧与可选尾帧动起来。本站开放 768P、2K 以及 6、10、15 秒镜头。",
+        "verdict": "当尾帧控制或 2K 产品选项很重要时，选择 MiniMax H3。先用 768P 验证动作，再为 2K 成片付费。",
+        "last_reviewed": "复核于 2026 年 8 月 22 日",
+        "source_note": "MiniMax 与 Kie 能力可能变化。上方生成器反映本站已实现和测试的输入与产品积分。",
+        "primary_button": {
+          "title": "使用 MiniMax H3 创作",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较当前模型",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "本站工作流",
+            "value": "文字 · 首尾帧",
+            "description": "两种工作流分别对应 Kie 模型。"
+          },
+          {
+            "label": "输出",
+            "value": "768P · 2K",
+            "description": "使用上游准确分辨率值。"
+          },
+          {
+            "label": "时长",
+            "value": "6 · 10 · 15 秒",
+            "description": "取自支持的 4–15 秒范围。"
+          },
+          {
+            "label": "文字画幅",
+            "value": "6 种选择",
+            "description": "包含 21:9 与竖版格式。"
+          }
+        ],
+        "show_generator": true,
+        "default_model": "minimax-h3",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "选择规则",
+            "title": "MiniMax H3 最适合哪些镜头",
+            "paragraphs": [
+              "MiniMax H3 适合需要丰富构图或明确结尾的镜头，例如时装动态、产品转场、风景宽幅，以及有规定起点或终点的人物镜头。",
+              "图生视频由图片决定画幅；文生视频直接提供 21:9、16:9、4:3、1:1、3:4 与 9:16。"
+            ],
+            "bullets": [
+              "只有真正存在横向动作时才使用 21:9。",
+              "用尾帧控制动作最终落点。",
+              "提示词重点描述两帧之间的变化。",
+              "动作验证完成后，再把 2K 用于最终输出。"
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "产品控制",
+            "title": "本站开放的 MiniMax H3 输入",
+            "table": {
+              "headers": ["控制", "本站可用", "边界"],
+              "rows": [
+                ["分辨率", "768P 或 2K", "使用 Kie 区分大小写的准确值。"],
+                ["时长", "6、10 或 15 秒", "上游支持 4–15 的整数。"],
+                [
+                  "文字画幅",
+                  "21:9、16:9、4:3、1:1、3:4、9:16",
+                  "文生视频必填。"
+                ],
+                ["图片", "首帧与可选尾帧", "图生模式至少需要一张。"],
+                ["参考模型", "暂未开放", "首版只提供已测试的文字与帧适配器。"]
+              ]
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "提示词模式",
+            "title": "描述转变，不要重复描述静态画面",
+            "examples": [
+              {
+                "label": "超宽氛围",
+                "text": "21:9 电影宽幅。一列电车在蓝调时刻穿过盐沼；摄影机缓慢摇摄保持同速，远处风暴光线横扫地平线。列车结构稳定，空气雾气克制，尺度真实。"
+              },
+              {
+                "label": "帧间转场",
+                "text": "模特从开场姿势自然走到结尾画面。布料只受到一次柔和阵风，相机锁定，布料重量真实，面部与服装细节一致，不新增配饰。"
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "模型选择",
+            "title": "MiniMax H3 与本站模型目录",
+            "table": {
+              "headers": ["模型", "分辨率控制", "适合场景"],
+              "rows": [
+                ["MiniMax H3", "768P / 2K", "2K 或六种画幅很重要"],
+                ["Kling 3.0", "720p / 1080p", "可选声音很重要"],
+                ["Wan 2.7", "720p / 1080p", "负面提示词与增强很重要"],
+                ["Grok Imagine 1.5", "480p / 720p", "快速多图迭代很重要"],
+                ["Seedance 2.5", "480p / 720p", "独立参考工作流很重要"]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "现在可以在本站生成 MiniMax H3 视频吗？",
+            "answer": "可以。上方生成器已预选 MiniMax H3，支持文字和图片工作流。生成需要账户和足够的积分。"
+          },
+          {
+            "question": "2K 是后期放大吗？",
+            "answer": "本站直接发送 MiniMax H3 文档中的 2K 分辨率值，不会把单独的后期放大描述为原生输出。"
+          },
+          {
+            "question": "为什么图生视频隐藏画幅？",
+            "answer": "MiniMax H3 会使用首帧或尾帧确定图片工作流构图，因此额外显示文字画幅会造成误导。"
+          },
+          {
+            "question": "MiniMax H3 在本站支持音频吗？",
+            "answer": "当前工作台没有为 MiniMax H3 实现独立音频控制。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "MiniMax H3 文生视频 API",
+            "url": "https://docs.kie.ai/market/minimax-h3/text-to-video"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "MiniMax H3 图生视频 API",
+            "url": "https://docs.kie.ai/market/minimax-h3/image-to-video"
+          },
+          {
+            "publisher": "MiniMax",
+            "title": "MiniMax H3 发布公告",
+            "url": "https://www.minimax.io/blog/minimax-h3"
+          }
+        ],
+        "related": [
+          {
+            "title": "Kling 3.0",
+            "description": "比较可选声音与 1080p 专业模式。",
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "title": "Wan 2.7",
+            "description": "比较提示词增强与负面提示词。",
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "title": "Grok Imagine 1.5",
+            "description": "使用更轻量的 480p/720p 迭代路径。",
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "cta": {
+          "title": "先验证动作，再生成 2K",
+          "description": "先用 768P 验证一个清晰变化，再提高分辨率。",
+          "button": "打开 MiniMax H3",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "Seedance AI",
+      "logo": {
+        "src": "/logo-64.webp",
+        "alt": "Seedance AI",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Create",
+          "url": "/ai-video-generator",
+          "icon": "RiVideoLine"
+        },
+        {
+          "title": "Models",
+          "icon": "RiMovie2Line",
+          "children": [
+            {
+              "title": "Seedance 2.5 Free",
+              "description": "Generate with free starter credits",
+              "url": "/seedance-2-5-free",
+              "icon": "RiSparklingLine"
+            },
+            {
+              "title": "Seedance 2.0",
+              "description": "Use the established model workflow",
+              "url": "/seedance-2-0",
+              "icon": "RiVideoLine"
+            },
+            {
+              "title": "2.5 vs 2.0",
+              "description": "Compare capabilities and costs",
+              "url": "/seedance-2-5-vs-2-0",
+              "icon": "RiArrowLeftRightLine"
+            }
+          ]
+        },
+        {
+          "title": "Learn",
+          "icon": "RiBookOpenLine",
+          "children": [
+            {
+              "title": "What is Seedance?",
+              "description": "The model family, versions and access",
+              "url": "/what-is-seedance",
+              "icon": "RiQuestionLine"
+            },
+            {
+              "title": "Prompt Guide",
+              "description": "Write shots with timing and intent",
+              "url": "/seedance-2-5-prompt-guide",
+              "icon": "RiDraftLine"
+            },
+            {
+              "title": "API Guide",
+              "description": "Pricing, fields and code examples",
+              "url": "/seedance-2-5-api",
+              "icon": "RiCodeLine"
+            },
+            {
+              "title": "Unlimited Plans",
+              "description": "Every unlimited offer compared",
+              "url": "/unlimited-seedance-2-5",
+              "icon": "RiInformationLine"
+            }
+          ]
+        },
+        {
+          "title": "Pricing",
+          "url": "/pricing",
+          "icon": "RiMoneyDollarCircleLine"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Create a video",
+        "url": "/ai-video-generator",
+        "variant": "gold"
+      }
+    ],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Billing",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Activity",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Seedance AI",
+      "description": "An independent workspace for generating Seedance videos with transparent settings, credit costs, and provider status.",
+      "logo": {
+        "src": "/logo-64.webp",
+        "alt": "Seedance AI"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2026 SeedanceAI.dev. Independent product; not affiliated with ByteDance.",
+    "nav": {
+      "items": [
+        {
+          "title": "Create",
+          "children": [
+            {
+              "title": "AI video generator",
+              "url": "/ai-video-generator",
+              "target": "_self"
+            },
+            {
+              "title": "Seedance 2.5 free",
+              "url": "/seedance-2-5-free",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Models",
+          "children": [
+            {
+              "title": "Seedance 2.5",
+              "url": "/ai-video-generator?model=seedance-2.5#seedance-generator",
+              "target": "_self"
+            },
+            {
+              "title": "Seedance 2.0",
+              "url": "/seedance-2-0",
+              "target": "_self"
+            },
+            {
+              "title": "2.5 vs 2.0",
+              "url": "/seedance-2-5-vs-2-0",
+              "target": "_self"
+            },
+            {
+              "title": "Seedance 3.0",
+              "url": "/seedance-3-0",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Guides",
+          "children": [
+            {
+              "title": "What is Seedance?",
+              "url": "/what-is-seedance",
+              "target": "_self"
+            },
+            {
+              "title": "Prompt guide",
+              "url": "/seedance-2-5-prompt-guide",
+              "target": "_self"
+            },
+            {
+              "title": "API guide",
+              "url": "/seedance-2-5-api",
+              "target": "_self"
+            },
+            {
+              "title": "Unlimited plans compared",
+              "url": "/unlimited-seedance-2-5",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Legal",
+          "children": [
+            {
+              "title": "About",
+              "url": "/about",
+              "target": "_self"
+            },
+            {
+              "title": "Terms",
+              "url": "/terms-of-service",
+              "target": "_self"
+            },
+            {
+              "title": "Privacy",
+              "url": "/privacy-policy",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "agreement": {
+      "items": []
+    }
+  }
+}

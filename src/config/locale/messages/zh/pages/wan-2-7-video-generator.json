@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "title": "Wan 2.7 视频生成器 — 文生与图生视频",
+    "description": "使用文字或首尾帧生成 Wan 2.7 视频。支持 720p/1080p、提示词增强、负面提示词与准确产品积分。",
+    "keywords": "Wan 2.7 视频生成器, Wan AI 视频, 文生视频, 图生视频"
+  },
+  "page": {
+    "title": "Wan 2.7 视频生成器",
+    "sections": {
+      "hero": {
+        "id": "wan-2-7-video-generator",
+        "label": "Wan 2.7 工作台",
+        "title": "Wan 2.7 视频生成器",
+        "description": "使用五种画幅创建文字镜头，或让首帧与可选尾帧动起来。本站支持 720p、1080p 以及 5、10、15 秒控制。",
+        "verdict": "当画幅灵活性与提示词整理很重要时，选择 Wan 2.7。粗略需求可开启提示词增强；做严格对比时则关闭。",
+        "last_reviewed": "复核于 2026 年 8 月 22 日",
+        "source_note": "本页区分 Wan 2.7 上游范围与本站离散控制。提交前请核对所选参数和产品积分。",
+        "primary_button": {
+          "title": "使用 Wan 2.7 创作",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较当前模型",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "本站工作流",
+            "value": "文字 · 首尾帧",
+            "description": "两个经过适配的生成路径。"
+          },
+          {
+            "label": "输出",
+            "value": "720p · 1080p",
+            "description": "生成前明确选择分辨率。"
+          },
+          {
+            "label": "文字画幅",
+            "value": "5 种比例",
+            "description": "16:9、9:16、1:1、4:3、3:4。"
+          },
+          {
+            "label": "指令控制",
+            "value": "提示词增强",
+            "description": "支持改写与负面提示词。"
+          }
+        ],
+        "show_generator": true,
+        "default_model": "wan-2.7",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "选择规则",
+            "title": "Wan 2.7 最适合哪些工作流",
+            "paragraphs": [
+              "当同一创意需要横版、竖版、方形与 4:3 家族变体时，Wan 2.7 很实用。文生视频直接选择画幅，图生视频跟随素材。",
+              "提示词扩展可以把简短需求改写成更丰富的视觉指令。受控测试时请关闭它，让原始措辞成为唯一变量。"
+            ],
+            "bullets": [
+              "从同一镜头计划制作横竖版变体。",
+              "需要精准落版时上传尾帧。",
+              "把闪烁、文字不可读等风险写入负面提示词。",
+              "先用 720p 验证，再投入 1080p 积分。"
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "产品控制",
+            "title": "Wan 适配器实际发送什么",
+            "table": {
+              "headers": ["控制", "文生视频", "图生视频"],
+              "rows": [
+                ["提示词", "必填", "必填"],
+                ["负面提示词", "可选", "可选"],
+                ["分辨率", "720p 或 1080p", "720p 或 1080p"],
+                ["画幅", "五种选择", "跟随素材"],
+                ["提示词增强", "开或关", "开或关"],
+                ["水印", "产品适配器关闭", "产品适配器关闭"]
+              ]
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "提示词模式",
+            "title": "一个主体、一个变化、一个运镜",
+            "examples": [
+              {
+                "label": "竖版社媒镜头",
+                "text": "9:16 竖屏。一名甜点师把镜面蛋糕放到暖色出餐灯下。轻微手持推进，蒸汽细微上升，手部与蛋糕结构稳定，厨房反射真实，不出现标签或屏幕文字。"
+              },
+              {
+                "label": "首尾帧",
+                "text": "布料从开场排列以一条干净波浪运动到结尾画面。相机锁定，柔和侧光，材质重量真实，不新增物体，不偏色，不闪烁。"
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "模型选择",
+            "title": "什么时候应该选择其他模型",
+            "table": {
+              "headers": ["需求", "可考虑模型", "原因"],
+              "rows": [
+                [
+                  "可选模型声音",
+                  "Kling 3.0 或 Seedance 2.5",
+                  "本站都提供音频开关。"
+                ],
+                [
+                  "独立参考工作流",
+                  "Seedance 2.5",
+                  "提供专门的视觉参考输入模式。"
+                ],
+                ["2K 选项", "MiniMax H3", "当前 H3 适配器开放 2K。"],
+                [
+                  "快速多图测试",
+                  "Grok Imagine 1.5",
+                  "当前分辨率下最多七张图片。"
+                ]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Wan 2.7 能在本站真实生成吗？",
+            "answer": "可以。上方生成器已预选 Wan 2.7，支持文字和图片工作流。生成需要账户和足够的积分。"
+          },
+          {
+            "question": "本站开放哪些时长？",
+            "answer": "上游接口支持 2–15 秒；本站当前提供 5、10、15 秒，让选择与积分更可预测。"
+          },
+          {
+            "question": "提示词增强有什么作用？",
+            "answer": "它会发送 Wan 的 prompt_extend 参数。简短需求可开启；严格措辞对比时建议关闭。"
+          },
+          {
+            "question": "Wan 2.7 在本站能生成音频吗？",
+            "answer": "当前界面不提供 Wan 2.7 生成音频开关。上游文字接口可接收外部音频 URL，但尚未进入本站产品工作流。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Wan 2.7 文生视频 API",
+            "url": "https://docs.kie.ai/market/wan/2-7-text-to-video"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Wan 2.7 图生视频 API",
+            "url": "https://docs.kie.ai/market/wan/2-7-image-to-video"
+          },
+          {
+            "publisher": "阿里云",
+            "title": "Wan 2.7 模型公告",
+            "url": "https://www.alibabacloud.com/blog/alibaba-unveils-wan2-7-video-to-elevate-creators-from-executors-to-directors_603009"
+          }
+        ],
+        "related": [
+          {
+            "title": "Kling 3.0",
+            "description": "加入可选声音与 1080p 专业模式。",
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "比较 768P 或 2K 动作工作流。",
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "title": "Grok Imagine 1.5",
+            "description": "探索快速多图视频测试。",
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "cta": {
+          "title": "先定义一条 Wan 2.7 测试镜头",
+          "description": "先选目标画幅，再描述一个主体、一个变化和一个运镜。",
+          "button": "打开 Wan 2.7",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

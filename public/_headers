@@ -1,0 +1,14 @@
+/_next/static/*
+  Cache-Control: public,max-age=31536000,immutable
+
+/imgs/*
+  Cache-Control: public,max-age=31536000,immutable
+
+/logo.png
+  Cache-Control: public,max-age=604800,stale-while-revalidate=86400
+
+/preview.png
+  Cache-Control: public,max-age=604800,stale-while-revalidate=86400
+
+/favicon.ico
+  Cache-Control: public,max-age=604800,stale-while-revalidate=86400

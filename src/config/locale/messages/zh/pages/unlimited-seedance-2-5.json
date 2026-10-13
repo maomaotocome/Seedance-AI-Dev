@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 无限量方案对比（2026 年 10 月）",
+    "description": "哪些平台还在卖 Seedance 2.5 无限量？对比无限量天数、时长上限、价格和已结束的活动，均按各平台自己的条款核对。"
+  },
+  "page": {
+    "title": "Seedance 2.5 无限量方案对比",
+    "show_sections": [
+      "hero"
+    ],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "unlimited-seedance-2-5",
+        "label": "方案对比",
+        "title": "Seedance 2.5 不限量套餐：费用与限制",
+        "description": "选择套餐前先比较有效窗口、预付金额与输出限制。本次快照覆盖 Topview 与 Creaa 的公开方案，并非所有提供者。",
+        "verdict": "SeedanceAI.dev 不销售无限量套餐。本站使用积分，并在每次生成前显示确切消耗。下表整理的是对外宣传无限量的平台。",
+        "last_reviewed": "核对日期：2026 年 10 月 12 日",
+        "source_note": "2026 年 10 月 12 日核对公开价格与条款，未购买或实测排队及生成；优惠可能变化，请在结账前核对所选配置。无联盟链接。",
+        "primary_button": {
+          "title": "查看方案对比",
+          "url": "#plans-compared"
+        },
+        "secondary_button": {
+          "title": "查看本站积分定价",
+          "url": "/pricing"
+        },
+        "quick_facts": [],
+        "sections": [
+          {
+            "id": "plans-compared",
+            "kicker": "核对日期：2026 年 10 月 12 日",
+            "title": "当前公开的 Seedance 2.5 不限量方案",
+            "paragraphs": [
+              "年付价格是整年支付金额，不是一个月的费用。权益窗口不同于购买活动截止日；本次页面未提供可确认的日历截止日。",
+              "具体账号的权益起算日和到期时区，需要在所选套餐的结账页面确认。这里核对的是公开方案条款；我们尚未购买或使用这些第三方权益生成视频。"
+            ],
+            "table": {
+              "headers": [
+                "套餐 / 来源",
+                "预付价格",
+                "不限量窗口",
+                "输出",
+                "条件 / 核对日期",
+                "起算 / 截止 / 时区",
+                "适用范围 / 任务实测"
+              ],
+              "rows": [
+                [
+                  "[Topview Ultra annual](https://www.topview.ai/pricing)",
+                  "$599.90 / 年",
+                  "30 天",
+                  "720p · 30s",
+                  "标准队列；最多 6 个不限量视频任务并发。2026-10-12。",
+                  "起算条件须在结账确认；未公布可靠的购买截止日及到期时区。",
+                  "手动网页任务；不含 API、MCP 或自动化。未完成生成实测。"
+                ],
+                [
+                  "[Topview Team annual](https://www.topview.ai/pricing)",
+                  "$672 / 席位/年；至少 2 席（$1,344）",
+                  "60 天",
+                  "720p · 30s",
+                  "不限量仅限网站操作；速度会变化。2026-10-12。 本快照未记录并发数。",
+                  "起算条件须在结账确认；未公布可靠的购买截止日及到期时区。",
+                  "手动网页任务；不含 API、MCP 或自动化。未完成生成实测。"
+                ],
+                [
+                  "[Creaa Ultra annual](https://creaa.ai/pricing)",
+                  "$2,990 / 年",
+                  "每个会员月 15 天",
+                  "720p · 15s",
+                  "更高档位的天数与时长不同。2026-10-12。 本快照未记录队列与并发数。",
+                  "起算条件须在结账确认；未公布可靠的购买截止日及到期时区。",
+                  "手动网页任务；不含 API、MCP 或自动化。未完成生成实测。"
+                ],
+                [
+                  "[Creaa higher annual tier](https://creaa.ai/pricing)",
+                  "$4,990 / 年",
+                  "请在结账页核对所选档位",
+                  "720p · 20s",
+                  "FAQ 列出该价格与时长；不要仅从首页标题推断连续 365 天。2026-10-12。 本快照未记录队列与并发数。",
+                  "起算条件须在结账确认；未公布可靠的购买截止日及到期时区。",
+                  "手动网页任务；不含 API、MCP 或自动化。未完成生成实测。"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "不限量实际包含什么",
+              "text": "仅符合条件的网站手动任务免逐次积分扣费；仍有队列与合理使用限制，不含 API、MCP 和自动化。[Topview 条款](https://www.topview.ai/pricing) · [Creaa 付款条款](https://creaa.ai/payment-terms.html)。",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "credit-alternative",
+            "kicker": "适合少量测试",
+            "title": "SeedanceAI.dev 的按任务扣积分方案",
+            "paragraphs": [
+              "本站不出售不限量权益。2.5 的 5 秒 480p 任务需 30 积分；最小积分包 $9.90 含 150 积分，可生成 5 条，额度用完时折合约 $1.98/条。这是整包购买，不是按条结账。",
+              "[载入真实 5 秒样片设置](/ai-video-generator?sample=product-25#seedance-generator)，或[计算你的预算](/pricing#video-budget)。"
+            ]
+          },
+          {
+            "id": "choose-plan",
+            "title": "用可用成片比较，不只看不限量标签",
+            "steps": [
+              {
+                "title": "先定义任务",
+                "description": "固定模型、时长、分辨率、参考素材及需要的可用视频条数。"
+              },
+              {
+                "title": "核对完整支出",
+                "description": "比较全年或月付总额、席位、续费、剩余额度及权益日期。"
+              },
+              {
+                "title": "测试队列与可用输出",
+                "description": "短期权益只有在队列和输出质量满足交付要求时才有价值，预算应包含重试。"
+              },
+              {
+                "title": "购买前再核对",
+                "description": "保存结账条款与所选档位；标题或旧首发活动不能证明当前权益。"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "本站 Seedance 2.5 不限量吗？",
+            "answer": "不是。本站每个任务按显示的积分收费，比较表介绍其它提供者的方案。"
+          },
+          {
+            "question": "不限量是否意味着立即出片？",
+            "answer": "不是。需要核对队列、并发、合理使用、视频时长及权益窗口；标签不能说明截止前能完成多少可用视频。"
+          },
+          {
+            "question": "不限量套餐能用于 API 吗？",
+            "answer": "本次核对的 Topview 和 Creaa 不限量权益排除 API 与自动化访问，API 适用独立费用及账号条款。"
+          },
+          {
+            "question": "应比较哪个价格？",
+            "answer": "比较所选档位含必需席位与税费的完整支付金额，再比较允许任务、权益窗口和可能的重试。"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Pricing and Unlimited FAQ",
+            "url": "https://www.topview.ai/pricing",
+            "publisher": "Topview"
+          },
+          {
+            "title": "Pricing and duration FAQ",
+            "url": "https://creaa.ai/pricing",
+            "publisher": "Creaa"
+          },
+          {
+            "title": "Payment terms",
+            "url": "https://creaa.ai/payment-terms.html",
+            "publisher": "Creaa"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 定价",
+            "description": "每秒积分与各套餐可生成的数量。",
+            "url": "/pricing"
+          },
+          {
+            "title": "Seedance 2.5 免费体验",
+            "description": "从有限额度和可见成本开始。",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 2.5 与 2.0 对比",
+            "description": "先选版本，再选套餐。",
+            "url": "/seedance-2-5-vs-2-0"
+          }
+        ],
+        "cta": {
+          "title": "先试一个明确的镜头",
+          "description": "载入样片设置、确认积分费用，准备好后再提交。",
+          "button": "载入产品样片",
+          "url": "/ai-video-generator?sample=product-25#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

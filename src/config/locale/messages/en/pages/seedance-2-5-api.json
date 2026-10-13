@@ -1,0 +1,365 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 API: Pricing, Access & Code Examples",
+    "description": "Review Seedance 2.5 API providers, asynchronous requests, resolution options, pricing sources, errors and curl/Python integration examples."
+  },
+  "page": {
+    "title": "Seedance 2.5 API Guide",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "seedance-2-5-api",
+        "label": "Developer guide",
+        "title": "Seedance 2.5 API: access, pricing and code examples",
+        "description": "You can call Seedance 2.5 today through third-party API providers such as Kie and fal. On October 3, 2026, Kie listed $0.14 per second at 480p and $0.315 at 720p, and fal listed about $0.22 and $0.47. A request is one asynchronous job: create a task, then poll or receive a callback.",
+        "verdict": "Kie is the cheaper of the two routes we reviewed and uses one request shape for text, image and reference inputs. fal splits those into three endpoints and ships a queue SDK. Keep either one behind your own server-side adapter.",
+        "last_reviewed": "Schema reviewed October 12, 2026 · prices dated October 3",
+        "source_note": "API schemas rechecked October 12, 2026; price examples retain their October 3 snapshot date. Account pricing can change. This site provides a browser workspace and does not offer a public developer API.",
+        "primary_button": {
+          "title": "Try it in the browser first",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "Compare model versions",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [
+          {
+            "label": "Kie price",
+            "value": "$0.14 to $0.79 per second",
+            "description": "480p, 720p and 1080p without video input."
+          },
+          {
+            "label": "fal price",
+            "value": "$0.22 to $0.47 per second",
+            "description": "Dated 480p/720p examples; 1080p is also accepted by the current API schema."
+          },
+          {
+            "label": "Duration",
+            "value": "4 to 30 seconds",
+            "description": "One clip per task."
+          },
+          {
+            "label": "Task pattern",
+            "value": "Asynchronous",
+            "description": "Create, then poll or use a callback."
+          }
+        ],
+        "sections": [
+          {
+            "id": "api-pricing",
+            "kicker": "Checked October 3, 2026",
+            "title": "How much does the Seedance 2.5 API cost?",
+            "paragraphs": [
+              "API pricing is per second of video and rises with resolution. When you pass a reference video, Kie bills a lower unit price on input plus output seconds, so a long reference clip can cost more than a text-only request."
+            ],
+            "table": {
+              "headers": [
+                "Provider and mode",
+                "480p per second",
+                "720p per second",
+                "1080p per second"
+              ],
+              "rows": [
+                ["Kie, no video input", "$0.14", "$0.315", "$0.79"],
+                [
+                  "Kie, with video input (input plus output seconds)",
+                  "$0.085",
+                  "$0.19",
+                  "$0.475"
+                ],
+                [
+                  "fal, no video input",
+                  "$0.2205",
+                  "$0.473",
+                  "Supported; check live pricing"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Workspace credits are a separate price",
+              "text": "These are provider API prices for developers. The browser workspace on this site charges product credits, listed on the pricing page.",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "curl-example",
+            "kicker": "Quick start",
+            "title": "Seedance 2.5 API example with curl",
+            "paragraphs": [
+              "Create a task with one POST request. The response returns a task ID immediately; the video is produced in the background."
+            ],
+            "examples": [
+              {
+                "label": "Create a task",
+                "text": "curl -X POST https://api.kie.ai/api/v1/jobs/createTask \\\n  -H \"Authorization: Bearer $KIE_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"bytedance/seedance-2-5\",\n    \"callBackUrl\": \"https://your-domain.com/api/seedance/callback\",\n    \"input\": {\n      \"prompt\": \"A ceramic artist lifts a cobalt bowl into window light, slow dolly in.\",\n      \"resolution\": \"720p\",\n      \"duration\": 5,\n      \"aspect_ratio\": \"16:9\",\n      \"generate_audio\": true\n    }\n  }'"
+              },
+              {
+                "label": "Response",
+                "text": "{ \"code\": 200, \"msg\": \"success\", \"data\": { \"taskId\": \"task_bytedance_...\" } }"
+              },
+              {
+                "label": "Check the task",
+                "text": "curl \"https://api.kie.ai/api/v1/jobs/recordInfo?taskId=$TASK_ID\" \\\n  -H \"Authorization: Bearer $KIE_API_KEY\""
+              }
+            ]
+          },
+          {
+            "id": "python-example",
+            "kicker": "Polling loop",
+            "title": "Seedance 2.5 API example in Python",
+            "paragraphs": [
+              "Illustrative server-side code, not a live request result. It bounds HTTP and polling time, checks provider errors, and keeps the task ID when a job is still running. Never resubmit automatically after an unknown outcome."
+            ],
+            "examples": [
+              {
+                "label": "Python with requests",
+                "text": "import os, time, requests\n\nBASE = \"https://api.kie.ai/api/v1/jobs\"\nHEADERS = {\"Authorization\": f\"Bearer {os.environ['KIE_API_KEY']}\"}\n\ndef checked(response):\n    response.raise_for_status()\n    payload = response.json()\n    if payload.get(\"code\") != 200 or not payload.get(\"data\"):\n        raise RuntimeError(\"Provider rejected request; inspect server logs\")\n    return payload[\"data\"]\n\ncreated = checked(requests.post(f\"{BASE}/createTask\", headers=HEADERS, timeout=30, json={\n    \"model\": \"bytedance/seedance-2-5\",\n    \"input\": {\"prompt\": \"A ceramic artist lifts a cobalt bowl, slow dolly in.\",\n              \"resolution\": \"480p\", \"duration\": 5, \"aspect_ratio\": \"16:9\"}\n}))\ntask_id = created[\"taskId\"]  # Persist before polling. Do not create a second task.\ndeadline = time.monotonic() + 20 * 60\nwhile time.monotonic() < deadline:\n    data = checked(requests.get(f\"{BASE}/recordInfo\", headers=HEADERS,\n                   params={\"taskId\": task_id}, timeout=30))\n    if data[\"state\"] in (\"success\", \"fail\"):\n        print(data[\"state\"], data.get(\"resultJson\") or data.get(\"failMsg\"))\n        break\n    time.sleep(10)\nelse:\n    print(\"Still running or unresolved; resume polling this task:\", task_id)\n"
+              }
+            ]
+          },
+          {
+            "id": "kie-shape",
+            "kicker": "Unified input",
+            "title": "Seedance 2.5 API request fields",
+            "paragraphs": [
+              "Kie's reviewed form exposes a unified object. Your application can map text, image and reference modes into that object while omitting unused arrays rather than sending empty or contradictory fields."
+            ],
+            "table": {
+              "headers": ["Field", "Use", "Validation"],
+              "rows": [
+                [
+                  "prompt",
+                  "Shot description and temporal direction",
+                  "Required by your product even if provider behavior varies"
+                ],
+                [
+                  "first_frame_url / last_frame_url",
+                  "Opening and optional ending composition",
+                  "HTTPS URL, supported image type and provider size limit"
+                ],
+                [
+                  "reference_image_urls",
+                  "Character, product or style references",
+                  "Provider page currently shows up to 30 files"
+                ],
+                [
+                  "reference_video_urls",
+                  "Motion or scene references",
+                  "Provider page currently shows up to 10; also validate total duration"
+                ],
+                [
+                  "reference_audio_urls",
+                  "Audio reference material",
+                  "Provider page currently shows up to 10; validate type, size and rights"
+                ],
+                [
+                  "resolution / duration / aspect_ratio",
+                  "Output and cost controls",
+                  "Allowlist values server-side; never trust browser input"
+                ],
+                [
+                  "nsfw_checker",
+                  "Provider safety pre-check",
+                  "Keep enabled, then add your own policy and review controls"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "provider-comparison",
+            "kicker": "Access routes",
+            "title": "Kie versus fal at a glance",
+            "table": {
+              "headers": ["Area", "Kie.ai", "fal"],
+              "rows": [
+                [
+                  "Model routing",
+                  "Unified Seedance 2.5 model and input object",
+                  "Separate text-to-video, image-to-video and reference-to-video model IDs"
+                ],
+                [
+                  "Reviewed resolution fields",
+                  "480p, 720p and 1080p in the current form schema",
+                  "480p, 720p and 1080p in the text-to-video API schema"
+                ],
+                [
+                  "Reference inputs",
+                  "first/last frame plus image, video and audio URL arrays",
+                  "Endpoint-specific image/reference schemas"
+                ],
+                [
+                  "Duration",
+                  "Numeric duration field; provider page markets up to 30 seconds",
+                  "auto or 4–30 seconds in the text route documentation"
+                ],
+                [
+                  "Task handling",
+                  "Task status and callback support documented by provider",
+                  "Queue SDK/REST with status updates; queue recommended for longer runs"
+                ],
+                [
+                  "Pricing signal",
+                  "Check account pricing and calculator",
+                  "Token formula; current documentation gives approximate per-second examples"
+                ],
+                [
+                  "Best fit",
+                  "One normalized Seedance integration surface",
+                  "Typed endpoint separation and SDK-driven queues"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Do not generalize provider marketing",
+              "text": "Kie and fal currently list 1080p parameters for their 2.5 routes. This browser workspace exposes only 480p/720p. Distinguish requested size, returned file dimensions and verified native generation.",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "fal-example",
+            "kicker": "Minimal request",
+            "title": "The same request through fal",
+            "paragraphs": [
+              "fal documents the model ID below and recommends its queue API for longer generations. In B2B use, send a stable, non-sensitive end_user_id as required by the provider—never an email or raw personal identifier."
+            ],
+            "examples": [
+              {
+                "label": "Server-side JavaScript",
+                "text": "import { fal } from '@fal-ai/client';\n\nfal.config({ credentials: process.env.FAL_KEY });\n\nconst result = await fal.subscribe(\n  'bytedance/seedance-2.5/text-to-video',\n  {\n    input: {\n      prompt: 'A ceramic artist lifts a cobalt bowl, slow dolly in.',\n      duration: '10',\n      resolution: '720p',\n      aspect_ratio: '16:9',\n      generate_audio: true,\n      end_user_id: internalHashedUserId\n    },\n    logs: true\n  }\n);\n\nconst videoUrl = result.data.video.url;"
+              }
+            ]
+          },
+          {
+            "id": "production-architecture",
+            "kicker": "Reliability",
+            "title": "Production integration checklist",
+            "steps": [
+              {
+                "title": "Create your own task first",
+                "description": "Reserve credits and persist your internal task ID before calling a provider."
+              },
+              {
+                "title": "Store provider identity",
+                "description": "Save the actual provider, model ID and provider task ID so polling never guesses the route."
+              },
+              {
+                "title": "Use idempotency boundaries",
+                "description": "Do not fall back to a second provider after a network timeout; the first request may already be running."
+              },
+              {
+                "title": "Treat failure states explicitly",
+                "description": "Refund only on a confirmed terminal failure, not on a slow queue or temporary polling error."
+              },
+              {
+                "title": "Copy durable outputs",
+                "description": "Provider result URLs may expire. Move completed videos to controlled storage according to user and provider terms."
+              },
+              {
+                "title": "Observe cost and latency",
+                "description": "Log resolution, duration, provider, retries, final status and cost without recording sensitive prompts unnecessarily."
+              }
+            ]
+          },
+          {
+            "id": "security",
+            "kicker": "Hard requirements",
+            "title": "API security and rights checks",
+            "bullets": [
+              "Keep Kie and fal secrets in server-side environment variables; never prefix them as public client variables.",
+              "Validate URLs, MIME types, file sizes, counts, duration and allowlisted output settings before spending credits.",
+              "Rate-limit by account and internal end-user ID, not only by IP address.",
+              "Require users to have rights to every image, video, audio and character reference they submit.",
+              "Store the provider terms/version reviewed for your commercial-use decision.",
+              "Build moderation and appeal handling in addition to provider safety filters."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is there a Seedance 2.5 API?",
+            "answer": "Yes. Seedance 2.5 is available through third-party API providers including Kie and fal. ByteDance's own international API is not offered in every country, so many developers use a reseller."
+          },
+          {
+            "question": "How much does the Seedance 2.5 API cost per second?",
+            "answer": "On October 3, 2026, Kie listed $0.14 per second at 480p, $0.315 at 720p and $0.79 at 1080p without video input. fal listed about $0.22 at 480p and $0.47 at 720p."
+          },
+          {
+            "question": "Is there an official public ByteDance Seedance 2.5 API?",
+            "answer": "Official access and regional availability can differ from third-party access. This guide covers current Kie and fal provider routes; verify ByteDance or BytePlus documentation separately before describing a route as official."
+          },
+          {
+            "question": "Should I automatically fail over from Kie to fal?",
+            "answer": "Only before a task may have been accepted, such as a validated provider rejection. Do not resubmit after a timeout or unknown server error because both providers might generate and charge."
+          },
+          {
+            "question": "Can I call these APIs from the browser?",
+            "answer": "Do not expose provider secrets in client code. Send a validated request to your own server, create an internal task, then call the provider from the server."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "API pricing table, Seedance 2.5 rows",
+            "url": "https://kie.ai/pricing"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API request reference",
+            "url": "https://docs.kie.ai/market/bytedance/seedance-2-5"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API form and schema",
+            "url": "https://kie.ai/seedance-2-5"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 text-to-video API, schema and pricing",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 image-to-video API",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/image-to-video"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 reference-to-video API",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/reference-to-video"
+          },
+          {
+            "title": "Current text-to-video schema, including 1080p",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video/api",
+            "publisher": "fal"
+          }
+        ],
+        "related": [
+          {
+            "title": "2.5 vs 2.0",
+            "description": "Decide which model belongs behind the adapter.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Prompt guide",
+            "description": "Create structured test cases for integration QA.",
+            "url": "/seedance-2-5-prompt-guide"
+          },
+          {
+            "title": "Pricing",
+            "description": "See the product credit model used by this workspace.",
+            "url": "/pricing"
+          }
+        ],
+        "cta": {
+          "title": "Test the product workflow first",
+          "description": "Validate prompts, settings and result handling in the browser before building your own integration.",
+          "button": "Open the generator",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "title": "Multi-model AI Video Generator",
+    "description": "Create videos with Seedance, Kling, Wan, MiniMax H3 or Grok Imagine. Choose compatible settings and see the exact product credit charge before generation."
+  },
+  "page": {
+    "title": "Multi-model AI Video Generator",
+    "description": "Direct text-to-video, image-to-video and reference-led shots with model-aware settings and transparent product credit costs."
+  },
+  "generator": {
+    "title": "Multi-model AI Video Generator",
+    "page_eyebrow": "AI video model workspace",
+    "page_title": "Multi-model AI video generator — choose the model, then see the cost.",
+    "page_description": "Create with Seedance, Kling, Wan, MiniMax H3 or Grok Imagine. The workspace exposes only compatible controls and shows the exact product credit charge before submission.",
+    "workflow_label": "Video generation workflow",
+    "tabs": {
+      "text-to-video": "Text to video",
+      "image-to-video": "Image to video",
+      "reference-to-video": "Visual references",
+      "text-short": "Text",
+      "image-short": "Image",
+      "reference-short": "Refs"
+    },
+    "badges": {
+      "new": "New",
+      "popular": "Popular"
+    },
+    "model_picker": {
+      "title": "Choose a video model",
+      "description": "Search available production models and review their current workspace fit.",
+      "search": "Search models or providers…",
+      "empty": "No available model matches that search.",
+      "available": "Available in this workspace"
+    },
+    "models": {
+      "seedance_2_5": {
+        "summary": "Audio and reference-led shots",
+        "description": "The default Seedance workflow for text, first-frame and visual-reference generation."
+      },
+      "seedance_2_0": {
+        "summary": "Maximum-quality 2.0 tier",
+        "description": "Use the standard 2.0 model when final-shot quality matters more than draft cost."
+      },
+      "seedance_2_0_fast": {
+        "summary": "Faster 2.0 production tier",
+        "description": "A lower-cost 2.0 option for prompt iteration and repeatable production shots."
+      },
+      "seedance_2_0_mini": {
+        "summary": "Lowest-cost Seedance drafts",
+        "description": "Test motion, framing and prompt direction before moving to a higher-cost final model."
+      },
+      "kling_3_0": {
+        "summary": "720p/1080p with optional sound",
+        "description": "Single-shot text or first/last-frame video with selectable sound and up to 15 seconds."
+      },
+      "wan_2_7": {
+        "summary": "Flexible ratios and prompt expansion",
+        "description": "Text or first/last-frame generation with 720p/1080p output and optional prompt rewriting."
+      },
+      "minimax_h3": {
+        "summary": "768P or 2K cinematic motion",
+        "description": "Text or first/last-frame generation with broad aspect-ratio support for text-led shots."
+      },
+      "grok_imagine_1_5": {
+        "summary": "Fast 480p/720p experimentation",
+        "description": "Text or multi-image-guided video from one to fifteen seconds; this workspace exposes 480p and 720p."
+      }
+    },
+    "form": {
+      "model": "Model",
+      "resolution": "Resolution",
+      "duration": "Duration",
+      "aspect_ratio": "Aspect ratio",
+      "shot_direction": "Shot direction",
+      "prompt_guide": "Prompt guide",
+      "prompt_placeholder": "Describe the scene, action and camera movement…",
+      "timecode_hint": "One clear shot is a good place to start.",
+      "start_frame": "Start and optional end frame",
+      "start_frame_hint": "Upload one start frame, or add a second image to define the ending composition.",
+      "reference_images": "Visual references",
+      "reference_images_hint": "Upload up to {count} image references and describe their roles in the prompt. Video and audio uploads are not supported here.",
+      "upload_labels": {
+        "drop_to_upload": "Drop to upload",
+        "upload": "Upload",
+        "max_file_size": "Max {size}MB",
+        "uploading": "Uploading…",
+        "failed": "Upload failed",
+        "replace_image": "Upload a new image to replace this reference",
+        "remove_image": "Remove reference image",
+        "reference_image_alt": "Uploaded visual reference"
+      },
+      "generate_audio": "Generate synchronized audio",
+      "audio_not_exposed": "No separate audio control for this model",
+      "some_images_failed_to_upload": "One or more images failed to upload. Remove the failed item and try again."
+    },
+    "advanced": {
+      "title": "Advanced direction",
+      "negative_prompt": "Avoid",
+      "negative_prompt_placeholder": "flicker, distorted hands, unreadable text",
+      "prompt_extend": "Enhance prompt"
+    },
+    "checking_account": "Checking account…",
+    "generating": "Generating…",
+    "sign_in_to_generate": "Sign in to generate",
+    "generate_with_cost": "Generate · {credits} credits",
+    "credits_remaining": "{credits} credits available",
+    "new_user_credits": "Sign in to view credits",
+    "billing_note": "The action shows the exact product credit charge for this model and these settings. Start at 480p, then move to 720p for a final render.",
+    "refund_note": "Failed provider tasks are automatically refunded after failure is confirmed.",
+    "independent_note": "Independent service · model names belong to their respective owners",
+    "output_monitor": "Output monitor",
+    "generation_wait": "Longer video tasks can take several minutes. You can keep this tab open while the task is checked in the background.",
+    "empty_monitor": "Add direction, confirm the compatible settings, then generate your first take.",
+    "source_aspect": "Source ratio",
+    "launch_output": "Current product output",
+    "audio_on": "Audio on",
+    "audio_off": "Audio off",
+    "audio_model_default": "Model audio",
+    "model_audio": "Generated with the video",
+    "download": "Download video",
+    "next_after_generation": {
+      "label": "Recommended next",
+      "guide": "Improve the direction for another take",
+      "compare": "Compare Seedance 2.5 with 2.0",
+      "pricing": "Check credits before the next render"
+    },
+    "status": {
+      "ready": "Ready to direct",
+      "queued": "Queued with the model",
+      "generating": "Generating your shot",
+      "complete": "Video ready",
+      "failed": "Generation failed"
+    },
+    "messages": {
+      "complete": "Your video is ready."
+    },
+    "errors": {
+      "timeout": "The task is taking longer than expected. Check your activity page before starting a duplicate generation.",
+      "query": "We could not refresh the generation status.",
+      "empty_result": "The provider completed the task but returned no playable video.",
+      "failed": "Generation failed. Confirmed failures are refunded automatically.",
+      "credits": "You do not have enough credits for these settings.",
+      "reference": "Upload the required image reference before generating.",
+      "prompt": "Add a prompt within the character limit before generating.",
+      "start": "The video task could not be started.",
+      "download": "The video could not be downloaded.",
+      "credits_short": "This shot needs {cost} credits and you have {balance}. Credit packs start at $9.9.",
+      "credits_action": "Buy credits"
+    },
+    "links": {
+      "free": "Seedance 2.5 starter-credit guide",
+      "compare": "Compare 2.5 vs 2.0",
+      "prompts": "Prompt guide",
+      "api": "Seedance 2.5 API guide",
+      "pricing": "Credits and pricing"
+    },
+    "links_eyebrow": "Choose the next useful step",
+    "links_title": "Plan the shot before spending more credits.",
+    "link_descriptions": {
+      "free": "See how starter credits, limits and refunds work before signing in.",
+      "compare": "Choose between 2.5 and 2.0 by workflow, duration and product cost.",
+      "prompts": "Build a clearer shot with timecodes, camera direction and audio cues.",
+      "api": "Compare the current Kie and fal integration paths before automating a workflow.",
+      "pricing": "Compare the credit wallet and effective cost for your generation plan."
+    },
+    "reuse_settings": "Reuse this task’s settings",
+    "cost_estimate": "About ${cost}/video using the Starter pack; ${payment} paid upfront covers {count, plural, one {# complete video} other {# complete videos}} at these settings. Videos are not sold individually.",
+    "generation_cost": "This shot: {credits} credits",
+    "sample_monitor": "Explore the possibilities"
+  }
+}

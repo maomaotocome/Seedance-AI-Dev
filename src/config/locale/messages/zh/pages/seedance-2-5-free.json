@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 免费：免费能做什么、限制与最低成本",
+    "description": "比较 Seedance 2.5 免费访问声明与本站符合资格用户的 5 积分 Mini 试用；了解邮箱验证规则、2.5 付费费用和资料来源。"
+  },
+  "page": {
+    "title": "Seedance 2.5 免费访问：平台条件与 Mini 试用",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide-generator",
+        "id": "seedance-2-5-free",
+        "label": "注册赠送积分",
+        "title": "Seedance 2.5 免费访问：平台条件与 Mini 试用",
+        "description": "本站为符合资格的新账号提供 5 积分，用于 Seedance 2.0 Mini。Seedance 2.5 在本站需付费：5 秒 480p 需 30 积分。下方比较外部平台的免费访问条件。",
+        "verdict": "请先验证邮箱。临时邮箱和重复账号受限，生成前以实际到账余额为准。下方工具默认 Mini、5 秒、480p，需 5 积分。",
+        "last_reviewed": "核对日期：2026 年 10 月 12 日",
+        "source_note": "下方外部信息来自链接中的公开声明，未用测试账号完成免费生成；可用性可能因地区与账号而异。",
+        "primary_button": {
+          "title": "试用 Seedance 2.0 Mini",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较免费访问条件",
+          "url": "#free-options"
+        },
+        "quick_facts": [],
+        "show_generator": true,
+        "default_model": "seedance-2.0-mini",
+        "sections": [
+          {
+            "id": "free-options",
+            "kicker": "核对日期：2026 年 10 月 12 日",
+            "title": "哪里可以免费试用 Seedance 2.5？",
+            "paragraphs": [
+              "请区分宣传模型和账号实际到账额度。Dreamina FAQ 表示每日免费积分可测试 Seedance 2.5；我们尚未验证具体账号资格或完成免费任务。"
+            ],
+            "table": {
+              "headers": ["服务 / 来源", "公开条件", "需要确认"],
+              "rows": [
+                [
+                  "SeedanceAI.dev（本站）",
+                  "符合资格的已验证新账号一次获 5 积分；Mini 5 秒 480p",
+                  "验证邮箱、非临时邮箱、网络防滥用检查、实际余额"
+                ],
+                [
+                  "[Dreamina](https://dreamina.capcut.com/seedance/seedance-2-5)",
+                  "FAQ 宣传每日免费积分可试 Seedance 2.5",
+                  "地区、账号资格、到账额度和当前模型权限；未独立实测生成"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "促销价格不等于免费生成",
+              "text": "Dreamina 9 月 23 日至 10 月 9 日的首月活动已结束。不要用已过期的订阅折扣计算当前费用。[原活动说明](https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026)。",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "how-free-works",
+            "kicker": "不隐藏无限量条件",
+            "title": "本站 Seedance 2.0 Mini 试用流程",
+            "paragraphs": [
+              "符合资格的新用户验证邮箱后可获 5 积分，有效期 30 天。临时邮箱不符合资格；同一网络 24 小时内有其它账号会话时可能无法领取。这是一次性新账号额度，不是每日赠送。提交前先查看余额。"
+            ],
+            "steps": [
+              {
+                "title": "选择工作流",
+                "description": "文生视频适合全新镜头，图生视频适合控制开场构图，参考模式适合保持角色或品牌视觉。"
+              },
+              {
+                "title": "只写一个清晰镜头",
+                "description": "依次描述主体、动作、环境、摄影机和时间；避免同时堆叠互相冲突的运镜。"
+              },
+              {
+                "title": "设置时长与分辨率",
+                "description": "保持 Mini、5 秒、480p，才能使用 5 积分额度；更长或 720p 需要更多积分。"
+              },
+              {
+                "title": "核对成本后生成",
+                "description": "按钮会显示确切积分。只有准备提交时才需要登录。"
+              }
+            ]
+          },
+          {
+            "id": "cost-table",
+            "kicker": "产品积分",
+            "title": "本站付费 Seedance 2.5 费用",
+            "paragraphs": [
+              "积分是本站的计费单位，并不等同于 Kie 或 fal 向开发者收取的美元成本；第三方供应商价格会独立变化。"
+            ],
+            "table": {
+              "headers": ["设置", "5 秒", "10 秒", "15 秒", "30 秒"],
+              "rows": [
+                [
+                  "480p · 6 积分/秒",
+                  "30 积分",
+                  "60 积分",
+                  "90 积分",
+                  "180 积分"
+                ],
+                [
+                  "720p · 12 积分/秒",
+                  "60 积分",
+                  "120 积分",
+                  "180 积分",
+                  "360 积分"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "整包购买，并非按条结账",
+              "text": "Starter 积分包 $9.90 含 150 积分：可生成 5 条 5 秒 480p 的 2.5 视频，或 2 条 720p 视频并余 30 积分。[计算其它设置](/pricing#video-budget)。",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "what-to-prompt",
+            "kicker": "提示词结构",
+            "title": "给模型镜头计划，而不是形容词清单",
+            "paragraphs": [
+              "有效提示词会描述画面随时间发生什么变化。先写主体和动作，再写摄影机、环境、光线与声音意图；较长视频可用时间段拆分节奏。"
+            ],
+            "examples": [
+              {
+                "label": "10 秒产品镜头",
+                "text": "[0–3 秒] 黑色石面上一块拉丝钢手表的微距镜头；摄影机缓慢顺时针环绕，柔和窗光反射。\n[3–7 秒] 表冠转动，秒针开始行走；摄影机轻轻靠近。\n[7–10 秒] 焦点从表盘转移到刻印标志；轻微机械声，无音乐。"
+              }
+            ]
+          },
+          {
+            "id": "limits",
+            "kicker": "提交前须知",
+            "title": "当前限制与真实预期",
+            "bullets": [
+              "本站 Seedance 提供 480p 和 720p；其它模型的输出设置不同。",
+              "免费积分有限且可能调整，账户中显示的实际余额为准。",
+              "浏览器参考模式只开放实用数量，即使供应商 API 可能支持更多文件。",
+              "生成时间受供应商队列、时长、分辨率和实时需求影响。",
+              "商业使用还取决于素材权利、具体输出和账户适用条款。",
+              "SeedanceAI.dev 是独立服务，并非字节跳动官方网站。"
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "可以免费使用 Seedance 2.5 吗？",
+            "answer": "本站 2.5 需付费，5 积分赠额仅够 Mini。Dreamina 公开宣传每日免费积分可试 2.5，取决于账号及地区；我们尚未完成该试用。"
+          },
+          {
+            "question": "新账户能拿到多少免费积分？",
+            "answer": "符合资格的新用户验证邮箱后可获 5 积分，有效期 30 天。临时邮箱不符合资格；同一网络 24 小时内有其它账号会话时可能无法领取。这是一次性新账号额度，不是每日赠送。提交前先查看余额。"
+          },
+          {
+            "question": "使用 Seedance 2.5 最便宜的方式是什么？",
+            "answer": "在本站是 $9.9 的 Starter 积分包：150 积分，可生成 5 条 480p 的 5 秒 Seedance 2.5 视频。一次性付款，不自动续费。"
+          },
+          {
+            "question": "免费生成会有水印吗？",
+            "answer": "水印取决于上游供应商和账户方案。发布前请检查生成文件与当前条款；本站不做统一的无水印承诺。"
+          },
+          {
+            "question": "本站能生成 Seedance 2.5 4K 视频吗？",
+            "answer": "不能。当前工作区提供 480p 与 720p。后续放大属于独立工作流，不能称为原生 Seedance 2.5 4K 生成。"
+          },
+          {
+            "question": "生成失败会怎样？",
+            "answer": "供应商明确确认任务失败后会退还预扣积分；仍在处理的任务不会被误判为失败。"
+          },
+          {
+            "question": "SeedanceAI.dev 是字节跳动官网吗？",
+            "answer": "不是。SeedanceAI.dev 是使用已配置第三方 API 供应商的独立产品。"
+          }
+        ],
+        "sources": [
+          {
+            "title": "Seedance 2.5 免费积分 FAQ",
+            "url": "https://dreamina.capcut.com/seedance/seedance-2-5",
+            "publisher": "Dreamina"
+          },
+          {
+            "title": "已结束的首月活动",
+            "url": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+            "publisher": "Dreamina"
+          }
+        ],
+        "related": [
+          {
+            "title": "提示词指南",
+            "description": "用镜头顺序、摄影机意图和时间节点写提示词。",
+            "url": "/seedance-2-5-prompt-guide"
+          },
+          {
+            "title": "2.5 与 2.0 对比",
+            "description": "根据工作流和成本选择模型。",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "无限量方案说明",
+            "description": "理解“无限量”优惠通常仍有哪些限制。",
+            "url": "/unlimited-seedance-2-5"
+          }
+        ],
+        "cta": {
+          "title": "准备测试付费 Seedance 2.5？",
+          "description": "先看真实 5 秒产品样片，再带入 30 积分设置。只有你提交后才开始生成。",
+          "button": "载入 2.5 样片设置",
+          "url": "/ai-video-generator?sample=product-25#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Wan 2.7 Video Generator — Text and Image to Video",
+    "description": "Generate Wan 2.7 video from text or first and last frames in 720p or 1080p, with prompt enhancement, negative prompts and visible credits.",
+    "keywords": "Wan 2.7 video generator, Wan AI video, text to video, image to video"
+  },
+  "page": {
+    "title": "Wan 2.7 Video Generator",
+    "sections": {
+      "hero": {
+        "id": "wan-2-7-video-generator",
+        "label": "Wan 2.7 workspace",
+        "title": "Wan 2.7 Video Generator",
+        "description": "Create a text-led shot across five aspect ratios, or animate a first and optional last frame. The workspace supports 720p and 1080p with a focused five-, ten-, or fifteen-second control set.",
+        "verdict": "Choose Wan 2.7 when framing flexibility and prompt cleanup matter. Keep prompt enhancement on for rough briefs; turn it off when exact wording is part of the test.",
+        "last_reviewed": "Reviewed August 22, 2026",
+        "source_note": "The page separates Wan 2.7 upstream ranges from the discrete controls exposed in this product. Verify the selected settings and credits before submission.",
+        "primary_button": {
+          "title": "Create with Wan 2.7",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "Compare current models",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "Workspace modes",
+            "value": "Text · First/last frame",
+            "description": "Two production-ready request adapters."
+          },
+          {
+            "label": "Output",
+            "value": "720p · 1080p",
+            "description": "Resolution is explicit before generation."
+          },
+          {
+            "label": "Text ratios",
+            "value": "5 aspect ratios",
+            "description": "16:9, 9:16, 1:1, 4:3 and 3:4."
+          },
+          {
+            "label": "Direction",
+            "value": "Prompt enhance",
+            "description": "Optional rewriting plus a negative prompt."
+          }
+        ],
+        "show_generator": true,
+        "default_model": "wan-2.7",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "Selection rule",
+            "title": "Where Wan 2.7 fits best",
+            "paragraphs": [
+              "Wan 2.7 is a practical choice for campaigns that need the same idea reframed across landscape, portrait, square and 4:3 families. Text-to-video exposes those ratios directly; image-to-video follows the supplied frame.",
+              "Its prompt extension can turn a compact brief into richer visual direction. For a controlled comparison, disable it so the submitted wording remains the independent variable."
+            ],
+            "bullets": [
+              "Create landscape and portrait variants from the same shot plan.",
+              "Use a last frame when a product or character must land in a precise composition.",
+              "Put artifact risks such as flicker or unreadable text in the negative prompt.",
+              "Begin at 720p before committing 1080p credits."
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "Product controls",
+            "title": "What the Wan adapter sends",
+            "table": {
+              "headers": ["Control", "Text to video", "Image to video"],
+              "rows": [
+                ["Prompt", "Required", "Required"],
+                ["Negative prompt", "Optional", "Optional"],
+                ["Resolution", "720p or 1080p", "720p or 1080p"],
+                ["Aspect ratio", "Five choices", "Follows source frame"],
+                ["Prompt enhancement", "On or off", "On or off"],
+                [
+                  "Watermark",
+                  "Disabled by product adapter",
+                  "Disabled by product adapter"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "Prompt patterns",
+            "title": "Use one subject, one change and one camera move",
+            "examples": [
+              {
+                "label": "Vertical social shot",
+                "text": "9:16 portrait. A pastry chef places a mirror-glazed cake beneath a warm pass light. Slow handheld push in, subtle steam, stable hands and cake geometry, realistic kitchen reflections, no labels or on-screen text."
+              },
+              {
+                "label": "First and last frame",
+                "text": "The fabric moves in a single clean wave from the opening arrangement to the final frame. Locked camera, soft side light, realistic material weight, no extra objects, no color shift, no flicker."
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "Model choice",
+            "title": "When to choose another model",
+            "table": {
+              "headers": ["Need", "Model to consider", "Reason"],
+              "rows": [
+                [
+                  "Optional generated sound",
+                  "Kling 3.0 or Seedance 2.5",
+                  "Both expose an audio toggle here."
+                ],
+                [
+                  "Dedicated reference workflow",
+                  "Seedance 2.5",
+                  "Separate visual-reference input mode."
+                ],
+                [
+                  "2K option",
+                  "MiniMax H3",
+                  "The current H3 adapter exposes 2K."
+                ],
+                [
+                  "Fast multi-image tests",
+                  "Grok Imagine 1.5",
+                  "Up to seven image inputs at current product resolutions."
+                ]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Wan 2.7 available for real generation here?",
+            "answer": "Yes. Wan 2.7 is preselected in the generator above for both text and image workflows. You need an account with enough credits."
+          },
+          {
+            "question": "Which Wan 2.7 durations are exposed?",
+            "answer": "The upstream API accepts 2–15 seconds. This product currently offers 5, 10 and 15 seconds to keep selection and credits predictable."
+          },
+          {
+            "question": "What does Enhance prompt do?",
+            "answer": "It sends Wan's prompt_extend option. Keep it enabled for terse briefs; disable it when you need a controlled wording test."
+          },
+          {
+            "question": "Can Wan 2.7 generate audio here?",
+            "answer": "This interface does not expose a generated-audio switch for Wan 2.7. The upstream text endpoint accepts an optional external audio URL, which is not part of the current product workflow."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Wan 2.7 text-to-video API",
+            "url": "https://docs.kie.ai/market/wan/2-7-text-to-video"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Wan 2.7 image-to-video API",
+            "url": "https://docs.kie.ai/market/wan/2-7-image-to-video"
+          },
+          {
+            "publisher": "Alibaba Cloud",
+            "title": "Wan 2.7 model announcement",
+            "url": "https://www.alibabacloud.com/blog/alibaba-unveils-wan2-7-video-to-elevate-creators-from-executors-to-directors_603009"
+          }
+        ],
+        "related": [
+          {
+            "title": "Kling 3.0",
+            "description": "Add an optional sound-aware workflow.",
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "Compare a 768P or 2K motion workflow.",
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "title": "Grok Imagine 1.5",
+            "description": "Explore quick multi-image video tests.",
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "cta": {
+          "title": "Frame one Wan 2.7 test",
+          "description": "Choose the target aspect ratio first, then describe one subject, one change and one camera move.",
+          "button": "Open Wan 2.7",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 vs 2.0: Specs, Price & Which to Use",
+    "description": "Compare Seedance 2.5 and 2.0 using real sample clips, current workspace credit costs and a clear distinction between official specs and provider options."
+  },
+  "page": {
+    "title": "Seedance 2.5 vs 2.0",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "seedance-2-5-vs-2-0",
+        "label": "Model comparison",
+        "title": "Seedance 2.5 vs 2.0: specs, price and which to use",
+        "description": "The official announcements describe up to 30 seconds and 50 references for Seedance 2.5, versus 15 seconds and 15 references for 2.0. This browser workspace exposes a smaller set of controls; compare those separately from provider APIs.",
+        "verdict": "Use 2.5 for longer tasks here. Compare Standard, Fast and Mini for lower-cost 2.0 tests. Both versions offer 480p/720p in this workspace; higher provider resolutions are not enabled here.",
+        "last_reviewed": "Reviewed October 12, 2026",
+        "source_note": "Official model capabilities and third-party API availability are separate facts. This comparison labels workspace limits independently and does not treat provider marketing as a universal model guarantee.",
+        "primary_button": {
+          "title": "Test both models",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "Read the prompt guide",
+          "url": "/seedance-2-5-prompt-guide"
+        },
+        "quick_facts": [
+          {
+            "label": "Max clip length",
+            "value": "30s vs 15s",
+            "description": "Seedance 2.5 doubles the single-clip limit."
+          },
+          {
+            "label": "Reference files",
+            "value": "50 vs 15",
+            "description": "Official limits: 30/10/10 vs 9/3/3 images/videos/audio. Workspace limits are lower."
+          },
+          {
+            "label": "Cost in this workspace",
+            "value": "12 vs 8 credits per second",
+            "description": "At 720p. Fast and Mini tiers of 2.0 cost less."
+          },
+          {
+            "label": "Released",
+            "value": "July 31 vs February 12, 2026",
+            "description": "2.5 followed 2.0 by under six months."
+          }
+        ],
+        "sections": [
+          {
+            "id": "spec-table",
+            "kicker": "Reviewed October 12, 2026",
+            "title": "Official model, provider API and workspace limits",
+            "paragraphs": [
+              "An accepted API parameter does not prove native resolution or every account’s access. Check the exact provider route and returned file before making a production commitment."
+            ],
+            "table": {
+              "headers": ["Evidence scope", "Seedance 2.5", "Seedance 2.0"],
+              "rows": [
+                ["Official single-pass duration", "30s", "15s"],
+                [
+                  "Official reference counts",
+                  "30 images + 10 video + 10 audio = 50",
+                  "9 images + 3 video + 3 audio = 15"
+                ],
+                [
+                  "Specified provider API",
+                  "fal and BytePlus document 1080p alongside 480p/720p",
+                  "BytePlus 2.0 Standard documents a 4K option; not a claim for every tier or native output"
+                ],
+                [
+                  "This workspace: duration",
+                  "5 / 8 / 10 / 15 / 30s",
+                  "5 / 8 / 10 / 15s"
+                ],
+                ["This workspace: resolution", "480p / 720p", "480p / 720p"],
+                [
+                  "This workspace: inputs",
+                  "Up to 2 frames or 6 reference images; no video/audio uploads",
+                  "Same image limits; no video/audio uploads"
+                ],
+                [
+                  "This workspace: 5s at 480p / 720p",
+                  "30 / 60 credits",
+                  "Standard 20/40; Fast 15/25; Mini 5/10 credits"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "same-prompt-test",
+            "kicker": "Same prompt, both models",
+            "title": "Seedance 2.5 vs 2.0 with the same prompt",
+            "paragraphs": [
+              "Two prompts were run once per model at 480p on October 3, 2026. These unedited pairs illustrate those particular outputs, not typical reliability or a statistically established winner. Use the controls below to run your own test."
+            ],
+            "samples": ["product-25", "product-20", "camera-25", "camera-20"]
+          },
+          {
+            "id": "comparison-table",
+            "kicker": "At a glance",
+            "title": "Seedance 2.5 and 2.0 comparison",
+            "paragraphs": [
+              "Separate model capability from the controls a particular site exposes. The table below combines the practical choices available in this workspace with provider-documented 2.5 reference support."
+            ],
+            "table": {
+              "headers": [
+                "Decision area",
+                "Seedance 2.5",
+                "Seedance 2.0",
+                "Practical choice"
+              ],
+              "rows": [
+                [
+                  "New production",
+                  "Current model for new tests",
+                  "Established baseline",
+                  "Begin with 2.5, keep a 2.0 control"
+                ],
+                [
+                  "Reference planning",
+                  "Provider APIs document image, video and audio reference inputs",
+                  "Depends on the available provider route",
+                  "Prefer 2.5 for multimodal reference work"
+                ],
+                [
+                  "Long shot planning",
+                  "Up to 30 seconds in reviewed provider routes",
+                  "Use options shown by the live generator",
+                  "Test long prompts in shorter segments first"
+                ],
+                [
+                  "Workspace resolution",
+                  "480p or 720p",
+                  "480p or 720p",
+                  "Prototype at 480p, finish at 720p"
+                ],
+                [
+                  "Workspace credits",
+                  "6/sec at 480p; 12/sec at 720p",
+                  "Standard: 4/8; Fast: 3/5; Mini: 1/2 per second",
+                  "Compare usable outputs, not attempts"
+                ],
+                [
+                  "Continuity risk",
+                  "May change an established look",
+                  "Preserves existing baseline",
+                  "Keep 2.0 where visual continuity is contractual"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "About 4K claims",
+              "text": "Neither version is presented as native 4K in this workspace. The current generator exposes 480p and 720p; an external upscale is a separate processing step.",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "choose-2-5",
+            "kicker": "Use cases",
+            "title": "Choose Seedance 2.5 when control breadth matters",
+            "paragraphs": [
+              "Seedance 2.5 is the sensible first test for a new project that depends on multiple references, longer temporal instructions or audio-aware planning. Its value is not the version label; it is whether those controls reduce retries and post-production."
+            ],
+            "bullets": [
+              "A campaign must keep a product, character or style aligned across reference material.",
+              "A 15–30 second concept needs explicit timecoded beats.",
+              "Audio intent is part of the shot design rather than an afterthought.",
+              "You are building a new prompt library with no legacy version dependency."
+            ]
+          },
+          {
+            "id": "choose-2-0",
+            "kicker": "Continuity",
+            "title": "Choose Seedance 2.0 when repeatability matters",
+            "paragraphs": [
+              "An established model can be the lower-risk choice when a team already understands its prompts and artifacts. Model migration has a real QA cost, even if the new version wins isolated demos."
+            ],
+            "bullets": [
+              "An approved project must match previous 2.0 shots.",
+              "Your team has known prompts, references and acceptance checks for 2.0.",
+              "The shot is simple and does not need the newer reference workflow.",
+              "A deadline makes model re-validation more expensive than the expected improvement."
+            ]
+          },
+          {
+            "id": "benchmark",
+            "kicker": "Fair test",
+            "title": "A five-step model benchmark",
+            "steps": [
+              {
+                "title": "Pick a representative shot",
+                "description": "Use a shot similar to real production—not a prompt chosen to flatter either model."
+              },
+              {
+                "title": "Lock every shared setting",
+                "description": "Prompt, reference, aspect ratio, duration and resolution must match."
+              },
+              {
+                "title": "Generate more than once",
+                "description": "One lucky or unlucky sample is not enough to estimate reliability."
+              },
+              {
+                "title": "Score blind when possible",
+                "description": "Reviewers should assess adherence and artifacts before seeing the model label."
+              },
+              {
+                "title": "Calculate cost per accepted clip",
+                "description": "Include every attempt plus the editing time required to make a clip usable."
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the difference between Seedance 2.5 and 2.0?",
+            "answer": "The official announcements describe up to 30 seconds and 50 references for Seedance 2.5, versus 15 seconds and 15 references for 2.0. This browser workspace exposes a smaller set of controls; compare those separately from provider APIs."
+          },
+          {
+            "question": "Is Seedance 2.5 better than Seedance 2.0?",
+            "answer": "It offers a newer, broader workflow, but better depends on the shot. For existing work, test both with identical inputs and compare usable output, cost and rework."
+          },
+          {
+            "question": "Which model should a beginner choose?",
+            "answer": "Start with 2.5 for a new project, use a short 480p test, and keep the prompt simple. Try 2.0 as a comparison when consistency or cost is uncertain."
+          },
+          {
+            "question": "Do both models cost the same here?",
+            "answer": "No. Seedance 2.5 uses 6 credits per second at 480p and 12 at 720p. Seedance 2.0 Standard uses 4 and 8, Fast uses 3 and 5, and Mini uses 1 and 2. The generator shows the exact charge before submission."
+          },
+          {
+            "question": "Can I compare both without changing my prompt?",
+            "answer": "Yes. That is the best first benchmark. Change only the model, then optimize each version after recording the baseline."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Seedance 2.0 launch",
+            "url": "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Seedance 2.5 launch",
+            "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Seedance 2.5 API schema",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video/api",
+            "publisher": "fal"
+          },
+          {
+            "title": "Seedance 2.0 API parameters",
+            "url": "https://docs.byteplus.com/en/docs/modelark/seedance-2-0",
+            "publisher": "BytePlus"
+          },
+          {
+            "title": "Seedance 2.5 API parameters",
+            "url": "https://docs.byteplus.com/en/docs/ModelArk/seedance-2-5",
+            "publisher": "BytePlus"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 free",
+            "description": "Run the newer model with visible credit cost.",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 2.0",
+            "description": "Learn how to preserve an established baseline.",
+            "url": "/seedance-2-0"
+          },
+          {
+            "title": "API guide",
+            "description": "Compare Kie and fal integration surfaces.",
+            "url": "/seedance-2-5-api"
+          }
+        ],
+        "cta": {
+          "title": "Make the model earn the migration",
+          "description": "Duplicate one production-like shot and compare the results under equal settings.",
+          "button": "Run the comparison",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

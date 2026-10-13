@@ -1,0 +1,361 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 API：价格、接入方式与代码示例",
+    "description": "了解 Seedance 2.5 API 提供者、异步请求、分辨率选项、价格来源和错误处理，参考 curl 与 Python 集成示例。"
+  },
+  "page": {
+    "title": "Seedance 2.5 API 指南",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "seedance-2-5-api",
+        "label": "开发者指南",
+        "title": "Seedance 2.5 API：接入方式、价格与代码示例",
+        "description": "现在可以通过 Kie、fal 等第三方 API 供应商调用 Seedance 2.5。2026 年 10 月 3 日，Kie 的标价是 480p 每秒 $0.14、720p 每秒 $0.315，fal 约为 $0.22 和 $0.47。一次请求就是一个异步任务：先创建任务，再轮询或接收回调。",
+        "verdict": "在我们核对的两条路线里，Kie 更便宜，文字、图片和参考输入共用一种请求结构。fal 把它们拆成三个端点，并提供队列 SDK。无论选哪家，都应放在自己的服务端适配层后面。",
+        "last_reviewed": "参数核对：2026 年 10 月 12 日 · 价格快照：10 月 3 日",
+        "source_note": "API 参数于 2026 年 10 月 12 日复核；价格示例仍保留 10 月 3 日快照日期，账号价格可能变化。本站提供浏览器工作区，不提供公开开发者 API。",
+        "primary_button": {
+          "title": "先在浏览器里试用",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "比较模型版本",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [
+          {
+            "label": "Kie 价格",
+            "value": "每秒 $0.14 至 $0.79",
+            "description": "480p、720p 与 1080p，无视频输入。"
+          },
+          {
+            "label": "fal 价格",
+            "value": "每秒 $0.22 至 $0.47",
+            "description": "480p/720p 历史价格示例；当前 API 参数也接受 1080p。"
+          },
+          {
+            "label": "时长",
+            "value": "4 至 30 秒",
+            "description": "每个任务生成一条视频。"
+          },
+          {
+            "label": "任务模式",
+            "value": "异步",
+            "description": "先创建，再轮询或使用回调。"
+          }
+        ],
+        "sections": [
+          {
+            "id": "api-pricing",
+            "kicker": "核对于 2026 年 10 月 3 日",
+            "title": "Seedance 2.5 API 多少钱？",
+            "paragraphs": [
+              "API 按视频秒数计费，分辨率越高越贵。传入参考视频时，Kie 用较低的单价乘以输入加输出的总秒数，所以参考视频较长时，费用可能高于纯文字请求。"
+            ],
+            "table": {
+              "headers": [
+                "供应商与模式",
+                "480p 每秒",
+                "720p 每秒",
+                "1080p 每秒"
+              ],
+              "rows": [
+                ["Kie，无视频输入", "$0.14", "$0.315", "$0.79"],
+                [
+                  "Kie，有视频输入（按输入加输出秒数）",
+                  "$0.085",
+                  "$0.19",
+                  "$0.475"
+                ],
+                [
+                  "fal，无视频输入",
+                  "$0.2205",
+                  "$0.473",
+                  "参数支持；核对实时价格"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "本站积分是另一套价格",
+              "text": "以上是面向开发者的供应商 API 价格。本站浏览器工作台按产品积分计费，费率见定价页。",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "curl-example",
+            "kicker": "快速开始",
+            "title": "Seedance 2.5 API curl 示例",
+            "paragraphs": [
+              "用一次 POST 请求创建任务。响应会立即返回任务 ID，视频在后台生成。"
+            ],
+            "examples": [
+              {
+                "label": "创建任务",
+                "text": "curl -X POST https://api.kie.ai/api/v1/jobs/createTask \\\n  -H \"Authorization: Bearer $KIE_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"bytedance/seedance-2-5\",\n    \"callBackUrl\": \"https://your-domain.com/api/seedance/callback\",\n    \"input\": {\n      \"prompt\": \"A ceramic artist lifts a cobalt bowl into window light, slow dolly in.\",\n      \"resolution\": \"720p\",\n      \"duration\": 5,\n      \"aspect_ratio\": \"16:9\",\n      \"generate_audio\": true\n    }\n  }'"
+              },
+              {
+                "label": "响应",
+                "text": "{ \"code\": 200, \"msg\": \"success\", \"data\": { \"taskId\": \"task_bytedance_...\" } }"
+              },
+              {
+                "label": "查询任务",
+                "text": "curl \"https://api.kie.ai/api/v1/jobs/recordInfo?taskId=$TASK_ID\" \\\n  -H \"Authorization: Bearer $KIE_API_KEY\""
+              }
+            ]
+          },
+          {
+            "id": "python-example",
+            "kicker": "轮询",
+            "title": "Seedance 2.5 API Python 示例",
+            "paragraphs": [
+              "以下为服务端示意代码，并非实时请求结果。它限制 HTTP 与轮询时长、检查提供者错误，并在任务仍运行时保留任务 ID；未知结果时不要自动重复提交。"
+            ],
+            "examples": [
+              {
+                "label": "使用 requests 的 Python 示例",
+                "text": "import os, time, requests\n\nBASE = \"https://api.kie.ai/api/v1/jobs\"\nHEADERS = {\"Authorization\": f\"Bearer {os.environ['KIE_API_KEY']}\"}\n\ndef checked(response):\n    response.raise_for_status()\n    payload = response.json()\n    if payload.get(\"code\") != 200 or not payload.get(\"data\"):\n        raise RuntimeError(\"Provider rejected request; inspect server logs\")\n    return payload[\"data\"]\n\ncreated = checked(requests.post(f\"{BASE}/createTask\", headers=HEADERS, timeout=30, json={\n    \"model\": \"bytedance/seedance-2-5\",\n    \"input\": {\"prompt\": \"A ceramic artist lifts a cobalt bowl, slow dolly in.\",\n              \"resolution\": \"480p\", \"duration\": 5, \"aspect_ratio\": \"16:9\"}\n}))\ntask_id = created[\"taskId\"]  # Persist before polling. Do not create a second task.\ndeadline = time.monotonic() + 20 * 60\nwhile time.monotonic() < deadline:\n    data = checked(requests.get(f\"{BASE}/recordInfo\", headers=HEADERS,\n                   params={\"taskId\": task_id}, timeout=30))\n    if data[\"state\"] in (\"success\", \"fail\"):\n        print(data[\"state\"], data.get(\"resultJson\") or data.get(\"failMsg\"))\n        break\n    time.sleep(10)\nelse:\n    print(\"Still running or unresolved; resume polling this task:\", task_id)\n"
+              }
+            ]
+          },
+          {
+            "id": "kie-shape",
+            "kicker": "统一输入",
+            "title": "Seedance 2.5 API 请求字段",
+            "paragraphs": [
+              "Kie 的已核验表单使用统一输入对象。应用可把文本、图片和参考模式映射到该对象，未使用的数组应省略，不发送空值或互相冲突的字段。"
+            ],
+            "table": {
+              "headers": ["字段", "用途", "验证"],
+              "rows": [
+                [
+                  "prompt",
+                  "镜头描述和时间指令",
+                  "即便供应商行为不同，产品层也应要求"
+                ],
+                [
+                  "first_frame_url / last_frame_url",
+                  "开场与可选结尾构图",
+                  "HTTPS 地址、支持的图片类型与大小"
+                ],
+                [
+                  "reference_image_urls",
+                  "角色、产品或风格参考",
+                  "供应商页面当前显示最多 30 个"
+                ],
+                [
+                  "reference_video_urls",
+                  "动作或场景参考",
+                  "当前显示最多 10 个，同时验证总时长"
+                ],
+                [
+                  "reference_audio_urls",
+                  "声音参考",
+                  "当前显示最多 10 个，并验证类型、大小和权利"
+                ],
+                [
+                  "resolution / duration / aspect_ratio",
+                  "输出与成本控制",
+                  "服务器端白名单，不信任浏览器输入"
+                ],
+                [
+                  "nsfw_checker",
+                  "供应商安全预检",
+                  "保持开启，并补充自有政策和审核"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "provider-comparison",
+            "kicker": "接入路由",
+            "title": "Kie 与 fal 一览",
+            "table": {
+              "headers": ["维度", "Kie.ai", "fal"],
+              "rows": [
+                [
+                  "模型路由",
+                  "统一 Seedance 2.5 模型与输入对象",
+                  "分别提供文生、图生、参考生成模型 ID"
+                ],
+                [
+                  "已核验分辨率字段",
+                  "当前表单列出 480p、720p、1080p",
+                  "文生视频 API 参数列出 480p、720p 与 1080p"
+                ],
+                [
+                  "参考输入",
+                  "首尾帧以及图片、视频、音频 URL 数组",
+                  "按端点区分图像与参考参数"
+                ],
+                [
+                  "时长",
+                  "数字时长字段，供应商页面宣传最高 30 秒",
+                  "文生路由文档为 auto 或 4–30 秒"
+                ],
+                [
+                  "任务处理",
+                  "供应商记录任务状态并支持回调",
+                  "队列 SDK/REST 提供状态；长任务推荐队列"
+                ],
+                [
+                  "价格依据",
+                  "以账户价格与计算器为准",
+                  "基于 token 公式，并提供每秒估算"
+                ],
+                ["适合", "统一的 Seedance 接入面", "类型明确的端点和 SDK 队列"]
+              ]
+            },
+            "callout": {
+              "title": "不要泛化供应商宣传",
+              "text": "Kie 与 fal 的 2.5 路由当前列有 1080p 参数；本浏览器工作区仍仅提供 480p/720p。应区分请求尺寸、返回文件尺寸和已验证的原生生成。",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "fal-example",
+            "kicker": "最小请求",
+            "title": "通过 fal 发起同样的请求",
+            "paragraphs": [
+              "fal 公开了下方模型 ID，并建议长视频使用队列 API。B2B 接入按供应商要求发送稳定且不敏感的 end_user_id，不要直接使用邮箱等个人信息。"
+            ],
+            "examples": [
+              {
+                "label": "服务器端 JavaScript",
+                "text": "import { fal } from '@fal-ai/client';\n\nfal.config({ credentials: process.env.FAL_KEY });\n\nconst result = await fal.subscribe(\n  'bytedance/seedance-2.5/text-to-video',\n  {\n    input: {\n      prompt: '一位陶艺师拿起钴蓝色碗，摄影机缓慢推进。',\n      duration: '10',\n      resolution: '720p',\n      aspect_ratio: '16:9',\n      generate_audio: true,\n      end_user_id: internalHashedUserId\n    },\n    logs: true\n  }\n);\n\nconst videoUrl = result.data.video.url;"
+              }
+            ]
+          },
+          {
+            "id": "production-architecture",
+            "kicker": "可靠性",
+            "title": "生产接入检查清单",
+            "steps": [
+              {
+                "title": "先创建内部任务",
+                "description": "调用供应商前先预扣积分并持久化自己的任务 ID。"
+              },
+              {
+                "title": "保存供应商身份",
+                "description": "记录实际供应商、模型 ID 和外部任务 ID，轮询时不能猜路由。"
+              },
+              {
+                "title": "明确幂等边界",
+                "description": "网络超时后不要自动换供应商，首次请求可能已经运行。"
+              },
+              {
+                "title": "显式处理失败",
+                "description": "只有确认终态失败才退款，慢队列和临时轮询错误不算失败。"
+              },
+              {
+                "title": "持久化输出",
+                "description": "供应商结果链接可能过期，应依据用户与供应商条款复制到受控存储。"
+              },
+              {
+                "title": "观察成本和延迟",
+                "description": "记录分辨率、时长、供应商、重试和终态，避免不必要地记录敏感提示词。"
+              }
+            ]
+          },
+          {
+            "id": "security",
+            "kicker": "硬性要求",
+            "title": "API 安全与权利检查",
+            "bullets": [
+              "Kie 与 fal 密钥只放服务器环境变量，绝不作为公开客户端变量。",
+              "扣费前验证 URL、MIME 类型、文件大小、数量、时长和输出白名单。",
+              "按账户和内部 end-user ID 限流，而不只按 IP。",
+              "要求用户拥有每一份图片、视频、音频和角色参考的使用权。",
+              "记录商业使用判断所依据的供应商条款版本。",
+              "在供应商安全过滤之外建设自己的审核与申诉流程。"
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "有 Seedance 2.5 API 吗？",
+            "answer": "有。Seedance 2.5 可以通过 Kie、fal 等第三方 API 供应商调用。字节跳动自己的国际版 API 并非在所有国家开放，所以很多开发者使用转售方。"
+          },
+          {
+            "question": "Seedance 2.5 API 每秒多少钱？",
+            "answer": "2026 年 10 月 3 日，Kie 的标价是 480p 每秒 $0.14、720p 每秒 $0.315、1080p 每秒 $0.79（无视频输入）。fal 约为 480p 每秒 $0.22、720p 每秒 $0.47。"
+          },
+          {
+            "question": "是否有字节跳动官方公开 Seedance 2.5 API？",
+            "answer": "官方接入与地区可用性可能不同于第三方。本指南针对当前 Kie 与 fal 路由；把任何路由称为官方前，应单独核对字节跳动或 BytePlus 文档。"
+          },
+          {
+            "question": "应该从 Kie 自动故障转移到 fal 吗？",
+            "answer": "只有在确认任务未被接收时才可安全切换。超时或未知服务错误后不要重提，否则两家都可能生成并扣费。"
+          },
+          {
+            "question": "能从浏览器直接调用这些 API 吗？",
+            "answer": "不要在客户端暴露密钥。浏览器向自有服务器发送经验证请求，服务器创建内部任务后再调用供应商。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "API 价格表中的 Seedance 2.5 条目",
+            "url": "https://kie.ai/pricing"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API 请求文档",
+            "url": "https://docs.kie.ai/market/bytedance/seedance-2-5"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API 表单与参数",
+            "url": "https://kie.ai/seedance-2-5"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 文生视频 API、参数与价格",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 图生视频 API",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/image-to-video"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 参考视频 API",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/reference-to-video"
+          },
+          {
+            "title": "Current text-to-video schema, including 1080p",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video/api",
+            "publisher": "fal"
+          }
+        ],
+        "related": [
+          {
+            "title": "2.5 与 2.0 对比",
+            "description": "决定适配层后应该使用哪个模型。",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "提示词指南",
+            "description": "为接入质检建立结构化测试用例。",
+            "url": "/seedance-2-5-prompt-guide"
+          },
+          {
+            "title": "定价",
+            "description": "查看本站工作区的产品积分模型。",
+            "url": "/pricing"
+          }
+        ],
+        "cta": {
+          "title": "先验证产品工作流",
+          "description": "构建自有接入前，先在浏览器中验证提示词、设置和结果处理。",
+          "button": "打开生成器",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

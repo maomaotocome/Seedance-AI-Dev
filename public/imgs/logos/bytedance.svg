@@ -1,0 +1,10 @@
+<svg width="172" height="44" viewBox="0 0 172 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="172" height="44" rx="12" fill="#0B1220"/>
+  <g transform="translate(14 10)">
+    <rect x="0" y="6" width="10" height="18" rx="5" fill="#2B7FFF"/>
+    <rect x="9" y="0" width="10" height="24" rx="5" fill="#00C2FF"/>
+    <rect x="22" y="10" width="10" height="14" rx="5" fill="#2B7FFF"/>
+    <rect x="31" y="4" width="10" height="20" rx="5" fill="#00C2FF"/>
+  </g>
+  <text x="66" y="27" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="0.2">ByteDance</text>
+</svg>

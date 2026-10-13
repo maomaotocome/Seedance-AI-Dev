@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "title": "Seedance 是什么？字节跳动 AI 视频模型说明",
+    "description": "Seedance 是字节跳动的 AI 视频模型，可把文字、图片和参考素材生成带声音的视频。了解版本、2.5 的能力和使用途径。"
+  },
+  "page": {
+    "title": "Seedance 是什么？",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "label": "说明",
+        "title": "Seedance 是什么？",
+        "description": "Seedance 是字节跳动推出的 AI 视频生成模型系列。输入文字提示词、图片或参考素材，它会生成一段带同步声音的短视频。当前版本 Seedance 2.5 于 2026 年 7 月 31 日发布，单条最长 30 秒。",
+        "verdict": "Seedance 是模型，不是某一个网站。可以通过字节跳动自己的应用（如 Dreamina）、API 供应商，或本站这样的独立工作台使用。",
+        "last_reviewed": "更新于 2026 年 10 月 3 日",
+        "source_note": "发布日期与模型上限来自所列来源。SeedanceAI.dev 是独立服务，与字节跳动、豆包和 Dreamina 没有关联，也未获其认可。",
+        "primary_button": {
+          "title": "在浏览器里试用 Seedance",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "对比 2.5 与 2.0",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [
+          {
+            "label": "开发方",
+            "value": "字节跳动",
+            "description": "TikTok、CapCut 和 Dreamina 背后的公司。"
+          },
+          {
+            "label": "当前版本",
+            "value": "Seedance 2.5",
+            "description": "2026 年 7 月 31 日发布。"
+          },
+          {
+            "label": "单条时长",
+            "value": "最长 30 秒",
+            "description": "声音在同一次生成中产出。"
+          },
+          {
+            "label": "输入",
+            "value": "文字、图片、视频、音频",
+            "description": "2.5 版最多 50 个参考文件。"
+          }
+        ],
+        "sections": [
+          {
+            "id": "what-seedance-does",
+            "kicker": "能力",
+            "title": "Seedance 能做什么？",
+            "paragraphs": [
+              "Seedance 有三种生成方式。文生视频根据文字提示词生成。图生视频把一张静态图作为首帧让它动起来，也可以指定尾帧。参考生视频结合多张图片、视频或音频，让人物、产品或风格保持一致。",
+              "从 1.5 版开始，模型会把声音和画面一起生成，包括带口型同步的对白、音效和环境声。[Seedance 2.5 提示词指南](/seedance-2-5-prompt-guide)说明了如何指挥这些元素。"
+            ]
+          },
+          {
+            "id": "versions",
+            "kicker": "版本历史",
+            "title": "Seedance 版本与发布时间",
+            "paragraphs": [
+              "字节跳动在一年多的时间里发布了四个公开版本。Seedance 2.0 还有更便宜的 Fast 和 Mini 两档。两个现行版本的逐项对比见 [Seedance 2.5 与 2.0 对比](/seedance-2-5-vs-2-0)。"
+            ],
+            "table": {
+              "headers": ["版本", "发布时间", "新增能力"],
+              "rows": [
+                [
+                  "Seedance 1.0",
+                  "2025 年 6 月 11 日",
+                  "由文字和图片生成 1080p 视频，支持多镜头"
+                ],
+                [
+                  "Seedance 1.5 Pro",
+                  "2025 年 12 月",
+                  "音频与视频同时生成，支持多语言口型同步"
+                ],
+                [
+                  "Seedance 2.0",
+                  "2026 年 2 月 12 日",
+                  "单条最长 15 秒，最多 15 个参考文件"
+                ],
+                [
+                  "Seedance 2.5",
+                  "2026 年 7 月 31 日",
+                  "单条最长 30 秒，最多 50 个参考文件"
+                ],
+                ["Seedance 3.0", "尚未核实", "未核实正式公告"]
+              ]
+            }
+          },
+          {
+            "id": "where-to-use",
+            "kicker": "使用途径",
+            "title": "在哪里可以使用 Seedance？",
+            "paragraphs": [
+              "有三条途径。字节跳动的消费级应用 Dreamina 和 CapCut 是官方入口。开发者通过 API 供应商调用，价格和代码见 [Seedance 2.5 API 指南](/seedance-2-5-api)。本站这类独立工作台把这些 API 封装成浏览器生成器，并按积分收费。"
+            ],
+            "bullets": [
+              "官方应用：Dreamina 与 CapCut",
+              "API 供应商：Kie、fal 等",
+              "独立工作台：SeedanceAI.dev 及同类网站"
+            ]
+          },
+          {
+            "id": "cost",
+            "kicker": "价格",
+            "title": "Seedance 免费吗？",
+            "paragraphs": [
+              "Seedance 是付费模型，但多数平台会给新账户一小笔免费额度。付费使用按视频秒数计费，分辨率越高越贵。本站赠送积分的用法见 [Seedance 2.5 免费体验](/seedance-2-5-free)，完整积分表见 [Seedance 2.5 定价](/pricing)。"
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Seedance 是什么？",
+            "answer": "Seedance 是字节跳动的 AI 视频生成模型系列，可以把文字提示词、图片和参考素材生成带同步声音的短视频。"
+          },
+          {
+            "question": "Seedance 是谁开发的？",
+            "answer": "字节跳动，也就是 TikTok、CapCut 和 Dreamina 背后的公司。第一个版本发布于 2025 年 6 月 11 日。"
+          },
+          {
+            "question": "Seedance 的最新版本是什么？",
+            "answer": "Seedance 2.5，发布于 2026 年 7 月 31 日，单条最长 30 秒，最多接受 50 个参考文件。尚未在本次查阅来源中核实 Seedance 3.0 正式发布。"
+          },
+          {
+            "question": "Seedance 和 Dreamina 是一回事吗？",
+            "answer": "不是。Seedance 是模型，Dreamina 是字节跳动旗下运行该模型的应用之一。"
+          },
+          {
+            "question": "SeedanceAI.dev 是 Seedance 官网吗？",
+            "answer": "不是。SeedanceAI.dev 是使用第三方 API 的独立服务，与字节跳动没有关联，也未获其认可。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Wikipedia",
+            "title": "Seedance 版本历史与发布日期",
+            "url": "https://en.wikipedia.org/wiki/Seedance"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 与 2.0 对比",
+            "url": "https://fal.ai/learn/devs/seedance-2-5-vs-seedance-2-0"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API 请求文档",
+            "url": "https://docs.kie.ai/market/bytedance/seedance-2-5"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "API 价格表",
+            "url": "https://kie.ai/pricing"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 与 2.0 对比",
+            "description": "参数、价格与版本选择。",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 免费体验",
+            "description": "赠送积分如何使用。",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 3.0",
+            "description": "关于下一个版本的已知信息。",
+            "url": "/seedance-3-0"
+          }
+        ],
+        "cta": {
+          "title": "用你的提示词看看 Seedance 的效果",
+          "description": "先做一次 480p 短测试，生成前确认积分成本。",
+          "button": "打开生成器",
+          "url": "/ai-video-generator"
+        }
+      }
+    }
+  }
+}

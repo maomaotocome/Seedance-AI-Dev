@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "title": "Grok Imagine Video 1.5 Generator — Text and Images",
+    "description": "Generate Grok Imagine Video 1.5 from text or up to seven images. Choose 480p or 720p, 5–15 seconds and visible product credits.",
+    "keywords": "Grok Imagine Video 1.5, Grok video generator, multi-image video, text to video"
+  },
+  "page": {
+    "title": "Grok Imagine Video 1.5 Generator",
+    "sections": {
+      "hero": {
+        "id": "grok-imagine-video-1-5",
+        "label": "Grok Imagine 1.5 preview",
+        "title": "Grok Imagine Video 1.5 Generator",
+        "description": "Turn text or a small visual set into a fast video experiment. This workspace exposes 480p and 720p with five-, eight-, ten-, or fifteen-second takes and up to seven image inputs.",
+        "verdict": "Choose Grok Imagine 1.5 for fast concept exploration and multi-image direction. Treat the preview model as an iteration tool, then compare the strongest shot with a higher-resolution workflow if needed.",
+        "last_reviewed": "Reviewed August 22, 2026",
+        "source_note": "Kie labels this model as a preview. This site currently limits output controls to 480p and 720p while the upstream API also documents 1080p.",
+        "primary_button": {
+          "title": "Create with Grok Imagine 1.5",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "Compare current models",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "Workspace modes",
+            "value": "Text · Multi-image",
+            "description": "One prompt with up to seven visual inputs."
+          },
+          {
+            "label": "Product output",
+            "value": "480p · 720p",
+            "description": "1080p is not exposed in this release."
+          },
+          {
+            "label": "Duration",
+            "value": "5 · 8 · 10 · 15 seconds",
+            "description": "Discrete choices inside the 1–15 second API range."
+          },
+          {
+            "label": "Status",
+            "value": "Preview",
+            "description": "Model behavior and availability may change."
+          }
+        ],
+        "show_generator": true,
+        "default_model": "grok-imagine-video-1.5",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "Selection rule",
+            "title": "Where Grok Imagine Video 1.5 fits best",
+            "paragraphs": [
+              "Grok Imagine Video 1.5 is useful early in the creative process: social concepts, storyboard motion, mood tests and quick visual combinations where iteration speed matters more than maximum resolution.",
+              "Multiple images can supply a compact visual vocabulary. Keep the set coherent—subject, environment and one material or style reference—rather than uploading seven unrelated pictures."
+            ],
+            "bullets": [
+              "Use text-only mode to explore a shot before preparing references.",
+              "Use two to four related images for clearer visual direction.",
+              "Start at 480p for disposable motion tests.",
+              "Re-test a keeper in another model when final resolution or sound controls matter."
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "Product versus upstream",
+            "title": "A deliberately focused preview surface",
+            "table": {
+              "headers": ["Control", "Available here", "Upstream note"],
+              "rows": [
+                [
+                  "Resolution",
+                  "480p or 720p",
+                  "Kie also documents 1080p; it is not priced or exposed here yet."
+                ],
+                [
+                  "Duration",
+                  "5, 8, 10 or 15 seconds",
+                  "API range is 1–15 seconds."
+                ],
+                [
+                  "Images",
+                  "Up to seven",
+                  "At 1080p upstream allows only one image."
+                ],
+                [
+                  "Aspect",
+                  "Five text-led choices",
+                  "Image-led requests derive composition from inputs."
+                ],
+                [
+                  "Audio",
+                  "No separate control",
+                  "The current product adapter sends no audio option."
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "Prompt patterns",
+            "title": "Use references as roles, not a collage",
+            "examples": [
+              {
+                "label": "Concept motion",
+                "text": "A translucent orange raincoat hangs in a concrete gallery. A controlled gust lifts the hem as the camera makes a slow half-circle; sharp material reflections, soft daylight, stable coat construction, quiet atmospheric motion."
+              },
+              {
+                "label": "Multi-image direction",
+                "text": "Use the images for the same cyclist, the night market environment and the wet chrome material language. Track beside the cyclist through one turn; keep face, jacket and bicycle consistent, realistic crowd parallax, no logos or text."
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "Model choice",
+            "title": "When the preview is not the final tool",
+            "table": {
+              "headers": ["Requirement", "Consider", "Why"],
+              "rows": [
+                [
+                  "1080p plus sound toggle",
+                  "Kling 3.0",
+                  "Both are exposed together in its adapter."
+                ],
+                [
+                  "2K output option",
+                  "MiniMax H3",
+                  "The H3 workspace exposes 2K."
+                ],
+                [
+                  "Prompt enhancement",
+                  "Wan 2.7",
+                  "Its adapter exposes rewrite and negative prompt controls."
+                ],
+                [
+                  "Dedicated reference workflow",
+                  "Seedance 2.5",
+                  "It separates reference-led generation from first-frame mode."
+                ]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Grok Imagine Video 1.5 actually connected here?",
+            "answer": "Yes. Grok Imagine Video 1.5 is preselected in the generator above. It is a preview model, and you need an account with enough credits."
+          },
+          {
+            "question": "Why is 1080p missing?",
+            "answer": "Kie documents 1080p, but the current product exposes only 480p and 720p until its site credit pricing and end-to-end behavior are verified."
+          },
+          {
+            "question": "Can I use seven images?",
+            "answer": "The uploader and API adapter allow up to seven public image URLs at the current product resolutions. A smaller, coherent set is usually easier to direct."
+          },
+          {
+            "question": "What does preview mean?",
+            "answer": "The model name, behavior, pricing or availability may change more quickly than a stable release. Check the selected model and current controls before important work."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Grok Imagine Video 1.5 preview API",
+            "url": "https://docs.kie.ai/market/grok-imagine/1-5-preview"
+          },
+          {
+            "publisher": "xAI",
+            "title": "Grok Imagine Video 1.5 announcement",
+            "url": "https://x.ai/news/grok-imagine-video-1-5"
+          }
+        ],
+        "related": [
+          {
+            "title": "Kling 3.0",
+            "description": "Move from preview iteration to optional sound and 1080p.",
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "title": "Wan 2.7",
+            "description": "Use prompt enhancement and flexible ratios.",
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "Compare against a 768P/2K workflow.",
+            "url": "/minimax-h3-video-generator"
+          }
+        ],
+        "cta": {
+          "title": "Make the first motion test disposable",
+          "description": "Use 480p and a short take to find the idea before spending on the keeper.",
+          "button": "Open Grok Imagine 1.5",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

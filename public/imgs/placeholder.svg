@@ -1,0 +1,4 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#2a2a2a"/>
+  <text x="400" y="225" font-family="Arial" font-size="32" fill="#888" text-anchor="middle">Video Placeholder</text>
+</svg>

@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "title": "Seedance 3.0: Release Date Status & What We Know",
+    "description": "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false."
+  },
+  "page": {
+    "title": "Seedance 3.0",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "label": "Release status",
+        "title": "Seedance 3.0: release date and what we know",
+        "description": "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false.",
+        "verdict": "This workspace currently offers Seedance 2.5 and 2.0. Before paying for a service labeled 3.0, ask for the provider, exact model ID and official supporting documentation.",
+        "last_reviewed": "Reviewed October 12, 2026",
+        "source_note": "This page reports only what ByteDance and the linked sources have published. SeedanceAI.dev is an independent service and has no inside information about unreleased models.",
+        "primary_button": {
+          "title": "Use Seedance 2.5 now",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "What is Seedance?",
+          "url": "/what-is-seedance"
+        },
+        "quick_facts": [
+          {
+            "label": "Status",
+            "value": "Not verified",
+            "description": "No confirmed announcement in the official sources reviewed."
+          },
+          {
+            "label": "Release date",
+            "value": "Unknown",
+            "description": "No date verified in the sources reviewed."
+          },
+          {
+            "label": "Current version",
+            "value": "Seedance 2.5",
+            "description": "Released July 31, 2026."
+          },
+          {
+            "label": "Available here",
+            "value": "No",
+            "description": "This workspace offers Seedance 2.5 and 2.0."
+          }
+        ],
+        "sections": [
+          {
+            "id": "release-date",
+            "kicker": "Status",
+            "title": "When will Seedance 3.0 be released?",
+            "paragraphs": [
+              "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false."
+            ]
+          },
+          {
+            "id": "timeline",
+            "kicker": "Release cadence",
+            "title": "Seedance release timeline so far",
+            "paragraphs": [
+              "Past releases give the only factual basis for guessing. The gaps between major versions have been about eight months from 1.0 to 2.0 and under six months from 2.0 to 2.5. That is a pattern, not a schedule."
+            ],
+            "table": {
+              "headers": ["Version", "Released", "What it added"],
+              "rows": [
+                [
+                  "Seedance 1.0",
+                  "June 11, 2025",
+                  "1080p video from text and image prompts, including multi-shot clips"
+                ],
+                [
+                  "Seedance 1.5 Pro",
+                  "December 2025",
+                  "Audio and video generated together, with multilingual lip-sync"
+                ],
+                [
+                  "Seedance 2.0",
+                  "February 12, 2026",
+                  "Clips up to 15 seconds and up to 15 reference files"
+                ],
+                [
+                  "Seedance 2.5",
+                  "July 31, 2026",
+                  "Clips up to 30 seconds and up to 50 reference files"
+                ],
+                ["Seedance 3.0", "Not verified", "No verified official release"]
+              ]
+            }
+          },
+          {
+            "id": "can-i-use-it",
+            "kicker": "Availability",
+            "title": "Can I use Seedance 3.0 today?",
+            "paragraphs": [
+              "This workspace currently offers Seedance 2.5 and 2.0. Before paying for a service labeled 3.0, ask for the provider, exact model ID and official supporting documentation."
+            ],
+            "callout": {
+              "title": "How to check a claim",
+              "text": "Look for an announcement from ByteDance, Volcano Engine or Dreamina, and for the model appearing in an API provider's model list. Until both exist, treat the claim as unverified.",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "use-now",
+            "kicker": "What to use now",
+            "title": "What to use while you wait",
+            "paragraphs": [
+              "Seedance 2.5 is the current model: clips up to 30 seconds, up to 50 reference files and sound generated with the picture. If cost matters more than length, Seedance 2.0 and its Fast and Mini tiers are cheaper. [Seedance 2.5 vs 2.0](/seedance-2-5-vs-2-0) compares them, and [What is Seedance?](/what-is-seedance) covers the model family."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Seedance 3.0 out?",
+            "answer": "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false."
+          },
+          {
+            "question": "What is the Seedance 3.0 release date?",
+            "answer": "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false."
+          },
+          {
+            "question": "What features will Seedance 3.0 have?",
+            "answer": "As of October 12, 2026, we have not verified a formal Seedance 3.0 announcement or a usable 3.0 model ID in the official sources reviewed. This is a verification status, not proof that every third-party claim is false."
+          },
+          {
+            "question": "Will SeedanceAI.dev offer Seedance 3.0?",
+            "answer": "We would evaluate a documented provider route and test its output and billing before adding it. No release date or integration commitment is promised."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Official model and research updates",
+            "url": "https://seed.bytedance.com/en/",
+            "publisher": "ByteDance Seed"
+          },
+          {
+            "title": "Official Seedance 2.5 announcement",
+            "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+            "publisher": "ByteDance Seed"
+          }
+        ],
+        "related": [
+          {
+            "title": "What is Seedance?",
+            "description": "The model family, versions and access routes.",
+            "url": "/what-is-seedance"
+          },
+          {
+            "title": "Seedance 2.5 vs 2.0",
+            "description": "Specs and price of the two current versions.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 pricing",
+            "description": "Credits per second in this workspace.",
+            "url": "/pricing"
+          }
+        ],
+        "cta": {
+          "title": "Generate with the current model",
+          "description": "Seedance 2.5 is available now. Check the credit cost before you submit.",
+          "button": "Open the generator",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

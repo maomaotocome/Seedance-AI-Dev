@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 Pricing: Credits, Plans & Cost per Video",
+    "description": "Seedance 2.5 pricing on SeedanceAI.dev: 6 credits per second at 480p and 12 at 720p. Subscriptions from $19.9 a month, or try first with a $9.9 credit pack."
+  },
+  "page": {
+    "title": "Seedance 2.5 Pricing",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "Seedance 2.5 pricing: credits, plans and cost per video",
+        "description": "Seedance 2.5 costs 6 credits per second at 480p and 12 at 720p, so a five-second clip is 30 credits or 60 credits. Subscriptions give the lowest price per credit; one-time credit packs from $9.9 let you try first, and a pack bought in the last 24 hours counts toward your first subscription payment. One balance covers Seedance 2.5, 2.0 Standard, 2.0 Fast and 2.0 Mini, plus Kling 3.0, Wan 2.7, MiniMax H3 and Grok Imagine Video 1.5. No plan is unlimited.",
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "Monthly"
+          },
+          {
+            "name": "yearly",
+            "title": "Yearly · 2 months free"
+          },
+          {
+            "name": "packs",
+            "title": "Try with a credit pack"
+          }
+        ],
+        "items": [
+          {
+            "title": "Plus",
+            "description": "For creators who generate every week",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "450 credits every month",
+                  "Credits valid for 30 days, refreshed monthly",
+                  "About 15 five-second Seedance 2.5 clips at 480p each month"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 1990,
+            "currency": "USD",
+            "price": "$19.9",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "$19.9 billed monthly, cancel anytime",
+            "button": {
+              "title": "Subscribe",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "plus_monthly",
+            "product_name": "Seedance Ai Dev Plus Plan (Monthly)",
+            "credits": 450,
+            "valid_days": 30,
+            "plan_name": "Plus"
+          },
+          {
+            "title": "Pro",
+            "description": "For regular production across models",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "1,250 credits every month",
+                  "Credits valid for 30 days, refreshed monthly",
+                  "About 41 five-second Seedance 2.5 clips at 480p each month"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 4990,
+            "currency": "USD",
+            "price": "$49.9",
+            "unit": "USD/mo",
+            "is_featured": true,
+            "tip": "$49.9 billed monthly, cancel anytime",
+            "button": {
+              "title": "Subscribe",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pro_monthly",
+            "product_name": "Seedance Ai Dev Pro Plan (Monthly)",
+            "credits": 1250,
+            "valid_days": 30,
+            "plan_name": "Pro",
+            "label": "Popular"
+          },
+          {
+            "title": "Max",
+            "description": "For teams and heavy monthly output",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "2,600 credits every month",
+                  "Credits valid for 30 days, refreshed monthly",
+                  "About 86 five-second Seedance 2.5 clips at 480p each month"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 9990,
+            "currency": "USD",
+            "price": "$99.9",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "$99.9 billed monthly, cancel anytime",
+            "button": {
+              "title": "Subscribe",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "max_monthly",
+            "product_name": "Seedance Ai Dev Max Plan (Monthly)",
+            "credits": 2600,
+            "valid_days": 30,
+            "plan_name": "Max"
+          },
+          {
+            "title": "Plus",
+            "description": "For creators who generate every week",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "5,400 credits for the year, delivered upfront",
+                  "Credits valid for 365 days",
+                  "About 180 five-second Seedance 2.5 clips at 480p"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 19900,
+            "currency": "USD",
+            "price": "$16.58",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "$199 billed yearly: 12 months of credits for the price of 10",
+            "button": {
+              "title": "Subscribe yearly",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "plus_yearly",
+            "product_name": "Seedance Ai Dev Plus Plan (Yearly)",
+            "credits": 5400,
+            "valid_days": 365,
+            "plan_name": "Plus",
+            "original_price": "$19.9"
+          },
+          {
+            "title": "Pro",
+            "description": "For regular production across models",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "15,000 credits for the year, delivered upfront",
+                  "Credits valid for 365 days",
+                  "About 500 five-second Seedance 2.5 clips at 480p"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 49900,
+            "currency": "USD",
+            "price": "$41.58",
+            "unit": "USD/mo",
+            "is_featured": true,
+            "tip": "$499 billed yearly: 12 months of credits for the price of 10",
+            "button": {
+              "title": "Subscribe yearly",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pro_yearly",
+            "product_name": "Seedance Ai Dev Pro Plan (Yearly)",
+            "credits": 15000,
+            "valid_days": 365,
+            "plan_name": "Pro",
+            "original_price": "$49.9",
+            "label": "Popular"
+          },
+          {
+            "title": "Max",
+            "description": "For teams and heavy monthly output",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "31,200 credits for the year, delivered upfront",
+                  "Credits valid for 365 days",
+                  "About 1040 five-second Seedance 2.5 clips at 480p"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 99900,
+            "currency": "USD",
+            "price": "$83.25",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "$999 billed yearly: 12 months of credits for the price of 10",
+            "button": {
+              "title": "Subscribe yearly",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "max_yearly",
+            "product_name": "Seedance Ai Dev Max Plan (Yearly)",
+            "credits": 31200,
+            "valid_days": 365,
+            "plan_name": "Max",
+            "original_price": "$99.9"
+          },
+          {
+            "title": "Starter",
+            "description": "Try Seedance 2.5 on five short shots",
+            "group": "packs",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "150 credits, delivered once",
+                  "Valid for 365 days",
+                  "About 5 five-second Seedance 2.5 clips at 480p"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "one-time",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "USD",
+            "is_featured": false,
+            "tip": "$9.9 one-time. Counts toward a subscription's first payment for 24 hours",
+            "button": {
+              "title": "Buy credit pack",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pack_starter",
+            "product_name": "Seedance Ai Dev Starter Credit Pack",
+            "credits": 150,
+            "valid_days": 365,
+            "plan_name": "Starter"
+          },
+          {
+            "title": "Creator",
+            "description": "Test a small project before subscribing",
+            "group": "packs",
+            "feature": [
+              {
+                "title": "Credits",
+                "list": [
+                  "600 credits, delivered once",
+                  "Valid for 365 days",
+                  "About 20 five-second Seedance 2.5 clips at 480p"
+                ]
+              },
+              {
+                "title": "Included",
+                "list": [
+                  "Four Seedance tiers plus Kling, Wan, MiniMax and Grok",
+                  "Text, image and supported reference workflows",
+                  "Exact cost before generation",
+                  "Confirmed failed tasks refunded"
+                ]
+              }
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "USD",
+            "is_featured": false,
+            "tip": "$29.9 one-time. Counts toward a subscription's first payment for 24 hours",
+            "button": {
+              "title": "Buy credit pack",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pack_creator",
+            "product_name": "Seedance Ai Dev Creator Credit Pack",
+            "credits": 600,
+            "valid_days": 365,
+            "plan_name": "Creator"
+          }
+        ]
+      },
+      "rates": {
+        "kicker": "Credit rates",
+        "title": "How many credits does Seedance 2.5 use?",
+        "description": "Seedance credits are charged per second of output and depend only on the model and resolution. The other models have their own rates, which the generator shows before you submit.",
+        "headers": [
+          "Model",
+          "480p per second",
+          "720p per second",
+          "5-second clip at 480p",
+          "5-second clip at 720p"
+        ],
+        "unit": "credits"
+      },
+      "faq": {
+        "title": "Seedance 2.5 pricing questions",
+        "items": [
+          {
+            "question": "How much does Seedance 2.5 cost per second?",
+            "answer": "On SeedanceAI.dev, Seedance 2.5 costs 6 credits per second at 480p and 12 credits per second at 720p."
+          },
+          {
+            "question": "How many credits does a Seedance 2.5 video use?",
+            "answer": "A 5-second clip uses 30 credits at 480p or 60 at 720p. A 10-second clip uses 60 or 120, and a 30-second clip uses 180 or 360."
+          },
+          {
+            "question": "How many videos does each plan cover?",
+            "answer": "At 480p a 5-second Seedance 2.5 clip uses 30 credits. Plus gives 450 credits a month, about 15 clips; Pro gives 1,250, about 41; Max gives 2,600, about 86. The Starter pack covers 5 clips and the Creator pack 20."
+          },
+          {
+            "question": "Should I buy a credit pack or subscribe?",
+            "answer": "Packs are for trying the models without a commitment. Subscriptions cost less per credit: Plus monthly is about $0.044 a credit against $0.066 for the Starter pack, and yearly plans give 12 months of credits for the price of 10."
+          },
+          {
+            "question": "Does a credit pack count toward a subscription?",
+            "answer": "Yes. If you subscribe within 24 hours of buying a credit pack, the pack price is taken off your first subscription payment and you keep the pack credits. Within the same 24 hours you can also move from Starter to Creator and pay only the difference."
+          },
+          {
+            "question": "Do credits expire?",
+            "answer": "Pack credits and yearly-plan credits are valid for 365 days. Monthly-plan credits are valid for 30 days and refresh with each payment."
+          },
+          {
+            "question": "Is there an unlimited Seedance 2.5 plan here?",
+            "answer": "No. Every plan here is credit based. Our unlimited plan comparison lists the platforms that advertise unlimited Seedance 2.5 and the limits attached to each offer."
+          },
+          {
+            "question": "What happens to my credits if a generation fails?",
+            "answer": "Credits are returned automatically once the provider confirms that the task failed."
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Current Plan",
+    "processing": "Processing"
+  }
+}

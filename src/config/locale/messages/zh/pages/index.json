@@ -1,0 +1,385 @@
+{
+  "metadata": {
+    "title": "Seedance AI 视频生成器 — 2.5、2.0 与更多模型",
+    "description": "在独立创作工作区使用 Seedance 2.5 与 2.0，将文字或图片转成视频。生成前查看提示词、可用设置和积分费用，参考真实样片。"
+  },
+  "page": {
+    "title": "Seedance AI 视频生成器",
+    "show_sections": [
+      "hero",
+      "sample-reel",
+      "proof",
+      "version-paths",
+      "use-cases",
+      "prompt-system",
+      "model-roster",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "create",
+        "block": "hero",
+        "variant": "home",
+        "show_generator": true,
+        "status": "独立 AI 视频创作工作区",
+        "title": "Seedance AI 视频生成器：Seedance 2.5 与 2.0",
+        "highlight_text": "AI 视频生成器",
+        "description": "把提示词或图片转成 Seedance 视频。选择模型、构思镜头，生成前看清积分费用。",
+        "buttons": [
+          {
+            "title": "创作视频",
+            "url": "#seedance-generator"
+          },
+          {
+            "title": "查看样片",
+            "url": "#sample-videos"
+          }
+        ],
+        "facts": [
+          {
+            "title": "6 类模型"
+          },
+          {
+            "title": "按模型显示可用设置"
+          },
+          {
+            "title": "生成前明确积分"
+          }
+        ],
+        "media": {
+          "src": "/media/samples/seedance-i2v-25.webp",
+          "poster": "/media/samples/seedance-i2v-25.webp",
+          "video": "/media/samples/seedance-i2v-25.mp4",
+          "alt": "蓝调时刻的屋顶上，一位虚构成年表演者转身，钴蓝色外套被风扬起",
+          "frame_label": "Seedance 2.5 · 真实图片生成视频",
+          "label": "图生视频样片",
+          "caption": "一张静态图作为首帧。转身、外套的摆动和风都由 Seedance 2.5 生成。",
+          "prompt": "Keep the subject, outfit and background from the first frame. She turns into the wind and the cobalt coat lifts behind her. Hair moves in the breeze. Locked camera, no new objects.",
+          "prompt_label": "镜头提示词",
+          "model": "Seedance 2.5",
+          "model_label": "模型",
+          "output": "480p · 5 秒 · 30 积分",
+          "output_label": "输出设置",
+          "play_label": "播放样片",
+          "pause_label": "暂停样片",
+          "error_label": "动态预览暂不可用",
+          "gallery": [
+            {
+              "src": "/media/samples/seedance-dialogue-25.webp",
+              "alt": "车站对白的 Seedance 2.5 真实输出画面",
+              "label": "Seedance 2.5 · 8s",
+              "title": "对白与雨声"
+            },
+            {
+              "src": "/media/samples/seedance-camera-25.webp",
+              "alt": "山脊后拉镜头的 Seedance 2.5 真实输出画面",
+              "label": "Seedance 2.5 · 8s",
+              "title": "连续运镜"
+            }
+          ]
+        },
+        "workspace_label": "创作工作台",
+        "workspace_title": "开始创作 Seedance AI 视频",
+        "workspace_note": "选择模型、组织提示词，并在登录前看到准确产品积分成本。",
+        "preview": {
+          "src": "/media/samples/seedance-i2v-25.webp",
+          "video": "/media/samples/seedance-i2v-25.mp4",
+          "alt": "屋顶转身：从首帧图片生成动作",
+          "label": "真实样片 · Seedance 2.5 · 5 秒 · 480p",
+          "caption": "查看原始输出，再用下方样片设置开始自己的测试。"
+        },
+        "disclaimer": "独立服务，与字节跳动或 Dreamina 无关联。",
+        "cost_link_label": "积分与价格"
+      },
+      "proof": {
+        "id": "product-proof",
+        "block": "features",
+        "tone": "paper-2",
+        "layout": "metrics",
+        "title": "Seedance AI 设置与视频费用",
+        "description": "Seedance 2.5 的 5 秒视频在 480p 下需 30 积分，720p 下需 60 积分。工作区随设置更新费用，价格页提供套餐、预计条数和有效期。",
+        "items": [
+          {
+            "number": "01",
+            "icon": "Monitor",
+            "title": "8 个可选模型",
+            "description": "六条模型产品线的文字、图片与参考工作流。每个模式只展示该模型接受的设置。"
+          },
+          {
+            "number": "02",
+            "icon": "Clock3",
+            "title": "按模型开放 480p 到 2K",
+            "description": "分辨率会随模型变化；工作台不会把不同上游宣传合并成一项通用能力。"
+          },
+          {
+            "number": "03",
+            "icon": "Images",
+            "title": "只展示兼容控制",
+            "description": "切换模型时，工作流、画幅、时长、图片数量与音频选项会自动匹配。"
+          },
+          {
+            "number": "04",
+            "icon": "ReceiptText",
+            "title": "生成前锁定积分",
+            "description": "产品积分由分辨率与时长决定。供应商确认失败的任务会自动退还积分。"
+          }
+        ],
+        "button": {
+          "title": "计算你的视频预算",
+          "url": "/pricing#video-budget"
+        }
+      },
+      "sample-reel": {
+        "id": "sample-videos",
+        "block": "sample-reel",
+        "label": "真实输出 · 生成于 2026 年 10 月 3 日",
+        "title": "Seedance 2.5 视频样片与提示词",
+        "description": "每段均为 480p 的 Seedance 2.5 原始输出，保留生成声音。可复制提示词或带入完整设置开始测试；重复生成的结果可能不同。",
+        "provenance": "由 SeedanceAI.dev 通过与生成器相同的供应商路线生成。没有放大、变速或二次剪辑；点击播放可听到生成的声音。",
+        "button": {
+          "title": "了解这些提示词的写法",
+          "url": "/seedance-2-5-prompt-guide"
+        }
+      },
+      "model-roster": {
+        "id": "current-models",
+        "block": "model-roster",
+        "title": "工作区中的其他 AI 视频模型",
+        "description": "生成器里可随时切换模型。每个指南列出该模型的设置与积分成本。",
+        "items": [
+          {
+            "status": "热门",
+            "title": "Kling 3.0",
+            "description": "单镜头文字或首尾帧生成，支持 720p/1080p 与可选声音。",
+            "points": ["5–15 秒", "声音开关", "3 种画幅"],
+            "url": "/kling-3-0-ai-video-generator"
+          },
+          {
+            "status": "新上线",
+            "title": "Wan 2.7",
+            "description": "灵活文字画幅或首尾帧动作，支持提示词增强与负面指令。",
+            "points": ["720p/1080p", "5 种文字画幅", "提示词增强"],
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "status": "新上线",
+            "title": "MiniMax H3",
+            "description": "文字或帧驱动生成，支持 768P/2K 与六种文生视频画幅。",
+            "points": ["768P/2K", "6–15 秒", "首尾帧"],
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "status": "预览版",
+            "title": "Grok Imagine Video 1.5",
+            "description": "快速文字或多图实验，本站聚焦开放 480p/720p 控制。",
+            "points": ["最多 7 张图片", "5–15 秒", "低成本测试"],
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "layout": "compact"
+      },
+      "version-paths": {
+        "id": "versions",
+        "block": "version-paths",
+        "title": "Seedance 2.5 与 Seedance 2.0 怎么选",
+        "description": "本工作区的 Seedance 2.5 提供更长时长选项；2.0 Standard、Fast 和 Mini 的短片费用各不相同。用同一提示词和设置比较，再选择模型。",
+        "items": [
+          {
+            "version": "2.5",
+            "status": "默认",
+            "title": "Seedance 2.5",
+            "description": "适合新提示词、更长单镜头结构、同步音频和参考驱动的创作。",
+            "points": [
+              "支持文字、首帧和视觉参考工作流",
+              "本站提供 5–30 秒控制",
+              "当前上线 480p 与 720p 输出"
+            ],
+            "button": {
+              "title": "使用 2.5 创作",
+              "url": "#seedance-generator"
+            },
+            "secondary": {
+              "title": "阅读免费体验指南",
+              "url": "/seedance-2-5-free"
+            }
+          },
+          {
+            "version": "2.0",
+            "status": "可用",
+            "title": "Seedance 2.0",
+            "description": "适合已有提示词配方、同条件对比测试，以及明确搜索 2.0 工作流的访客。",
+            "points": [
+              "5–15 秒的公开设置",
+              "Standard、Fast 与 Mini 三种积分费率",
+              "同一工作区内切换"
+            ],
+            "button": {
+              "title": "打开 2.0 指南",
+              "url": "/seedance-2-0"
+            },
+            "secondary": {
+              "title": "比较两个版本",
+              "url": "/seedance-2-5-vs-2-0"
+            }
+          }
+        ],
+        "scene_title": "从掌中指南针，到日出山脊。",
+        "scene_note": "同一提示词 · 8 秒 · 480p · 两个原始输出",
+        "prompt_label": "查看这组对照的原始提示词"
+      },
+      "prompt-system": {
+        "id": "prompt-system",
+        "block": "prompt-system",
+        "title": "如何写 Seedance 视频提示词",
+        "description": "写清主体、变化、镜头和时间安排。仅在所选模型支持时加入对白或声音；先做短测试，再修改能从结果中观察到的问题。",
+        "checkpoints_label": "提示词检查点",
+        "spine_label": "一个有用的镜头需要清晰骨架",
+        "spine_description": "先交代主体，再说明动作、时间与声音，让模型能够准确理解导演意图。",
+        "spine_note": "确保每个节拍都能被看见。如果动作无法观察，就很难评估或修改。",
+        "timeline_label": "镜头方向",
+        "timeline_duration": "00:00–00:08",
+        "prompt": [
+          {
+            "time": "00:00–00:03",
+            "title": "建立场景",
+            "description": "一只拉丝金属音箱放在潮湿的黑色石面上，置于安静摄影棚。"
+          },
+          {
+            "time": "00:03–00:06",
+            "title": "推动动作",
+            "description": "镜头缓慢推进，暖色实景灯扫过产品金属边缘。"
+          },
+          {
+            "time": "00:06–00:08",
+            "title": "完成镜头",
+            "description": "一只手进入画面并停在旋钮旁，保留克制的室内环境声。"
+          }
+        ],
+        "tips": [
+          "参考图片已经定义可见内容，提示词重点描述变化。",
+          "开启音频时，需要说出的对白请放在双引号中。",
+          "先用 480p 与短时长测试动作，再制作最终版本。"
+        ],
+        "button": {
+          "title": "查看完整提示词指南",
+          "url": "/seedance-2-5-prompt-guide"
+        }
+      },
+      "use-cases": {
+        "id": "use-cases",
+        "block": "shot-workflow",
+        "tone": "paper-2",
+        "layout": "staggered",
+        "title": "如何使用 Seedance AI",
+        "description": "一段提示词，一条 5 秒动作镜头。从这个真实示例开始，做出你自己的版本。",
+        "items": [
+          {
+            "number": "01",
+            "icon": "Megaphone",
+            "title": "选择模型和流程",
+            "description": "这个示例使用 Seedance 2.5 文生视频，先从 480p、5 秒开始。"
+          },
+          {
+            "number": "02",
+            "icon": "Clapperboard",
+            "title": "写清一个镜头",
+            "description": "写清人物、跳跃动作、侧面跟拍和水花时序。复制这段指令，再换成你的主体或场景。"
+          },
+          {
+            "number": "03",
+            "icon": "BookOpen",
+            "title": "确认积分费用",
+            "description": "这组设置需 30 积分。登录并确认余额足够，再提交生成。"
+          },
+          {
+            "number": "04",
+            "icon": "Code2",
+            "title": "检查结果并复用",
+            "description": "播放成片，观察跟拍、跳跃和水花，再下载输出或复用设置继续调整。"
+          }
+        ],
+        "scene_title": "动漫动作：跃过水洼",
+        "prompt_label": "这个镜头的原始提示词",
+        "provenance": "本站的 Seedance 2.5 原始输出。播放后检查动作与声音，重复生成的结果可能不同。",
+        "guide_label": "学习如何构思下一条镜头"
+      },
+      "faq": {
+        "id": "faq",
+        "block": "faq",
+        "title": "Seedance AI 常见问题",
+        "description": "所有回答都以当前产品可用设置与实际行为为依据。",
+        "items": [
+          {
+            "title": "本站的 Seedance AI 是什么？",
+            "description": "SeedanceAI.dev 是通过第三方 API 提供访问的独立视频工作区，与字节跳动、豆包和 Dreamina 没有隶属或官方背书关系。"
+          },
+          {
+            "title": "本站是否提供 Seedance 2.5？",
+            "description": "工作区可选择 Seedance 2.5。提交前查看当前设置和积分费用，生成需要登录且余额足够。"
+          },
+          {
+            "title": "本站的 Seedance 2.5 免费吗？",
+            "description": "符合资格且已验证邮箱的新账号可获 5 积分，够生成一次 5 秒 480p 的 Seedance 2.0 Mini；临时邮箱及同一网络 24 小时内重复账号受限。Seedance 2.5 同配置需 30 积分，请查看免费指南与积分套餐。",
+            "button": {
+              "title": "免费访问与资格",
+              "url": "/seedance-2-5-free"
+            }
+          },
+          {
+            "title": "Seedance 2.5 一条视频多少钱？",
+            "description": "5 秒视频在 480p 下需 30 积分，720p 下需 60 积分。当前积分包从 $9.9 起；单条美元折算取决于套餐、设置和额度使用情况。",
+            "button": {
+              "title": "计算视频预算",
+              "url": "/pricing#video-budget"
+            }
+          },
+          {
+            "title": "可选择哪些时长和分辨率？",
+            "description": "本站 Seedance 2.5 当前可选 5、8、10、15、30 秒，输出 480p 或 720p；2.0 可选 5、8、10、15 秒。这里描述本站选项，不代表所有提供者的上限。"
+          },
+          {
+            "title": "可以上传哪些参考素材？",
+            "description": "本站 Seedance 图生视频模式最多两张图片，图片参考模式最多六张；当前浏览器工作区不提供视频或音频参考上传。"
+          },
+          {
+            "title": "本站提供不限量 Seedance 2.5 吗？",
+            "description": "本站按任务消耗积分。不限量比较页解释其它提供者的时间窗口、队列和套餐条件，不代表本站出售不限量方案。",
+            "button": {
+              "title": "比较不限量方案",
+              "url": "/unlimited-seedance-2-5"
+            }
+          },
+          {
+            "title": "生成失败怎么办？",
+            "description": "提供者确认失败的任务按积分返还流程处理。仍在排队或处理的任务不视为失败，请保留任务记录并避免运行中重复提交。"
+          },
+          {
+            "title": "视频可以商用吗？",
+            "description": "商用取决于套餐、当前提供者和模型条款，以及输入与输出内容的权利。模型访问不自动获得第三方角色、品牌、音乐或肖像授权。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "next-shot",
+        "block": "cta",
+        "title": "创作下一条 Seedance 视频",
+        "description": "先用 480p 和 5 秒验证提示词，再生成更长的 720p 视频。",
+        "buttons": [
+          {
+            "title": "打开生成器",
+            "url": "#seedance-generator"
+          },
+          {
+            "title": "查看积分与价格",
+            "url": "/pricing"
+          }
+        ],
+        "image": {
+          "src": "/media/samples/seedance-anime-25.webp",
+          "alt": "本站 Seedance 2.5 动漫水洼跳跃样片"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 定价：积分、套餐与单条视频成本",
+    "description": "SeedanceAI.dev 的 Seedance 2.5 定价：480p 每秒 6 积分，720p 每秒 12 积分。订阅每月 $19.9 起，也可以先用 $9.9 积分包试用。"
+  },
+  "page": {
+    "title": "Seedance 2.5 定价",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "Seedance 2.5 定价：积分、套餐与单条视频成本",
+        "description": "Seedance 2.5 在 480p 下每秒 6 积分、720p 下每秒 12 积分，5 秒视频分别为 30 积分和 60 积分。订阅的每积分价格最低；$9.9 起的一次性积分包适合先试用，24 小时内购买的积分包可以抵扣订阅首期。一个余额可用于 Seedance 2.5、2.0 标准版、2.0 Fast 与 2.0 Mini，以及 Kling 3.0、Wan 2.7、MiniMax H3 和 Grok Imagine Video 1.5。本站没有无限量方案。",
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "月付"
+          },
+          {
+            "name": "yearly",
+            "title": "年付 · 送 2 个月"
+          },
+          {
+            "name": "packs",
+            "title": "先用积分包试用"
+          }
+        ],
+        "items": [
+          {
+            "title": "Plus",
+            "description": "适合每周都会生成的创作者",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "每月 450 积分",
+                  "积分有效期 30 天，每月刷新",
+                  "每月约 15 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 1990,
+            "currency": "USD",
+            "price": "$19.9",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "每月扣款 $19.9，可随时取消",
+            "button": {
+              "title": "订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "plus_monthly",
+            "product_name": "Seedance Ai Dev Plus Plan (Monthly)",
+            "credits": 450,
+            "valid_days": 30,
+            "plan_name": "Plus"
+          },
+          {
+            "title": "Pro",
+            "description": "适合跨模型的常规制作",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "每月 1,250 积分",
+                  "积分有效期 30 天，每月刷新",
+                  "每月约 41 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 4990,
+            "currency": "USD",
+            "price": "$49.9",
+            "unit": "USD/mo",
+            "is_featured": true,
+            "tip": "每月扣款 $49.9，可随时取消",
+            "button": {
+              "title": "订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pro_monthly",
+            "product_name": "Seedance Ai Dev Pro Plan (Monthly)",
+            "credits": 1250,
+            "valid_days": 30,
+            "plan_name": "Pro",
+            "label": "热门"
+          },
+          {
+            "title": "Max",
+            "description": "适合团队和高产出的月度需求",
+            "group": "monthly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "每月 2,600 积分",
+                  "积分有效期 30 天，每月刷新",
+                  "每月约 86 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "month",
+            "amount": 9990,
+            "currency": "USD",
+            "price": "$99.9",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "每月扣款 $99.9，可随时取消",
+            "button": {
+              "title": "订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "max_monthly",
+            "product_name": "Seedance Ai Dev Max Plan (Monthly)",
+            "credits": 2600,
+            "valid_days": 30,
+            "plan_name": "Max"
+          },
+          {
+            "title": "Plus",
+            "description": "适合每周都会生成的创作者",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "5,400 积分，年初一次性发放",
+                  "积分有效期 365 天",
+                  "约 180 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 19900,
+            "currency": "USD",
+            "price": "$16.58",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "每年扣款 $199，相当于 12 个月积分只付 10 个月",
+            "button": {
+              "title": "按年订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "plus_yearly",
+            "product_name": "Seedance Ai Dev Plus Plan (Yearly)",
+            "credits": 5400,
+            "valid_days": 365,
+            "plan_name": "Plus",
+            "original_price": "$19.9"
+          },
+          {
+            "title": "Pro",
+            "description": "适合跨模型的常规制作",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "15,000 积分，年初一次性发放",
+                  "积分有效期 365 天",
+                  "约 500 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 49900,
+            "currency": "USD",
+            "price": "$41.58",
+            "unit": "USD/mo",
+            "is_featured": true,
+            "tip": "每年扣款 $499，相当于 12 个月积分只付 10 个月",
+            "button": {
+              "title": "按年订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pro_yearly",
+            "product_name": "Seedance Ai Dev Pro Plan (Yearly)",
+            "credits": 15000,
+            "valid_days": 365,
+            "plan_name": "Pro",
+            "original_price": "$49.9",
+            "label": "热门"
+          },
+          {
+            "title": "Max",
+            "description": "适合团队和高产出的月度需求",
+            "group": "yearly",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "31,200 积分，年初一次性发放",
+                  "积分有效期 365 天",
+                  "约 1040 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "year",
+            "amount": 99900,
+            "currency": "USD",
+            "price": "$83.25",
+            "unit": "USD/mo",
+            "is_featured": false,
+            "tip": "每年扣款 $999，相当于 12 个月积分只付 10 个月",
+            "button": {
+              "title": "按年订阅",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "max_yearly",
+            "product_name": "Seedance Ai Dev Max Plan (Yearly)",
+            "credits": 31200,
+            "valid_days": 365,
+            "plan_name": "Max",
+            "original_price": "$99.9"
+          },
+          {
+            "title": "Starter",
+            "description": "用 5 条短镜头体验 Seedance 2.5",
+            "group": "packs",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "150 积分，一次性发放",
+                  "有效期 365 天",
+                  "约 5 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "one-time",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "USD",
+            "is_featured": false,
+            "tip": "一次性付款 $9.9，不自动续费。24 小时内可抵扣订阅首期",
+            "button": {
+              "title": "购买积分包",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pack_starter",
+            "product_name": "Seedance Ai Dev Starter Credit Pack",
+            "credits": 150,
+            "valid_days": 365,
+            "plan_name": "Starter"
+          },
+          {
+            "title": "Creator",
+            "description": "订阅前先测试一个小项目",
+            "group": "packs",
+            "feature": [
+              {
+                "title": "积分",
+                "list": [
+                  "600 积分，一次性发放",
+                  "有效期 365 天",
+                  "约 20 条 480p 的 5 秒 Seedance 2.5 视频"
+                ]
+              },
+              {
+                "title": "包含",
+                "list": [
+                  "四档 Seedance 以及 Kling、Wan、MiniMax 与 Grok",
+                  "文字、图片和已支持的参考工作流",
+                  "生成前显示确切积分",
+                  "确认失败的任务自动退回积分"
+                ]
+              }
+            ],
+            "interval": "one-time",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "USD",
+            "is_featured": false,
+            "tip": "一次性付款 $29.9，不自动续费。24 小时内可抵扣订阅首期",
+            "button": {
+              "title": "购买积分包",
+              "url": "/sign-in",
+              "icon": "RiFlashlightFill"
+            },
+            "product_id": "pack_creator",
+            "product_name": "Seedance Ai Dev Creator Credit Pack",
+            "credits": 600,
+            "valid_days": 365,
+            "plan_name": "Creator"
+          }
+        ]
+      },
+      "rates": {
+        "kicker": "积分费率",
+        "title": "Seedance 2.5 消耗多少积分？",
+        "description": "Seedance 按输出秒数计费，费率只取决于模型和分辨率。其他模型有各自的费率，生成器会在提交前显示。",
+        "headers": [
+          "模型",
+          "480p 每秒",
+          "720p 每秒",
+          "480p 的 5 秒视频",
+          "720p 的 5 秒视频"
+        ],
+        "unit": "积分"
+      },
+      "faq": {
+        "title": "Seedance 2.5 定价常见问题",
+        "items": [
+          {
+            "question": "Seedance 2.5 每秒多少钱？",
+            "answer": "在 SeedanceAI.dev，Seedance 2.5 在 480p 下每秒 6 积分，720p 下每秒 12 积分。"
+          },
+          {
+            "question": "一条 Seedance 2.5 视频消耗多少积分？",
+            "answer": "5 秒视频在 480p 下为 30 积分，720p 下为 60 积分。10 秒视频为 60 或 120 积分，30 秒视频为 180 或 360 积分。"
+          },
+          {
+            "question": "每个方案能生成多少条视频？",
+            "answer": "480p 下一条 5 秒 Seedance 2.5 视频消耗 30 积分。Plus 每月 450 积分，约 15 条；Pro 每月 1,250 积分，约 41 条；Max 每月 2,600 积分，约 86 条。Starter 积分包约 5 条，Creator 积分包约 20 条。"
+          },
+          {
+            "question": "应该买积分包还是订阅？",
+            "answer": "积分包适合不做承诺地试用模型。订阅的每积分更便宜：Plus 月付约每积分 $0.044，而 Starter 积分包是 $0.066；年付方案付 10 个月的钱拿 12 个月的积分。"
+          },
+          {
+            "question": "积分包可以抵扣订阅吗？",
+            "answer": "可以。购买积分包后 24 小时内订阅，积分包的价格会从订阅首期中扣除，积分包里的积分照样保留。同样在 24 小时内，也可以从 Starter 升级到 Creator，只补差价。"
+          },
+          {
+            "question": "积分会过期吗？",
+            "answer": "积分包和年付方案的积分有效期为 365 天。月付方案的积分有效期为 30 天，每次付款后刷新。"
+          },
+          {
+            "question": "本站有 Seedance 2.5 无限量套餐吗？",
+            "answer": "没有。本站所有方案都按积分计费。无限量方案对比页列出了对外宣传 Seedance 2.5 无限量的平台，以及每个方案附带的限制。"
+          },
+          {
+            "question": "生成失败时积分怎么处理？",
+            "answer": "供应商确认任务失败后，积分会自动退回。"
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "当前正在使用",
+    "processing": "正在处理中..."
+  }
+}

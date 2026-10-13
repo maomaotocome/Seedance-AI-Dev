@@ -1,0 +1,214 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 Free: What's Free, Limits & Cheapest Access",
+    "description": "Compare Seedance 2.5 free-access claims with this site’s eligible 5-credit Seedance 2.0 Mini trial. See verification rules, paid 2.5 costs and current sources."
+  },
+  "page": {
+    "title": "Seedance 2.5 free access: options and a Mini trial",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide-generator",
+        "id": "seedance-2-5-free",
+        "label": "Free starter workflow",
+        "title": "Seedance 2.5 free access: options and a Mini trial",
+        "description": "This workspace offers eligible new accounts 5 starter credits for Seedance 2.0 Mini. Seedance 2.5 is paid here: 30 credits for 5 seconds at 480p. Compare external free-access claims below.",
+        "verdict": "Verify your email first. Disposable email and repeat-account restrictions apply; check your credited balance before generating. The tool below defaults to Mini, 5s, 480p (5 credits).",
+        "last_reviewed": "Reviewed October 12, 2026",
+        "source_note": "External statements below come from linked public pages, not a completed free generation on a test account. Availability can vary by region and account.",
+        "primary_button": {
+          "title": "Try Seedance 2.0 Mini",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "Compare free access",
+          "url": "#free-options"
+        },
+        "quick_facts": [],
+        "show_generator": true,
+        "default_model": "seedance-2.0-mini",
+        "sections": [
+          {
+            "id": "free-options",
+            "kicker": "Reviewed October 12, 2026",
+            "title": "Where can you try Seedance 2.5 free?",
+            "paragraphs": [
+              "Separate the advertised model from the credits actually delivered to your account. Dreamina’s FAQ says daily free credits can test Seedance 2.5; we have not verified an eligible account or completed a free task there."
+            ],
+            "table": {
+              "headers": ["Service / source", "Public offer", "What to verify"],
+              "rows": [
+                [
+                  "SeedanceAI.dev (this workspace)",
+                  "5 credits once for eligible verified accounts; Mini 5s at 480p",
+                  "Email verification; non-disposable address; network anti-abuse check; actual balance"
+                ],
+                [
+                  "[Dreamina](https://dreamina.capcut.com/seedance/seedance-2-5)",
+                  "FAQ advertises daily free credits for Seedance 2.5",
+                  "Region, account eligibility, credited amount and current model access; not independently task-tested"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "The promotion is not a free generation",
+              "text": "Dreamina’s September 23–October 9 first-month offer has ended. Do not budget around that expired subscription discount. [See source](https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "how-free-works",
+            "kicker": "No hidden unlimited claim",
+            "title": "How the Seedance 2.0 Mini trial works here",
+            "paragraphs": [
+              "Eligible new users receive 5 starter credits after email verification, valid for 30 days. Disposable addresses are excluded; another account with a recent session on the same network can make an account ineligible. The allowance is once per eligible account, not daily. Check the balance before submitting."
+            ],
+            "steps": [
+              {
+                "title": "Choose a workflow",
+                "description": "Use text-to-video for a new shot, image-to-video for a controlled opening frame, or references for recurring visual identity."
+              },
+              {
+                "title": "Write one clear shot",
+                "description": "Describe subject, action, environment, camera and timing. Avoid stacking conflicting camera moves."
+              },
+              {
+                "title": "Set duration and resolution",
+                "description": "Keep Mini selected at 5 seconds and 480p to fit the 5-credit allowance. Longer clips and 720p need more credits."
+              },
+              {
+                "title": "Review cost, then generate",
+                "description": "The button shows the exact product-credit charge. Sign in only when you are ready to submit."
+              }
+            ]
+          },
+          {
+            "id": "cost-table",
+            "kicker": "Product credits",
+            "title": "Paid Seedance 2.5 costs here",
+            "paragraphs": [
+              "Credits are the workspace billing unit. They are not the same as dollars charged by Kie or fal, and third-party provider prices may change independently."
+            ],
+            "table": {
+              "headers": ["Setting", "5 sec", "10 sec", "15 sec", "30 sec"],
+              "rows": [
+                [
+                  "480p · 6 credits/sec",
+                  "30 credits",
+                  "60 credits",
+                  "90 credits",
+                  "180 credits"
+                ],
+                [
+                  "720p · 12 credits/sec",
+                  "60 credits",
+                  "120 credits",
+                  "180 credits",
+                  "360 credits"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Minimum purchase, not pay per clip",
+              "text": "The $9.90 Starter pack contains 150 credits: five complete 5s 480p Seedance 2.5 tasks, or two 720p tasks with 30 credits left. [Calculate other settings](/pricing#video-budget).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "what-to-prompt",
+            "kicker": "Prompt structure",
+            "title": "Give the model a shot plan, not a bag of adjectives",
+            "paragraphs": [
+              "The most useful prompt describes what changes over time. State the subject and action first, then camera behavior, environment, lighting and audio intent. For longer clips, use time ranges to separate beats."
+            ],
+            "examples": [
+              {
+                "label": "10-second product shot",
+                "text": "[0–3s] Macro view of a brushed steel watch on black stone; slow clockwise orbit, soft window reflection.\n[3–7s] The crown turns and the second hand begins moving; camera eases closer.\n[7–10s] Pull focus from the dial to the engraved logo; quiet mechanical clicks, no music."
+              }
+            ]
+          },
+          {
+            "id": "limits",
+            "kicker": "Know before submitting",
+            "title": "Current limits and truthful expectations",
+            "bullets": [
+              "Seedance in this workspace offers 480p and 720p; other models have different output settings.",
+              "Free starter credits are finite and may change; the visible account balance is authoritative.",
+              "Reference mode accepts a practical subset in the browser even where a provider API may support more files.",
+              "Generation time depends on provider queues, duration, resolution and current demand.",
+              "Commercial use depends on your source rights, the output and the terms that apply to your account.",
+              "SeedanceAI.dev is an independent service and is not ByteDance's official product site."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can I use Seedance 2.5 for free?",
+            "answer": "Seedance 2.5 is paid in this workspace. The 5-credit allowance covers Mini only. Dreamina publicly advertises free daily credits for 2.5, subject to account and regional availability; we have not completed that trial."
+          },
+          {
+            "question": "How many free credits do new accounts get?",
+            "answer": "Eligible new users receive 5 starter credits after email verification, valid for 30 days. Disposable addresses are excluded; another account with a recent session on the same network can make an account ineligible. The allowance is once per eligible account, not daily. Check the balance before submitting."
+          },
+          {
+            "question": "What is the cheapest way to use Seedance 2.5?",
+            "answer": "On this site, the $9.9 Starter pack: 150 credits, enough for five 5-second Seedance 2.5 clips at 480p. It is a one-time payment with no renewal."
+          },
+          {
+            "question": "Does the free generator add a watermark?",
+            "answer": "Watermark behavior can depend on the upstream provider and account plan. Review the generated file and the current plan terms before publishing; we do not promise a universal no-watermark result here."
+          },
+          {
+            "question": "Can Seedance 2.5 generate 4K video here?",
+            "answer": "No. This workspace currently offers 480p and 720p. Upscaling is a separate workflow and should not be described as native Seedance 2.5 4K generation."
+          },
+          {
+            "question": "What happens if a generation fails?",
+            "answer": "When the provider confirms a failed task, the reserved product credits are refunded. A task that is still processing is not treated as failed."
+          },
+          {
+            "question": "Is SeedanceAI.dev the official ByteDance website?",
+            "answer": "No. SeedanceAI.dev is an independent product that uses configured third-party API providers."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Seedance 2.5 free-credit FAQ",
+            "url": "https://dreamina.capcut.com/seedance/seedance-2-5",
+            "publisher": "Dreamina"
+          },
+          {
+            "title": "Expired first-month promotion",
+            "url": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+            "publisher": "Dreamina"
+          }
+        ],
+        "related": [
+          {
+            "title": "Prompt guide",
+            "description": "Build prompts with shot order, camera intent and timecoded beats.",
+            "url": "/seedance-2-5-prompt-guide"
+          },
+          {
+            "title": "2.5 vs 2.0",
+            "description": "Choose a model using workflow and cost rather than version number alone.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Unlimited explained",
+            "description": "Understand what unlimited offers usually restrict.",
+            "url": "/unlimited-seedance-2-5"
+          }
+        ],
+        "cta": {
+          "title": "Ready for a paid Seedance 2.5 test?",
+          "description": "Review a real 5-second product sample and load its 30-credit settings. No generation starts until you submit.",
+          "button": "Load a 2.5 sample",
+          "url": "/ai-video-generator?sample=product-25#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

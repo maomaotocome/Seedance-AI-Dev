@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "title": "Kling 3.0 AI 视频生成器 — 文字、图片与声音",
+    "description": "使用文字或首尾帧生成 Kling 3.0 视频。支持 720p/1080p、5–15 秒与可选声音，并显示准确产品积分。",
+    "keywords": "Kling 3.0 视频生成器, 可灵 AI 视频, 文生视频, 图生视频"
+  },
+  "page": {
+    "title": "Kling 3.0 AI 视频生成器",
+    "sections": {
+      "hero": {
+        "id": "kling-3-0-ai-video-generator",
+        "label": "Kling 3.0 工作台",
+        "title": "Kling 3.0 AI 视频生成器",
+        "description": "通过文字或首尾帧导演单镜头。本站开放 Kling 3.0 标准 720p 与专业 1080p 模式、可选声音，以及 5、10、15 秒时长。",
+        "verdict": "当声音、运镜与可控尾帧都重要时，优先考虑 Kling 3.0。先用 720p 和 5 秒验证动作，再生成 1080p。",
+        "last_reviewed": "复核于 2026 年 8 月 22 日",
+        "source_note": "上游能力可能变化。上方预选生成器是本站当前可用控制与产品积分的准确信息来源。",
+        "primary_button": {
+          "title": "使用 Kling 3.0 创作",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "比较当前模型",
+          "url": "/ai-video-generator"
+        },
+        "quick_facts": [
+          {
+            "label": "本站工作流",
+            "value": "文字 · 首尾帧",
+            "description": "首个版本聚焦单镜头生成。"
+          },
+          {
+            "label": "输出",
+            "value": "720p · 1080p",
+            "description": "分别对应标准与专业模式。"
+          },
+          {
+            "label": "时长",
+            "value": "5 · 10 · 15 秒",
+            "description": "取自上游 3–15 秒范围。"
+          },
+          {
+            "label": "声音",
+            "value": "可选",
+            "description": "音频开关会同步更新积分。"
+          }
+        ],
+        "show_generator": true,
+        "default_model": "kling-3.0",
+        "sections": [
+          {
+            "id": "best-fit",
+            "kicker": "选择规则",
+            "title": "Kling 3.0 最适合哪些镜头",
+            "paragraphs": [
+              "Kling 3.0 适合需要同时判断运动与声音的镜头，例如产品揭示、短叙事节点、环境动作，以及带明确运镜的社媒开场。",
+              "本站首版有意聚焦单镜头。Kling 上游还提供多镜头与元素参考，但在完成端到端实现和测试前，不把它们写成本站能力。"
+            ],
+            "bullets": [
+              "文生视频适合探索构图与运镜。",
+              "一张图片确定首帧，两张图片同时控制结尾。",
+              "后期另配声音时，可以关闭模型声音。",
+              "先验证镜头，再把 1080p 用于最终版本。"
+            ]
+          },
+          {
+            "id": "controls",
+            "kicker": "本站与上游边界",
+            "title": "当前工作台提供的控制",
+            "table": {
+              "headers": ["控制", "本站可用", "实际作用"],
+              "rows": [
+                [
+                  "模式",
+                  "720p 标准或 1080p 专业",
+                  "分辨率映射到 Kling 的 std/pro 输入。"
+                ],
+                ["时长", "5、10 或 15 秒", "让镜头规划和成本更可预测。"],
+                ["画幅", "16:9、9:16 或 1:1", "图片工作流跟随上传帧。"],
+                ["声音", "开启或关闭", "同时改变接口输入与产品积分。"],
+                ["多镜头", "暂未开放", "本站当前把一次提示词作为一个镜头提交。"]
+              ]
+            },
+            "callout": {
+              "title": "本站不宣称 4K",
+              "text": "Kling 文档包含上游 4K 模式，但本站当前只开放 720p 与 1080p。上游能力或后期放大不会被写成本站原生输出。",
+              "tone": "warning"
+            }
+          },
+          {
+            "id": "prompts",
+            "kicker": "提示词模式",
+            "title": "围绕动作、节奏与声音写指令",
+            "examples": [
+              {
+                "label": "产品揭示",
+                "text": "一台哑光黑色录音机放在被雨水打湿的摄影棚桌面。镜头缓慢环绕 30 度，窄幅暖光扫过控制面板；低频脉冲让细小水珠轻微震动。产品结构清晰，环境声克制，不出现文字。"
+              },
+              {
+                "label": "首尾帧",
+                "text": "从开场帧自然运动到结尾构图。骑行者穿过潮湿路口，摄影机在街道高度向左跟拍；雨中车灯柔和散开，自行车与人体结构稳定，交通环境声真实。"
+              }
+            ]
+          },
+          {
+            "id": "comparison",
+            "kicker": "模型选择",
+            "title": "Kling 3.0 与本站其他模型",
+            "table": {
+              "headers": ["模型", "适合用途", "本站差异"],
+              "rows": [
+                ["Kling 3.0", "带声音的导演型单镜头", "720p/1080p 与可选声音"],
+                ["Seedance 2.5", "参考驱动与成熟长镜头控制", "独立参考工作流"],
+                ["Wan 2.7", "灵活画幅与提示词扩展", "负面提示词与提示词增强"],
+                ["MiniMax H3", "面向 2K 的文字或帧动画", "768P/2K 选择"],
+                ["Grok Imagine 1.5", "快速多图实验", "低成本 480p/720p 测试"]
+              ]
+            }
+          }
+        ],
+        "faqs": [
+          {
+            "question": "现在能在本站真实使用 Kling 3.0 吗？",
+            "answer": "可以。上方生成器已预选 Kling 3.0。生成需要账户和足够的积分。"
+          },
+          {
+            "question": "Kling 3.0 在本站能生成声音吗？",
+            "answer": "可以选择开启或关闭。开启后，生成按钮会重新计算本站产品积分。"
+          },
+          {
+            "question": "可以上传首帧和尾帧吗？",
+            "answer": "可以。一张图片作为首帧，两张图片分别指定开场与结尾构图；图片工作流的画幅由素材决定。"
+          },
+          {
+            "question": "本站支持 4K 吗？",
+            "answer": "不支持。Kling 上游文档虽然讨论 4K，本站当前只开放 720p 标准与 1080p 专业输出。"
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Kling 3.0 API 输入与模式文档",
+            "url": "https://docs.kie.ai/market/kling/kling-3-0"
+          },
+          {
+            "publisher": "快手",
+            "title": "Kling AI 3.0 发布公告",
+            "url": "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/"
+          }
+        ],
+        "related": [
+          {
+            "title": "Wan 2.7",
+            "description": "比较带提示词扩展的 720p/1080p 工作流。",
+            "url": "/wan-2-7-video-generator"
+          },
+          {
+            "title": "MiniMax H3",
+            "description": "探索 768P 与 2K 文字或帧动画。",
+            "url": "/minimax-h3-video-generator"
+          },
+          {
+            "title": "Grok Imagine 1.5",
+            "description": "尝试快速多图视频工作流。",
+            "url": "/grok-imagine-video-1-5"
+          }
+        ],
+        "cta": {
+          "title": "先导演一条干净的 Kling 镜头",
+          "description": "用 720p 和 5 秒验证动作，再增加分辨率或时长。",
+          "button": "打开 Kling 3.0",
+          "url": "#seedance-generator"
+        }
+      }
+    }
+  }
+}

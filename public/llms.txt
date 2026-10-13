@@ -1,0 +1,36 @@
+# SeedanceAI.dev
+
+> SeedanceAI.dev is an independent AI video generation workspace. It is not affiliated with or endorsed by ByteDance, Doubao, Dreamina, or other model owners.
+
+## Primary product pages
+
+- Home: https://seedanceai.dev/
+- Multi-model generator: https://seedanceai.dev/ai-video-generator
+- Seedance 2.5 pricing and product credits: https://seedanceai.dev/pricing
+- About and review method: https://seedanceai.dev/about
+
+## Seedance guides
+
+- What is Seedance: https://seedanceai.dev/what-is-seedance
+- Seedance 3.0 release status: https://seedanceai.dev/seedance-3-0
+- Seedance 2.5 starter access: https://seedanceai.dev/seedance-2-5-free
+- Seedance 2.0 generator guide: https://seedanceai.dev/seedance-2-0
+- Seedance 2.5 vs 2.0: https://seedanceai.dev/seedance-2-5-vs-2-0
+- Seedance 2.5 prompt guide: https://seedanceai.dev/seedance-2-5-prompt-guide
+- Seedance 2.5 API guide: https://seedanceai.dev/seedance-2-5-api
+- Seedance 2.5 unlimited plan comparison: https://seedanceai.dev/unlimited-seedance-2-5
+
+## Other model guides
+
+- Kling 3.0: https://seedanceai.dev/kling-3-0-ai-video-generator
+- Wan 2.7: https://seedanceai.dev/wan-2-7-video-generator
+- MiniMax H3: https://seedanceai.dev/minimax-h3-video-generator
+- Grok Imagine Video 1.5: https://seedanceai.dev/grok-imagine-video-1-5
+
+## Important interpretation rules
+
+- Available models, inputs, duration, resolution, audio, and product credit cost vary by model. The live generator controls are the source of truth for what SeedanceAI.dev currently supports.
+- Product credits are SeedanceAI.dev billing units, not an upstream provider's billing unit.
+- Visuals labeled as concept studies or visual studies are direction references created for this site, not claimed model outputs.
+- Commercial-use rights depend on input rights, applicable law, the user's plan, and current provider and model terms.
+- Contact for corrections and privacy requests: hello@seedanceai.dev

@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "title": "Seedance 2.0 AI Video Generator",
+    "description": "Generate Seedance 2.0 videos online and compare its established text-to-video and image-to-video workflow with Seedance 2.5."
+  },
+  "page": {
+    "title": "Seedance 2.0 AI Video Generator",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide-generator",
+        "id": "seedance-2-0",
+        "label": "Established workflow",
+        "title": "Seedance 2.0 AI Video Generator",
+        "description": "Seedance 2.0 still matters when an existing prompt library, visual baseline or production review process was built around it. Generate with the version you intend to ship, then compare 2.5 separately.",
+        "verdict": "Do not migrate a production workflow only because 2.5 is newer. Run the same short shot in both versions and compare motion, adherence, latency and total credits.",
+        "last_reviewed": "Reviewed October 12, 2026",
+        "source_note": "This page describes the options exposed by SeedanceAI.dev. Provider availability and exact model behavior can change; confirm the model shown in the generator before submission.",
+        "primary_button": {
+          "title": "Generate with Seedance 2.0",
+          "url": "#seedance-generator"
+        },
+        "secondary_button": {
+          "title": "Compare 2.5 vs 2.0",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [],
+        "show_generator": true,
+        "default_model": "seedance-2.0",
+        "sections": [
+          {
+            "id": "choose-tier",
+            "title": "Choose Seedance 2.0 Standard, Fast or Mini",
+            "paragraphs": [
+              "Use the same prompt and output settings to compare costs. These are this workspace’s product credits, not upstream API prices. [Calculate complete videos per plan](/pricing#video-budget)."
+            ],
+            "table": {
+              "headers": ["Model / action", "5s at 480p", "5s at 720p"],
+              "rows": [
+                [
+                  "[Standard](/ai-video-generator?model=seedance-2.0#seedance-generator)",
+                  "20",
+                  "40"
+                ],
+                [
+                  "[Fast](/ai-video-generator?model=seedance-2.0-fast#seedance-generator)",
+                  "15",
+                  "25"
+                ],
+                [
+                  "[Mini](/ai-video-generator?model=seedance-2.0-mini#seedance-generator)",
+                  "5",
+                  "10"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Mini starter allowance",
+              "text": "An eligible verified account’s 5 credits cover one Mini task at 5s/480p. [Check eligibility](/seedance-2-5-free#how-free-works) before expecting free access.",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "why-use-2-0",
+            "kicker": "Version choice",
+            "title": "Why creators may still choose Seedance 2.0",
+            "paragraphs": [
+              "A model version becomes part of a production system: prompt wording, reference preparation, expected failure modes and approval standards all adapt around it. A newer model can be more capable yet still require re-testing that system.",
+              "Seedance 2.0 is therefore useful as a control. If it already produces an approved look, preserve it while you test 2.5 on a duplicate shot rather than changing the entire pipeline at once."
+            ],
+            "bullets": [
+              "You have approved outputs made with 2.0 and need visual continuity.",
+              "Your prompt library has known, repeatable behavior on 2.0.",
+              "A client review references an earlier 2.0 sample.",
+              "You want a baseline for measuring whether 2.5 is actually better for this shot."
+            ]
+          },
+          {
+            "id": "repeatable-test",
+            "kicker": "A/B method",
+            "title": "Run a fair 2.0 versus 2.5 test",
+            "steps": [
+              {
+                "title": "Freeze the inputs",
+                "description": "Use the same prompt, first frame, aspect ratio, duration and resolution in both tests."
+              },
+              {
+                "title": "Change only the model",
+                "description": "Do not improve the 2.5 prompt during the first comparison; that makes the result impossible to attribute."
+              },
+              {
+                "title": "Score the useful output",
+                "description": "Rate prompt adherence, subject consistency, motion, artifacts and editing effort—not novelty alone."
+              },
+              {
+                "title": "Record cost and latency",
+                "description": "A marginal visual gain may not justify higher cost or slower iteration for every production stage."
+              }
+            ],
+            "table": {
+              "headers": ["Criterion", "What to inspect", "Why it matters"],
+              "rows": [
+                [
+                  "Prompt adherence",
+                  "Required subject, action and shot order appear",
+                  "Missing beats create rework"
+                ],
+                [
+                  "Temporal stability",
+                  "Faces, hands, products and backgrounds remain coherent",
+                  "Fewer repairs and cuts"
+                ],
+                [
+                  "Camera behavior",
+                  "Move starts, eases and stops as requested",
+                  "Determines editorial usefulness"
+                ],
+                [
+                  "Cost per keeper",
+                  "Credits spent divided by outputs you can publish",
+                  "More useful than cost per attempt"
+                ],
+                [
+                  "Turnaround",
+                  "Queue plus generation plus review time",
+                  "Controls iteration speed"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "prompt-baseline",
+            "kicker": "Control prompt",
+            "title": "Use a compact baseline prompt",
+            "paragraphs": [
+              "A comparison prompt should be specific enough to reveal differences but simple enough to diagnose. One subject, one action and one camera move is a better benchmark than a montage."
+            ],
+            "examples": [
+              {
+                "label": "A/B baseline",
+                "text": "A ceramic artist lifts a newly glazed cobalt bowl from a worktable. Medium close-up, slow dolly in, soft north-window light, natural hand movement, stable face and bowl geometry, quiet studio ambience."
+              }
+            ]
+          },
+          {
+            "id": "migration-checklist",
+            "kicker": "Before switching",
+            "title": "Migration checklist",
+            "bullets": [
+              "Archive the model name, settings, prompt and source references for every approved 2.0 shot.",
+              "Test 2.5 with non-critical shots before replacing a live client workflow.",
+              "Recalculate credit budgets using the settings you will actually ship.",
+              "Check provider terms and availability at the time of production.",
+              "Keep 2.0 as a fallback until 2.5 outputs pass your own acceptance criteria.",
+              "Never describe an upscale as native 4K model output."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Is Seedance 2.0 still available on SeedanceAI.dev?",
+            "answer": "It is selectable in the generator when the configured provider route is available. Always verify the selected model and live status before a production submission."
+          },
+          {
+            "question": "Is Seedance 2.5 always better than 2.0?",
+            "answer": "Not automatically for every prompt or workflow. Compare the same shot and include rework, latency and cost in the decision."
+          },
+          {
+            "question": "Can I reuse a Seedance 2.0 prompt in 2.5?",
+            "answer": "Yes as a baseline. After the first controlled comparison, adapt timing, reference and camera instructions based on the 2.5 result."
+          },
+          {
+            "question": "Can I try Seedance 2.0 with starter credits?",
+            "answer": "Yes, when starter credits are available in your account. The generator shows the exact charge for the selected 2.0 tier, resolution and duration before submission; starter access is a limited credit allowance, not unlimited generation."
+          },
+          {
+            "question": "Should I change old 2.0 projects to 2.5?",
+            "answer": "Only after a controlled test. Keeping the original version is often safer when continuity or client approval depends on an established look."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "SeedanceAI.dev",
+            "title": "Current generator model and credit controls",
+            "url": "https://seedanceai.dev/ai-video-generator"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.0 API service reference",
+            "url": "https://kie.ai/seedance-2-0"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.0 Mini API service reference",
+            "url": "https://kie.ai/seedance-2-0-mini"
+          }
+        ],
+        "related": [
+          {
+            "title": "2.5 vs 2.0",
+            "description": "Use a practical feature and workflow comparison.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 free",
+            "description": "Test the newer model with a transparent starter workflow.",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Prompt guide",
+            "description": "Improve shot structure after your baseline test.",
+            "url": "/seedance-2-5-prompt-guide"
+          }
+        ],
+        "cta": {
+          "title": "Keep the version decision measurable",
+          "description": "Run one controlled shot in 2.0, then duplicate the settings in 2.5.",
+          "button": "Open the generator",
+          "url": "#seedance-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}

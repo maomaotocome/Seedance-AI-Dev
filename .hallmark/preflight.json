@@ -1,0 +1,29 @@
+{
+  "scanned_at": "2026-08-26",
+  "design_system": {
+    "source": "DESIGN.md",
+    "status": "locked"
+  },
+  "framework": {
+    "name": "Next.js",
+    "version": "15.5.7",
+    "router": "app"
+  },
+  "styles": {
+    "system": "Tailwind CSS 4 with @theme inline tokens",
+    "spacing": "4-point Tailwind scale",
+    "tokens": "src/config/style/theme.css"
+  },
+  "fonts": ["Instrument Sans", "Newsreader", "JetBrains Mono"],
+  "motion": {
+    "stance": "motion-on",
+    "libraries": ["framer-motion", "motion"]
+  },
+  "preserve": [
+    "Director's Desk palette",
+    "existing font stack",
+    "semantic server-rendered content",
+    "English and Chinese parity",
+    "truthful product capability boundaries"
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "title": "What Is Seedance? ByteDance's AI Video Model Explained",
+    "description": "Seedance is ByteDance's AI video model. It turns text, images and reference clips into video with sound. See versions, what 2.5 can do and where to use it."
+  },
+  "page": {
+    "title": "What Is Seedance?",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "label": "Explainer",
+        "title": "What is Seedance?",
+        "description": "Seedance is a family of AI video generation models made by ByteDance. You give it a text prompt, an image or reference clips, and it returns a short video with matching sound. The current version, Seedance 2.5, was released on July 31, 2026 and makes clips up to 30 seconds long.",
+        "verdict": "Seedance is a model, not a single website. You reach it through ByteDance's own apps such as Dreamina, through API providers, or through independent workspaces like this one.",
+        "last_reviewed": "Updated October 3, 2026",
+        "source_note": "Release dates and model limits come from the linked sources. SeedanceAI.dev is an independent service and is not affiliated with or endorsed by ByteDance, Doubao or Dreamina.",
+        "primary_button": {
+          "title": "Try Seedance in the browser",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "Compare 2.5 and 2.0",
+          "url": "/seedance-2-5-vs-2-0"
+        },
+        "quick_facts": [
+          {
+            "label": "Made by",
+            "value": "ByteDance",
+            "description": "The company behind TikTok, CapCut and Dreamina."
+          },
+          {
+            "label": "Current version",
+            "value": "Seedance 2.5",
+            "description": "Released July 31, 2026."
+          },
+          {
+            "label": "Clip length",
+            "value": "Up to 30 seconds",
+            "description": "With sound generated in the same pass."
+          },
+          {
+            "label": "Inputs",
+            "value": "Text, images, video, audio",
+            "description": "Up to 50 reference files in version 2.5."
+          }
+        ],
+        "sections": [
+          {
+            "id": "what-seedance-does",
+            "kicker": "Capabilities",
+            "title": "What can Seedance do?",
+            "paragraphs": [
+              "Seedance creates video in three ways. Text-to-video builds a clip from a written prompt. Image-to-video animates a still image used as the first frame, with an optional last frame. Reference-to-video combines several images, clips or audio files to keep a character, product or style consistent.",
+              "Since version 1.5 the model generates audio together with the picture, including dialogue with lip-sync, sound effects and ambience. The [Seedance 2.5 prompt guide](/seedance-2-5-prompt-guide) shows how to direct those elements."
+            ]
+          },
+          {
+            "id": "versions",
+            "kicker": "Version history",
+            "title": "Seedance versions and release dates",
+            "paragraphs": [
+              "ByteDance has shipped four public versions in a little over a year. Seedance 2.0 also comes in cheaper Fast and Mini tiers. For a field-by-field comparison of the two current versions, see [Seedance 2.5 vs 2.0](/seedance-2-5-vs-2-0)."
+            ],
+            "table": {
+              "headers": ["Version", "Released", "What it added"],
+              "rows": [
+                [
+                  "Seedance 1.0",
+                  "June 11, 2025",
+                  "1080p video from text and image prompts, including multi-shot clips"
+                ],
+                [
+                  "Seedance 1.5 Pro",
+                  "December 2025",
+                  "Audio and video generated together, with multilingual lip-sync"
+                ],
+                [
+                  "Seedance 2.0",
+                  "February 12, 2026",
+                  "Clips up to 15 seconds and up to 15 reference files"
+                ],
+                [
+                  "Seedance 2.5",
+                  "July 31, 2026",
+                  "Clips up to 30 seconds and up to 50 reference files"
+                ],
+                ["Seedance 3.0", "Not verified", "No verified official release"]
+              ]
+            }
+          },
+          {
+            "id": "where-to-use",
+            "kicker": "Access",
+            "title": "Where can you use Seedance?",
+            "paragraphs": [
+              "There are three routes. ByteDance's consumer apps, Dreamina and CapCut, are the official way to use it. Developers call it through API providers; the [Seedance 2.5 API guide](/seedance-2-5-api) covers prices and code. Independent workspaces such as this site wrap those APIs in a browser generator and charge credits."
+            ],
+            "bullets": [
+              "Official apps: Dreamina and CapCut",
+              "API providers: Kie, fal and others",
+              "Independent workspaces: SeedanceAI.dev and similar sites"
+            ]
+          },
+          {
+            "id": "cost",
+            "kicker": "Price",
+            "title": "Is Seedance free?",
+            "paragraphs": [
+              "Seedance is a paid model, but most platforms give new accounts a small free allowance. Paid use is billed per second of video, and the price rises with resolution. See [Seedance 2.5 free](/seedance-2-5-free) for how starter credits work here and [Seedance 2.5 pricing](/pricing) for the full credit table."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is Seedance?",
+            "answer": "Seedance is ByteDance's family of AI video generation models. It turns text prompts, images and reference clips into short videos with synchronized sound."
+          },
+          {
+            "question": "Who made Seedance?",
+            "answer": "ByteDance, the company behind TikTok, CapCut and Dreamina. The first version was released on June 11, 2025."
+          },
+          {
+            "question": "What is the latest version of Seedance?",
+            "answer": "Seedance 2.5, released on July 31, 2026. It generates clips up to 30 seconds and accepts up to 50 reference files. A formal Seedance 3.0 release was not verified in the sources reviewed."
+          },
+          {
+            "question": "Is Seedance the same as Dreamina?",
+            "answer": "No. Seedance is the model. Dreamina is one of ByteDance's apps that runs it."
+          },
+          {
+            "question": "Is SeedanceAI.dev the official Seedance site?",
+            "answer": "No. SeedanceAI.dev is an independent service that uses third-party API access. It is not affiliated with or endorsed by ByteDance."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Wikipedia",
+            "title": "Seedance version history and release dates",
+            "url": "https://en.wikipedia.org/wiki/Seedance"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 vs Seedance 2.0 comparison",
+            "url": "https://fal.ai/learn/devs/seedance-2-5-vs-seedance-2-0"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 API request reference",
+            "url": "https://docs.kie.ai/market/bytedance/seedance-2-5"
+          },
+          {
+            "publisher": "Kie.ai",
+            "title": "API pricing table",
+            "url": "https://kie.ai/pricing"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 vs 2.0",
+            "description": "Specs, price and which version to use.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "Seedance 2.5 free",
+            "description": "How starter credits work.",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "Seedance 3.0",
+            "description": "What is known about the next version.",
+            "url": "/seedance-3-0"
+          }
+        ],
+        "cta": {
+          "title": "See what Seedance does with your prompt",
+          "description": "Start with a short 480p test and check the credit cost before you generate.",
+          "button": "Open the generator",
+          "url": "/ai-video-generator"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "metadata": {
+    "title": "Seedance 2.5 Prompt Guide: Formula & Copyable Examples",
+    "description": "Write better Seedance 2.5 prompts with a practical shot formula, timecoded examples, camera language, audio cues and troubleshooting steps."
+  },
+  "page": {
+    "title": "Seedance 2.5 Prompt Guide",
+    "show_sections": ["hero"],
+    "sections": {
+      "hero": {
+        "block": "search-guide",
+        "id": "seedance-2-5-prompt-guide",
+        "label": "Prompt field manual",
+        "title": "Seedance 2.5 prompt guide: formula, timecodes and examples",
+        "description": "A good Seedance 2.5 prompt names six things in order: subject, action, setting, camera, look and audio. Use one subject, one main action and one camera move with an endpoint. Add time ranges such as [0-5s] only when the shot has separate beats.",
+        "verdict": "Clarity beats adjective density. Start with one subject, one primary action and one camera move; add constraints only to solve a visible problem.",
+        "last_reviewed": "Templates reviewed October 12, 2026 · samples generated October 3",
+        "source_note": "Examples are original editorial guidance, not guaranteed outputs. Model results remain probabilistic; use short tests before committing credits to long, high-resolution clips.",
+        "primary_button": {
+          "title": "Try a prompt",
+          "url": "/ai-video-generator"
+        },
+        "secondary_button": {
+          "title": "Use free starter credits",
+          "url": "/seedance-2-5-free"
+        },
+        "quick_facts": [
+          {
+            "label": "Core formula",
+            "value": "6 prompt layers",
+            "description": "Subject, action, setting, camera, look, audio."
+          },
+          {
+            "label": "Long clips",
+            "value": "Use time ranges",
+            "description": "Assign one visible beat to each interval."
+          },
+          {
+            "label": "First test",
+            "value": "5–10 seconds",
+            "description": "Diagnose motion before extending the shot."
+          },
+          {
+            "label": "Avoid",
+            "value": "Conflicting directions",
+            "description": "Do not request several camera moves at once."
+          }
+        ],
+        "sections": [
+          {
+            "id": "prompt-formula",
+            "kicker": "The foundation",
+            "title": "A six-layer Seedance 2.5 prompt formula",
+            "steps": [
+              {
+                "title": "Subject",
+                "description": "Name the person, object or environment that must remain visually stable."
+              },
+              {
+                "title": "Action",
+                "description": "Use a concrete verb and describe what changes from the beginning to the end."
+              },
+              {
+                "title": "Setting",
+                "description": "Define the location, time of day and environmental motion that matters."
+              },
+              {
+                "title": "Camera",
+                "description": "Choose shot size, lens feeling and one primary move with a start and stop."
+              },
+              {
+                "title": "Look",
+                "description": "Specify lighting, palette, texture and realism without piling on incompatible styles."
+              },
+              {
+                "title": "Audio",
+                "description": "Describe ambience, effects or dialogue intent only when audio generation is enabled."
+              }
+            ],
+            "examples": [
+              {
+                "label": "Single-shot formula",
+                "text": "A bicycle courier in a cobalt rain jacket accelerates through a wet night market. Low tracking shot beside the rear wheel, 35mm documentary feel, warm stall light reflected on asphalt, realistic spray and fabric movement, distant vendors and tire hiss, no music."
+              }
+            ]
+          },
+          {
+            "id": "task-product-25",
+            "kicker": "Original task walkthrough",
+            "title": "Product motion: a five-second espresso shot",
+            "paragraphs": [
+              "The prompt and unedited sample below were made for this site on October 3, 2026. It uses Seedance 2.5 through the site’s configured provider route at the time. Historical wait time and the provider’s returned model ID were not retained in this public record; no new performance result is claimed.",
+              "Watch the cup silhouette, steam direction and where the push-in stops. If the camera feels contradictory, test “macro composition; slow push-in” instead of combining “locked” and a moving camera. That revision is a suggestion, not a tested result."
+            ],
+            "samples": ["product-25"],
+            "callout": {
+              "title": "Make your own test",
+              "text": "Use these settings to load the public prompt, model, duration, 480p and audio; the image task also loads the site-provided starting frame. Replace inputs only with material you have rights to use. Review the calculated cost before submitting; results can differ between runs. [Budget calculator](/pricing#video-budget).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "task-camera-25",
+            "kicker": "Original task walkthrough",
+            "title": "Camera direction: an eight-second ridge reveal",
+            "paragraphs": [
+              "The prompt and unedited sample below were made for this site on October 3, 2026. It uses Seedance 2.5 through the site’s configured provider route at the time. Historical wait time and the provider’s returned model ID were not retained in this public record; no new performance result is claimed.",
+              "Watch whether the compass stays recognizable and the close-to-wide reveal remains one continuous move. If a new test cuts early, shorten the reveal or simplify the background before changing resolution. These fixes are proposed, not measured improvements."
+            ],
+            "samples": ["camera-25"],
+            "callout": {
+              "title": "Make your own test",
+              "text": "Use these settings to load the public prompt, model, duration, 480p and audio; the image task also loads the site-provided starting frame. Replace inputs only with material you have rights to use. Review the calculated cost before submitting; results can differ between runs. [Budget calculator](/pricing#video-budget).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "task-i2v-25",
+            "kicker": "Original task walkthrough",
+            "title": "Image to video: a five-second rooftop turn",
+            "paragraphs": [
+              "The prompt and unedited sample below were made for this site on October 3, 2026. It uses Seedance 2.5 through the site’s configured provider route at the time. Historical wait time and the provider’s returned model ID were not retained in this public record; no new performance result is claimed.",
+              "Use the supplied starting image and check subject, coat and background across the turn. This sample uses one starting image; it is not evidence of a two-frame transition. If your own image drifts, reduce subject motion and hold the camera still."
+            ],
+            "samples": ["i2v-25"],
+            "callout": {
+              "title": "Make your own test",
+              "text": "Use these settings to load the public prompt, model, duration, 480p and audio; the image task also loads the site-provided starting frame. Replace inputs only with material you have rights to use. Review the calculated cost before submitting; results can differ between runs. [Budget calculator](/pricing#video-budget).",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "prompt-examples",
+            "kicker": "Copy and adapt",
+            "title": "Seedance 2.5 prompt examples",
+            "paragraphs": [
+              "Additional unedited examples explore dialogue, animation and a timecoded sequence. These are individual outputs, not a reliability benchmark."
+            ],
+            "samples": ["dialogue-25", "anime-25", "sequence-25"]
+          },
+          {
+            "id": "timecodes",
+            "kicker": "Temporal direction",
+            "title": "Use timecodes for visible beats",
+            "paragraphs": [
+              "Time ranges help when a shot contains sequential actions. Each interval should describe something the viewer can see or hear. Do not use timecodes to repeat styling words."
+            ],
+            "examples": [
+              {
+                "label": "15-second narrative beat",
+                "text": "[0–4s] Wide shot: a lone botanist enters a foggy glasshouse carrying a dim lantern; camera slowly cranes down.\n[4–10s] She brushes a giant leaf; blue bioluminescent veins wake and travel across the plant, reflected in her eyes.\n[10–15s] Camera arcs behind her as the entire glasshouse pulses awake; humid ambience, leaf movement, one low resonant tone."
+              },
+              {
+                "label": "10-second product reveal",
+                "text": "[0–3s] Locked macro of condensation on an unbranded amber bottle, hard rim light on black.\n[3–7s] Slow half-orbit as the bottle rotates once; liquid catches a warm highlight.\n[7–10s] Movement settles into a clean hero frame, subtle room tone, no text, no extra objects."
+              }
+            ]
+          },
+          {
+            "id": "camera-language",
+            "kicker": "Motion vocabulary",
+            "title": "Write camera direction that can be executed",
+            "table": {
+              "headers": ["Intent", "Useful language", "Common mistake"],
+              "rows": [
+                [
+                  "Reveal context",
+                  "Start close, slowly dolly back to a wide shot",
+                  "Asking for zoom, orbit and crane simultaneously"
+                ],
+                [
+                  "Follow action",
+                  "Low lateral tracking shot, matched to the runner's pace",
+                  "Saying only cinematic camera"
+                ],
+                [
+                  "Build attention",
+                  "Slow push-in that stops at a medium close-up",
+                  "No endpoint or subject named"
+                ],
+                [
+                  "Show an object",
+                  "Controlled 120-degree clockwise orbit, stable product geometry",
+                  "Requesting a full spin in too little time"
+                ],
+                [
+                  "Documentary energy",
+                  "Handheld shoulder-height follow, small natural corrections",
+                  "Combining handheld with perfectly locked framing"
+                ]
+              ]
+            }
+          },
+          {
+            "id": "troubleshooting",
+            "kicker": "Fix the prompt",
+            "title": "Diagnose common failures before adding more words",
+            "table": {
+              "headers": ["Problem", "Likely prompt issue", "Next test"],
+              "rows": [
+                [
+                  "Subject changes identity",
+                  "Too many subjects or weak reference priority",
+                  "Reduce the cast; put identity first; use a clean reference"
+                ],
+                [
+                  "Camera move is ignored",
+                  "Move conflicts with action or has no endpoint",
+                  "Use one move and state where it stops"
+                ],
+                [
+                  "Shot feels static",
+                  "Prompt describes appearance but no change",
+                  "Add one physical action with a clear beginning and end"
+                ],
+                [
+                  "Sequence order drifts",
+                  "Several beats have no time ranges",
+                  "Assign non-overlapping intervals"
+                ],
+                [
+                  "Visual artifacts multiply",
+                  "Scene complexity is too high for the first test",
+                  "Shorten duration and remove secondary motion"
+                ]
+              ]
+            },
+            "callout": {
+              "title": "Change one variable at a time",
+              "text": "When a test fails, adjust the prompt, reference, duration or model—not all four. Controlled iteration teaches you which change helped.",
+              "tone": "note"
+            }
+          },
+          {
+            "id": "templates",
+            "kicker": "Reusable starting points",
+            "title": "Three prompt templates to adapt",
+            "examples": [
+              {
+                "label": "Image-to-video",
+                "text": "Preserve the subject, clothing, composition and background from the first frame. [subject] performs [single action]. [one camera move with endpoint]. [environmental motion]. [lighting and texture]. Avoid new objects, text and identity changes."
+              },
+              {
+                "label": "Character consistency",
+                "text": "The same [character description] remains consistent throughout. [0–Xs] [first action and shot]. [X–Ys] [second action and camera transition]. Preserve face, hairstyle, wardrobe colors and body proportions; natural motion, no duplicate limbs."
+              },
+              {
+                "label": "Product commercial",
+                "text": "An unbranded [product] on [surface]. [camera move] reveals [material detail]. Controlled studio lighting, accurate geometry, clean reflections, no text or extra accessories. End on a stable centered hero frame."
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the best prompt structure for Seedance 2.5?",
+            "answer": "Write the subject, the action, the setting, one camera move with an endpoint, the look, and the audio, in that order. Put spoken lines in double quotes and add time ranges only for shots with separate beats."
+          },
+          {
+            "question": "How long should a Seedance 2.5 prompt be?",
+            "answer": "Long enough to define the shot, not to fill a target word count. A focused single shot may need one paragraph; a 15–30 second sequence benefits from timecoded beats."
+          },
+          {
+            "question": "Does Seedance 2.5 understand timecodes?",
+            "answer": "Time ranges are a useful way to communicate sequential intent in supported workflows, but they are direction rather than a frame-accurate editing guarantee."
+          },
+          {
+            "question": "Should I include negative prompts?",
+            "answer": "Use a short avoid list only for recurring failures: no text, no duplicate limbs, no identity change. A long negative list can compete with the main instruction."
+          },
+          {
+            "question": "What resolution should I use while testing prompts?",
+            "answer": "Use 480p and 5–10 seconds for early motion tests. Move to 720p and longer duration after the structure works."
+          }
+        ],
+        "sources": [
+          {
+            "publisher": "Kie.ai",
+            "title": "Seedance 2.5 prompt and timecode input field",
+            "url": "https://kie.ai/seedance-2-5"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 workflow guide",
+            "url": "https://fal.ai/learn/tools/seedance-2-5-workflows"
+          },
+          {
+            "publisher": "fal",
+            "title": "Seedance 2.5 text-to-video schema",
+            "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video"
+          }
+        ],
+        "related": [
+          {
+            "title": "Seedance 2.5 free",
+            "description": "Test these prompts with visible credit cost.",
+            "url": "/seedance-2-5-free"
+          },
+          {
+            "title": "2.5 vs 2.0",
+            "description": "Benchmark the same prompt across model versions.",
+            "url": "/seedance-2-5-vs-2-0"
+          },
+          {
+            "title": "API guide",
+            "description": "Send prompts and reference inputs programmatically.",
+            "url": "/seedance-2-5-api"
+          }
+        ],
+        "cta": {
+          "title": "Direct one clear shot",
+          "description": "Paste a template, replace the brackets, and test it at a short duration first.",
+          "button": "Try the prompt",
+          "url": "/ai-video-generator"
+        },
+        "compact_header": true
+      }
+    }
+  }
+}
